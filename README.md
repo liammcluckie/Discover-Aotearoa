@@ -22,10 +22,10 @@ relevant imagery of New Zealand and it's destinations.
 #### 1b. [Business Goals](#business-goals)
 
 #### 1c. [UCD](#user-centered-design)
-- Strategy Plane
-- Scope Plane
-- Structure Plane
-- Skeleton Plane
+- Strategy 
+- Scope 
+- Structure 
+- Wireframes
 
 ### 2. [Design](#design)
 - Colour Scheme
@@ -110,7 +110,7 @@ the form, allowing for initial contact with the business to be a quick process a
 
 ### User Centered Design
 
-#### Strategy Plane
+#### Strategy
 
 - With the main goal for this website to convert visitors into customers the use of aesthetically pleasing and dramatic imagery will be used to
 draw the user in, followed by informative and useful information providing facts that interest the user and are relevant to their travel desires.
@@ -123,7 +123,7 @@ contact form.
 experience. The prices and overall cost of such things as flights, accommodation and attractions will be high which will reduce the relatable audience to that of
 visitors who are not worried about price. Due to this the website will have a high end luxury feel to match.
 
-#### Scope Plane | Trade Off 
+#### Scope | Trade Off 
 
 - **The main features and content in the initial design plan that are of highest priority are;**
     - Fully responsive website regardless of viewing device size.
@@ -142,6 +142,32 @@ visitors who are not worried about price. Due to this the website will have a hi
     - An 'About' page or section that includes information about the business.
     - A newsletter or blog subscription form.
     - Gallery page or section.
+
+### Structure 
+
+- The basic structure of the website is;
+
+- Navigation - *Top level*
+    - The fixed navigation bar will allow users to navigate to all other pages regardless of the section they are currently viewing.
+
+- Body - *Main page elements*
+    - The main hero image's will be dramatic New Zealand landscapes that draw the users attention and aids in selling the websites product.
+
+    - Buttons will be placed at important sections that allow the user to click the link and find out more. This is so that first 
+    time users are not overloaded with information straight away.
+
+- Footer - *Bottom level*
+    - Mirroring the navigation bar to ensure the user can navigate the page easily.
+
+    - Social media links placed here to ensure the user does not navigate away from the page to soon.
+
+    - Copyright and legal information placed here.
+
+For a more detailed look at the website structure and page flow please see structure diagram [here.](#)
+
+### Wireframes
+
+
 
 
 
