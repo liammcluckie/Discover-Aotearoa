@@ -94,7 +94,19 @@ relevant imagery of New Zealand and it's destinations.
 
 ## Business Goals
 
+- The main goal of this website is to convert visitors into customers, it's primary focus is to show users that the content and information
+of this website has been created by people who are experienced in travel specifically in New Zealand. 
 
+- The content provided by this business is to ensure that every step of travel is covered from flights and accommodation, to attractions and 
+where to eat. It will also provide recommendations on which locations they may want to visit and why, and further information on what to do when 
+visiting these destinations. The purpose of this is so that users can book and organise their whole trip in one location, therefore, removing the need 
+to book each aspect through different websites, creating a highly in demand platform.
+
+- Once a user has explored the website finding all the information required they will then have to contact the business with either a general 
+enquiry or with details on their required booking. This will be easily found through a simple contact page that outlines the best practices for using 
+the form, allowing for initial contact with the business to be a quick process and for rapport and trust to be quickly built.
+
+[Back to Table of Contents](#table-of-contents)
 
 
 
