@@ -108,6 +108,20 @@ the form, allowing for initial contact with the business to be a quick process a
 
 [Back to Table of Contents](#table-of-contents)
 
+### User Centered Design
+
+#### Strategy Plane
+
+- With the main goal for this website to convert visitors into customers the use of aesthetically pleasing and dramatic imagery will be used to
+draw the user in, followed by informative and useful information providing facts that interest the user and are relevant to their travel desires.
+
+- The chance of the user converting to a customer heightens dramatically once they make contact with the business through the booking form. In order for
+this to happen the website needs to be engaging with excellent user experience to keep the visitor from navigating away from the page before completing the 
+contact form.
+
+- This website is aimed at users who want to spend anywhere from three weeks to a few months travelling, with the idea of the trip being a once in a lifetime 
+experience. The prices and overall cost of such things as flights, accommodation and attractions will be high which will reduce the relatable audience to that of
+visitors who are not worried about price. Due to this the website will have a high end luxury feel to match.
 
 
 
