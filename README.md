@@ -123,5 +123,28 @@ contact form.
 experience. The prices and overall cost of such things as flights, accommodation and attractions will be high which will reduce the relatable audience to that of
 visitors who are not worried about price. Due to this the website will have a high end luxury feel to match.
 
+#### Scope Plane | Trade Off 
+
+- **The main features and content in the initial design plan that are of highest priority are;**
+    - Fully responsive website regardless of viewing device size.
+    - Fixed navigation bar.
+    - A recommendations section that includes top destinations and attractions.
+    - The use of various API's to display real-time information to the user.
+    - Interactive clickable features that allow the user to find relevant or further information.
+    - Two different 'Explore' pages for both the North and South Island's.
+    - A contact page that includes an easy to use form that sends emails to an account using [Emailjs.](https://www.emailjs.com/)
+    - Internal page links that direct the user to further information if required.
+
+- **The features and content in the initial design plan that are of a lower priority and may not be including in this build are;**
+    - The use of various booking platforms and widgets integrated into the website.
+    - Information regarding car and campervan hire.
+    - Creating fixed price package trips that include multiple locations and attractions.
+    - An 'About' page or section that includes information about the business.
+    - A newsletter or blog subscription form.
+    - Gallery page or section.
+
+
+
+
 
 
