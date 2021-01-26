@@ -21,7 +21,7 @@ relevant imagery of New Zealand and it's destinations.
 
 #### 1b. [Business Goals](#business-goals)
 
-#### 1c. [UCD](#user-centered-design)
+#### 1c. [User Centered Design](#user-centered-design)
 - Strategy 
 - Scope 
 - Structure 
@@ -38,7 +38,7 @@ relevant imagery of New Zealand and it's destinations.
 - Syntax
 - Frameworks, Libraries & Programs
 
-### 5. Testing
+### 5. [Testing](#testing)
 - [Testing Document](#)
 
 ### 6. [Deployment](#deployment)
@@ -53,7 +53,7 @@ relevant imagery of New Zealand and it's destinations.
 - Media
 - Acknowledgements
 
-## UK
+## UX
 
 ### User Stories
 
