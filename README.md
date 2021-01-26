@@ -2,7 +2,7 @@
 
 [View Live Project Here](#)
 
-[//]: # "Images of Live Website here" 
+*Images of Live Website here*
 
 ## Overview
 
@@ -143,7 +143,7 @@ visitors who are not worried about price. Due to this the website will have a hi
     - A newsletter or blog subscription form.
     - Gallery page or section.
 
-### Structure 
+#### Structure 
 
 - The basic structure of the website is;
 
@@ -163,9 +163,29 @@ visitors who are not worried about price. Due to this the website will have a hi
 
     - Copyright and legal information placed here.
 
-For a more detailed look at the website structure and page flow please see structure diagram [here.](#)
+For a more detailed look at the website structure and page flow please see structure diagram [here.](#) *Add created flow structure here*
+
+[Back to Table of Contents](#table-of-contents)
 
 ### Wireframes
+
+*Add wireframes here*
+
+### Design
+ 
+#### Colour Scheme
+
+- The colour scheme for this website will consist of a combination of blue, green and neutral shades that will tie in with the overall imagery 
+and theme of the website. These natural colours help convey feelings of rest and relaxation which is key for travel, as well as portraying the 
+colours associated with the New Zealand landscape.
+
+- Blue Whale (#173042) - *Include information on how the colours are used and why*
+
+- Allports (#236477) - *Include information on how the colours are used and why*
+
+- Iceberg (#cfdfda) - *Include information on how the colours are used and why*
+
+- Dell (#4a6c2f) - *Include information on how the colours are used and why*
 
 
 
