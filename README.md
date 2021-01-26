@@ -200,6 +200,22 @@ the thick and thin lines in the text. This will immediately catch the users atte
 attention away from the other important aspects on the page. Due to it's popularity this is a font that many users will be familiar with evoking a feeling 
 of comfort and trust as well as being aesthetically pleasing.
 
+#### Logo *(if one is used)*
+
+#### Imagery 
+
+- The type of imagery used within this website will be of great importance as this is what will be used to initially convince first time users 
+that planning a trip to New Zealand is the right decision. This will be done by using dramatic and eye catching landscape imagery that really displays
+the beauty of the country. Firstly, this will be achieved by a full screen hero image displayed on the landing page that not only conveys what the website is 
+about but will also make the user want to see more.
+
+- Images will also be used to convey information and work alongside text content, this will be especially important when displaying what attractions, destinations
+and restaurants are available or recommended. These images will be more of a documentary style telling a story of what the user could experience should they 
+visit these places.
+
+- There will also be the use of font icons throughout the website imported from [Font Awesome.](https://fontawesome.com/) These will be used in a way to further 
+enhance certain sections on the website such as flights, accommodation, travelling and planning. By using these icons in a way that isn't excessive it will add 
+a professional and clean aesthetic feel to the website.
 
 
 
