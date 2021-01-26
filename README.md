@@ -187,6 +187,18 @@ colours associated with the New Zealand landscape.
 
 - Dell (#4a6c2f) - *Include information on how the colours are used and why*
 
+#### Typography 
+
+- There will be two fonts used throughout this website. The font used for the logo and headings is Bodoni Moda, for the remaining website content 
+the Montserrat font will be used. Since both of these fonts are of the serif typeface Sans Serif will be used as the fallback font in case there 
+is an issue when importing the fonts, or browsers not supporting these.
+
+- **Bodoni Moda** - The reason this font is being used for the logo and headings is due to it's striking appearance and extreme contrast between
+the thick and thin lines in the text. This will immediately catch the users attention and direct them to the most important parts of the page.
+
+- **Montserrat** - This font is an ideal pairing with Bodoni Moda and works perfectly for content due to its clean, simple lines that don't draw 
+attention away from the other important aspects on the page. Due to it's popularity this is a font that many users will be familiar with evoking a feeling 
+of comfort and trust as well as being aesthetically pleasing.
 
 
 
