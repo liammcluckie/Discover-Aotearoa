@@ -179,13 +179,18 @@ For a more detailed look at the website structure and page flow please see struc
 and theme of the website. These natural colours help convey feelings of rest and relaxation which is key for travel, as well as portraying the 
 colours associated with the New Zealand landscape.
 
-- Blue Whale (#173042) - *Include information on how the colours are used and why*
+-  Black Tone (#0C0409) - This colour which has some small tonal changes from a normal black colour will only be used for the navigation bar and the footer. The reason for this is 
+to represent New Zealands well known and recognisable *All Blacks* colour.
 
-- Allports (#236477) - *Include information on how the colours are used and why*
+- Pig Pink (#F5EBE0) - Primary Colour - Used throughout the website as the background colour for all pages, a light grey pink colour that compliments the black used in the navigation and footer well.
 
-- Iceberg (#cfdfda) - *Include information on how the colours are used and why*
+- Raw Umber (#A58961) - Secondary Colour - Also described as a bronze/gold shade and a typical colour pairing with black, Raw Umber will also feature heavily throughout the website used for
+borders and alternative background colours when using boxes/cards for content. This colour also works very well with the main hero imagery used on each page such as sand, beaches and sunsets.
 
-- Dell (#4a6c2f) - *Include information on how the colours are used and why*
+- Tundora (#53505A) - *Include information on how the colours are used and why/May not be used*
+
+
+
 
 #### Typography 
 
