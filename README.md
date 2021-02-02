@@ -189,9 +189,6 @@ borders and alternative background colours when using boxes/cards for content. T
 
 - Tundora (#53505A) - *Include information on how the colours are used and why/May not be used*
 
-
-
-
 #### Typography 
 
 - There will be two fonts used throughout this website. The font used for the logo and headings is Bodoni Moda, for the remaining website content 
@@ -222,7 +219,32 @@ visit these places.
 enhance certain sections on the website such as flights, accommodation, travelling and planning. By using these icons in a way that isn't excessive it will add 
 a professional and clean aesthetic feel to the website.
 
+[Back to Table of Contents](#table-of-contents)
 
+### Features
+
+#### Existing Features 
+
+- Responsive on all screen sizes and devices.
+
+- Collapsible navigation bar when viewed on smaller screen sizes.
+
+- Load on scroll, a Javascript technique to load elements on the page as the user scrolls.
+
+- A fully connected email system using [EmailJS](https://www.emailjs.com/) that works alongside a correctly validated form.
+
+- Modal pop up window when the user has successfully completed the form.
+
+- The appearance on all buttons and links alters when the user clicks or hovers.
+
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) used on both explore pages to display information and locations of information related to the 
+content on the page.
+
+- *If Other API's used create a specific API section in Features*
+
+- Input focus used on all input boxes throughout the website.
+
+- Show/hide buttons used to display further information on specific content if the user chooses to.
 
 
 
