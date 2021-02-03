@@ -224,6 +224,7 @@ a professional and clean aesthetic feel to the website.
 ### Features
 
 #### Existing Features 
+*Break these into features for each page*
 
 - Responsive on all screen sizes and devices.
 
@@ -245,6 +246,12 @@ content on the page.
 - Input focus used on all input boxes throughout the website.
 
 - Show/hide buttons used to display further information on specific content if the user chooses to.
+
+- Card carousel using images with a small amount of information that displays when the user interacts.
+
+- Map API markers that display different Google data depending on what the user has selected.
+
+- Radio buttons that display information on specific locations depending on what the user chooses.
 
 
 
