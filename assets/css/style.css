@@ -1,0 +1,17 @@
+/*---- Imported Google Font ----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400&display=swap');
+
+/*---- Special Margins/Padding/Text/Colour ----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    height: 100vh;
+}
