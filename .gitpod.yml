@@ -11,3 +11,8 @@ vscode:
     - esbenp.prettier-vscode@5.7.1:4Zx39KyQMoIz7x94PSmDmQ==
     - kevinglasson.cornflakes-linter@0.5.1:KAaMshgHOKan8eojXQ53OQ==
 
+
+    - coenraads.bracket-pair-colorizer-2@0.1.4:+JUeb/jFYZt2/0MS/gUllA==
+    - janne252.fontawesome-autocomplete@1.1.2:7HhKTj8hxobEat1XAUsNtg==
+    - oderwat.indent-rainbow@7.5.0:CpN4cZnk34gVihISgY/1Qw==
+    - coenraads.bracket-pair-colorizer@1.0.61:+jQByqALW0iXkhpd2yzYzQ==
