@@ -1,6 +1,6 @@
 /*---- Imported Google Font ----*/
 
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@100;200;300;400&display=swap');
 
 /*---- Special Margins/Padding/Text/Colour ----*/
 
@@ -13,5 +13,43 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
+    height: 100%;
+}
+
+/*---- Navbar ----*/
+
+.nav-wrapper {
+    background: url("../images/landing-page-hero.jpg") no-repeat center scroll;
+    background-size: cover;
     height: 100vh;
+}
+
+.nav-text {
+    color: #fff!important;
+}
+
+.navbar-brand {
+    font-family: "Bodoni Moda", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 2em;
+    margin-right: 0.5em;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    margin-top: 0.8em;
+    color: #fff;
+}
+
+.dropdown {
+    border: none;
+}
+
+/*---- Logo ----*/
+
+#logo {
+    width: 3em;
+    height: auto;
+    filter: invert(1);
 }
