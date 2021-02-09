@@ -12,20 +12,27 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: 1vh;
     height: 100%;
 }
 
-/*---- Navbar ----*/
+.text-uppercase {
+    text-transform: capitalize;
+}
+
+/*---- Hero Image ----*/
 
 .nav-wrapper {
-    background: url("../images/landing-page-hero.jpg") no-repeat center scroll;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/landing-page-hero.jpg") no-repeat center scroll;
     background-size: cover;
     height: 100vh;
 }
 
+/*---- Navbar ----*/
+
 .nav-text {
     color: #fff!important;
+    font-size: 2.5vmin;
 }
 
 .navbar-brand {
@@ -34,7 +41,7 @@ body {
     font-weight: 400;
     margin-left: 2em;
     margin-right: 0.5em;
-    font-size: 1.5rem;
+    font-size: 4vmin;
 }
 
 .navbar-toggler {
@@ -49,7 +56,47 @@ body {
 /*---- Logo ----*/
 
 #logo {
-    width: 3em;
+    width: 4%;
     height: auto;
     filter: invert(1);
 }
+
+/*---- Hero Image Text ----*/
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    margin-left: 6em;
+    height: 15em;
+}
+
+#slogan {
+    font-family: "Bodoni Moda", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 6vmin;
+    color: #fff;
+}
+
+#catchline {
+    font-family: "Bodoni Moda", sans-serif;
+    font-style: italic;
+    font-size: 2.5vmin;
+    color: #fff;
+}
+
+/*---- Location Text ----*/
+
+.location-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: -63%;
+}
+
+.image-location {
+    color: #fff;
+    font-size: 2vmin;
+}
+
