@@ -19,7 +19,7 @@
     <header class="nav-wrapper">
     <!-- Nav -->
     <!-- Navbar code taken from Bootstrap.com-->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand nav-text" href="index.html">Discover Aotearoa</a>
             <img class="img-fluid" id="logo" src="assets/images/fern-logo.png" alt="Silver Fern by Josh from the Noun Project">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -37,8 +37,8 @@
                             Explore
                         </a>
                         <div class="dropdown-menu ml-auto" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">North Island</a>
-                            <a class="dropdown-item" href="#">South Island</a>
+                            <a class="dropdown-item bg-transparent" href="#">North Island</a>
+                            <a class="dropdown-item bg-transparent" href="#">South Island</a>
                         </div>
                     </li>
                     <li class="nav-item ml-auto">
@@ -62,16 +62,27 @@
                 <div class="col">
                      <div class="image-location">
                          <i class="fas fa-map-marker"></i>
-                        <p>Milford Sound, South Island</p>
+                        <p class="mr-md-5">Milford Sound, South Island</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Hero Image -->
-    <figure></figure>
     <!-- Aotearoa Description -->
-    <section></section>
+    <section>
+        <div class="container-fluid description-wrapper">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h2 id="description-title">Aotearoa</h2>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <p id="description-content">Māori: [aɔˈtɛaɾɔa] the name for New Zealand originally used by the Māori people</p>
+                    </div>
+                </div>
+            </div>
+    </section>
     <!-- Popular Destinations Carousel -->
     <section></section>
     <!-- Top Attractions Carousel -->
