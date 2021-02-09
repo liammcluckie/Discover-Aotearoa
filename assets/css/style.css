@@ -85,7 +85,6 @@ body {
 
 #slogan {
     font-family: "Bodoni Moda", sans-serif;
-    font-style: italic;
     font-weight: 400;
     font-size: 6vmin;
     color: #fff;
@@ -118,5 +117,20 @@ body {
 .description-wrapper {
     height: 30em;
     background-color: #A58961;
+}
+
+#description-title {
+    font-family: "Bodoni Moda", sans-serif;
+    font-size: 8vmin;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+    color: #0C0409;
+}
+
+#description-content {
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    color: #0C0409;
+    text-align: center;
 }
 
