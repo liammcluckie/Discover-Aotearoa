@@ -17,6 +17,7 @@
 html,body {
     width: 100%;
     overflow-x: hidden; 
+    background-color: #F5EBE0;
 }
 
 body {
@@ -62,7 +63,6 @@ body {
 .dropdown {
     border: none;
 }
-
 
 /*---- Logo ----*/
 
@@ -115,14 +115,15 @@ body {
 /*---- Aotearoa Description ----*/
 
 .description-wrapper {
-    height: 30em;
+    height: 36em;
     background-color: #A58961;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
 }
 
 #description-title {
     font-family: "Bodoni Moda", sans-serif;
     font-size: 8vmin;
-    padding-top: 1em;
+    padding-top: 0.8em;
     margin-bottom: 0.5em;
     color: #0C0409;
 }
@@ -134,3 +135,54 @@ body {
     text-align: center;
 }
 
+/*---- What We Do ----*/
+
+#what-we-do {
+    font-family: "Bodoni Moda", sans-serif;
+    font-style: italic;
+    color: #0C0409;
+    font-size: 5vmin;
+    margin-top: 1.5em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.travel-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 9vmin;
+    margin-top: 0.6em;
+}
+
+hr {
+    border: 1px solid #0C0409;
+    width: 10%;
+    margin-top: 0.7em;
+}
+
+.what-we-do-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5vmin;
+    color: #0C0409;
+    position: relative;
+    margin-top: 0.3em;
+}
+
+#plan-text {
+    position: absolute;
+    left: 30%;
+}
+
+#go-text {
+    position: absolute;
+    left: 42%;
+}
+
+#explore-text {
+    position: absolute;
+    left: 46%;
+}
