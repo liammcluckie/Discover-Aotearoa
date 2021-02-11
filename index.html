@@ -18,6 +18,7 @@
 <body>
      <!-- Header -->
     <header class="nav-wrapper">
+        <span role="img" aria-label="Landscape image of the Milford Sound mountains and rainforest"></span>
     <!-- Nav -->
     <!-- Navbar code taken from Bootstrap.com-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -94,8 +95,8 @@
             </div>
             <div class="row">
                 <div class="col travel-icons">
-                    <span><i class="far fa-file-alt"></i></span><hr>
-                    <span><i class="fas fa-plane"></i></span><hr>
+                    <span><i class="far fa-file-alt"></i></span><hr class="travel-icons-hr">
+                    <span><i class="fas fa-plane"></i></span><hr class="travel-icons-hr">
                     <span><i class="fas fa-globe"></i></span>
                 </div>
             </div>
@@ -114,22 +115,39 @@
             </div>
         </div>
     </section>
-    <!-- Popular Destinations Carousel -->
+    <!-- Popular Destinations -->
     <section id="popular-destination-title">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h2>Popular Destinations</h2>
+                    <hr id="pop-dest-hr">
                 </div>
             </div>
         </div>
-        <!-- Code taken from https://flickity.metafizzy.co/ for carousel-->
+        <!-- Popular Destinations Carousel -->
+        <!-- Code taken from https://flickity.metafizzy.co/ for carousel -->
         <div class="carousel" data-flickity='{ "lazyLoad": 2, "contain": true, "wrapAround": true }'>
-            <img class="carousel-image" data-flickity-lazyload="https://i.imgur.com/NL6Bo2n.jpg" alt="Landscape image of Auckland city scape at sunset"/>
-            <img class="carousel-image" data-flickity-lazyload="https://i.imgur.com/4gt3voR.jpg" alt="Wellington cable car travelling up the line with the city in the background"/>
-            <img class="carousel-image" data-flickity-lazyload="https://i.imgur.com/SFhtfeL.jpg" alt="The oceanside Kaikoura train-line with the snow capped Southern Alps in the background"/>
-            <img class="carousel-image" data-flickity-lazyload="https://i.imgur.com/iS133pv.jpg" alt="Rotorua mountain bike park chair lift with the city and lake in the background"/>
-            <img class="carousel-image" data-flickity-lazyload="https://i.imgur.com/y3HiF2V.jpg" alt="View of the Remarkables mountain range and Lake Wakatipu in Queenstown"/>
+            <div class="carousel-cell">
+                <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/NL6Bo2n.jpg"
+                    alt="Landscape image of Auckland city scape at sunset" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/eQabXLd.jpg"
+                    alt="High vantage point image of Wellington city and harbour taken from the hills" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/SFhtfeL.jpg"
+                    alt="The oceanside Kaikoura train-line with the snow capped Southern Alps in the background" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/iS133pv.jpg"
+                    alt="Rotorua mountain bike park chair lift with the city and lake in the background" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/y3HiF2V.jpg"
+                    alt="View of the Remarkables mountain range and Lake Wakatipu in Queenstown" />
+            </div>
         </div>
     </section>
     <!-- Top Attractions Carousel -->
