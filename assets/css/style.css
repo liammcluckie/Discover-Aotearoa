@@ -98,7 +98,7 @@ body {
     letter-spacing: 1px;
 }
 
-/*---- Location Text ----*/
+/*---- Hero Image Location Text ----*/
 
 .location-wrapper {
     position: absolute;
@@ -156,7 +156,7 @@ body {
 }
 
 hr {
-    border: 1px solid #0C0409;
+    border: 1px solid #A58961;
     width: 10%;
     margin-top: 0.7em;
 }
@@ -186,3 +186,39 @@ hr {
     position: absolute;
     left: 46%;
 }
+
+/*Popular Destinations Carousel*/
+
+#popular-destination-title {
+    margin-top: 20em;
+    height: min-content;
+    font-family: "Bodoni Moda", sans-serif;
+    color: #0C0409;
+}
+/*Code taken from https://flickity.metafizzy.co/ for carousel*/
+
+.carousel {
+  background: #EEE;
+  position: relative;
+  bottom: -10em;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
