@@ -204,7 +204,8 @@ body {
     bottom: -1em;
     width: 20em;
 }
-/*Code taken from https://flickity.metafizzy.co/ for carousel*/
+
+/*Code taken from https://flickity.metafizzy.co/ for Popular Destinations carousel*/
 
 .carousel {
     background: #F5EBE0;
@@ -213,7 +214,7 @@ body {
 }
 
 .carousel-cell {
-    width: 50%;
+    width: 35%;
     margin-right: 3em;
 }
 
@@ -225,6 +226,36 @@ body {
     display: block;
 }
 
+/*Carousel hover effect code taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity*/
 
+.carousel-cell-image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
 
+.carousel-hover-content {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+.carousel-cell:hover .carousel-cell-image {
+  opacity: 0.3;
+}
+
+.carousel-cell:hover .carousel-hover-content {
+  opacity: 1;
+}
+
+.carousel-hover-text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
