@@ -228,6 +228,16 @@ body {
 
 /*Carousel hover effect code taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity*/
 
+.carousel-cell-title {
+    color: #0C0409;
+    font-size: 4vmin;
+    padding-top: 0.5em;
+}
+
+.carousel-cell > a {
+    text-decoration: none;
+}
+
 .carousel-cell-image {
   opacity: 1;
   transition: .5s ease;
@@ -237,12 +247,12 @@ body {
 .carousel-hover-content {
   transition: .5s ease;
   opacity: 0;
+  text-align: start;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .carousel-cell:hover .carousel-cell-image {
@@ -254,8 +264,11 @@ body {
 }
 
 .carousel-hover-text {
-  background-color: #4CAF50;
+  background-color: #A58961;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  line-height: 18px;
   color: white;
-  font-size: 16px;
+  font-size: 13px;
   padding: 16px 32px;
 }
