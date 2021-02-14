@@ -64,6 +64,16 @@ body {
     border: none;
 }
 
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #A58961!important;
+}
+
+.navbar-nav .nav-dropdown-colour:active,
+.navbar-nav .nav-dropdown-colour:hover {
+    color: #A58961!important;
+}
+
 /*---- Logo ----*/
 
 #logo {
@@ -267,8 +277,8 @@ body {
   background-color: #A58961;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
-  line-height: 18px;
+  line-height: 1.3em;
   color: white;
-  font-size: 13px;
-  padding: 16px 32px;
+  font-size: 2vmin;
+  padding: 1em 2em;
 }
