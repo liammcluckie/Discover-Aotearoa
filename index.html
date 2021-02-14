@@ -116,12 +116,12 @@
         </div>
     </section>
     <!-- Popular Destinations -->
-    <section id="popular-destination-title">
+    <section class="popular-carousel-heading">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h2>Popular Destinations</h2>
-                    <hr id="pop-dest-hr">
+                    <hr class="popular-carousel-hr">
                 </div>
             </div>
         </div>
@@ -187,8 +187,77 @@
             </div>
         </div>
     </section>
-    <!-- Top Attractions Carousel -->
-    <section></section>
+    <!-- Top Attractions -->
+    <section class="popular-carousel-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Top Attractions</h2>
+                    <hr class="popular-carousel-hr">
+                </div>
+            </div>
+        </div>
+        <!-- Top Attractions Carousel -->
+        <!-- Code taken from https://flickity.metafizzy.co/ for carousel -->
+        <div class="carousel" data-flickity='{ "lazyLoad": 2, "contain": true, "wrapAround": true }'>
+            <div class="carousel-cell">
+                <!-- Add links to individual explore pages -->
+                <a href="#">
+                    <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/0ctI2Yq.jpg"
+                        alt="Landscape image of Auckland city scape at sunset" />
+                    <h4 class="destinations-carousel-title">Fiordland National Park</h4>
+                </a>
+                <div class="carousel-hover-content">
+                    <p class="destinations-carousel-text">One of the most dramatic and beautiful parts of New Zealand; the power of Fiordland's scenery never fails to enthral 
+                        travellers.</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <a href="#">
+                    <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/XV9ktPv.jpg"
+                        alt="High vantage point image of Wellington city and harbour taken from the hills" />
+                    <h4 class="destinations-carousel-title">Franz Josef Glacier</h4>
+                </a>
+                <div class="carousel-hover-content">
+                    <p class="destinations-carousel-text">One of the steepest glaciers in New Zealand, descending from its origins high in the Southern Alps deep into the lush 
+                        native rainforest of Westland's National Park</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <a href="#">
+                    <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/3uM4Dc8.jpg"
+                        alt="The oceanside Kaikoura train-line with the snow capped Southern Alps in the background" />
+                    <h4 class="destinations-carousel-title">Abel Tasmen Coast Track</h4>
+                </a>
+                <div class="carousel-hover-content">
+                    <p class="destinations-carousel-text">Abel Tasman National Park is New Zealand's smallest national park, inviting sandy beaches fill the spaces between trees and 
+                        tide line. Crystal clear streams tumble down mossy valleys to join the ocean.</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <a href="#">
+                    <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/vDbY8Bi.jpg"
+                        alt="Rotorua mountain bike park chair lift with the city and lake in the background" />
+                    <h4 class="destinations-carousel-title">Waiheke Vineyards</h4>
+                </a>
+                <div class="carousel-hover-content">
+                    <p class="destinations-carousel-text">Waiheke is known for it's high quality red wines. There are around 30 boutique wineries scattered about, many with tasting rooms, 
+                        delightful restaurants and breathtaking views.</p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <a href="#">
+                    <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/JT07rnG.jpg"
+                        alt="View of the Remarkables mountain range and Lake Wakatipu in Queenstown" />
+                    <h4 class="destinations-carousel-title">Nevis Bungy Jump</h4>
+                </a>
+                <div class="carousel-hover-content">
+                    <p class="destinations-carousel-text">The Nevis Bungy is a bungee jumping platform in the Southern Alps near Queenstown. It is the third highest bungee jumping 
+                        platform in the world at a height of 134 metres.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Newsletter Modal -->
     <aside></aside>
     <!-- Footer -->
