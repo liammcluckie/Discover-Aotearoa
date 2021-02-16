@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@100;200;300;400&display=swap');
 
-/*---- Special Margins/Padding/Text/Colour ----*/
+/*---- Special Margins/Padding/Text/Colour/Effects ----*/
 
 * {
     margin: 0;
@@ -27,6 +27,24 @@ body {
 
 .text-uppercase {
     text-transform: capitalize;
+}
+
+/*---- Code taken from https://ianlunn.github.io/Hover/ for hover effect ----*/
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*---- Hero Image ----*/
@@ -380,7 +398,7 @@ body {
 }
 
 #footer-logo {
-    width: 4%;
+    width: 10%;
     height: auto;
     filter: invert(1);
 }
@@ -388,4 +406,59 @@ body {
 .footer-nav {
     display: flex;
     flex-direction: column;
+}
+
+#footer-title {
+    text-decoration: none;
+    font-family: "Bodoni Moda", sans-serif;
+    font-size: 3vmin;
+    color: #fff;
+    padding: 0.5em;
+    font-style: italic;
+    margin-left: 0.5em;
+}
+
+.footer-nav > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vmin;
+    padding: 0.5em;
+    margin-left: 1em;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.copyright-text {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    font-size: 2vmin;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links-title {
+    color: #fff;
+    font-size: 3vmin;
+    padding: 1em;
+    letter-spacing: 1px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-icons > a > i {
+    color: #fff;
+    font-size: 3vmin
 }
