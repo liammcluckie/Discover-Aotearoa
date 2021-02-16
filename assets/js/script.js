@@ -1,11 +1,8 @@
-// http://michalsnik.github.io/aos/ For Animate on Scroll 
+// http://michalsnik.github.io/aos/ For Animate on Scroll Library
 
 AOS.init();
 
-// You can also pass an optional settings object
-// below listed default settings
 AOS.init({
-  // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
   initClassName: 'aos-init', // class applied after initialization
@@ -27,11 +24,20 @@ AOS.init({
 
 });
 
-// Popular Destinations Carousel
-// Code taken from https://flickity.metafizzy.co/ for image carousel
+// Nav-bar background colour change on scroll
+// Code taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
+$(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 50) { 
+          $(".navbar").css("background-color", "#0C0409"); 
+        } else {
+          $(".navbar").css("background-color", "transparent");
+        }
+      });
+    });
 
+// Code taken from https://flickity.metafizzy.co/ for image carousel
 $('.main-carousel').flickity({
-  // options
   cellAlign: 'left',
   contain: true
 });
