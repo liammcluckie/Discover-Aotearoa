@@ -150,6 +150,7 @@ body {
     height: 36em;
     background-color: #A58961;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
+    text-align: center;
 }
 
 #description-title {
@@ -164,7 +165,6 @@ body {
     font-size: 3vmin;
     letter-spacing: 1px;
     color: #0C0409;
-    text-align: center;
 }
 
 /*---- What We Do ----*/
@@ -469,9 +469,10 @@ body {
 
 /*---- Media Queries index.html ----*/
 
-/*---- Nav Phone----*/
+/*---- Phone ----*/
 
 @media (min-width: 280px) and (max-width: 768px) {
+    /*---- Navbar & Header ----*/
     .image-location > i, p {
         position: relative;
         left: -2.5em;
@@ -508,14 +509,27 @@ body {
     #catchline {
         margin-left: 2.5em;
     }
+
+    /*---- Aotearoa Description ----*/
+    .description-wrapper {
+        height: 23em;
+    }
+
+    #description-content {
+        margin-left: 4em;
+    }
+
 }
 
-/*---- Nav Tablet ----*/
+/*---- Tablet ----*/
+
+/*---- Ipad Pro ----*/
 
 @media only screen 
 and (min-width: 1024px) and (max-width: 1026px)
 and (max-height: 1366px) 
 and (-webkit-min-device-pixel-ratio: 1.5) {
+    /*---- Navbar & Header ----*/
     .nav-text {
         margin: 0.5em;
     }
@@ -533,5 +547,30 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     #catchline {
         margin-left: 2em;
+    }
+
+    /*---- Aotearoa Description ----*/ 
+    .description-wrapper {
+        height: 25em;
+    }
+
+    #description-content {
+        margin-left: 3em;
+    }
+}
+
+/*---- Ipad ----*/
+
+@media only screen and (device-width: 768px) {
+    .description-wrapper {
+        height: 25em;
+    }
+}
+
+/*---- Surface Duo ----*/
+
+@media only screen and (max-width: 1366px) and (orientation : landscape) {
+	.description-wrapper {
+        height: 30em;
     }
 }
