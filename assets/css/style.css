@@ -78,6 +78,10 @@ body {
     color: #fff;
 }
 
+.dropdown-item {
+    font-size: 2.5vmin;
+}
+
 .dropdown {
     border: none;
 }
@@ -435,7 +439,7 @@ body {
 
 .copyright-text {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
     right: 0;
     font-size: 2vmin;
@@ -461,4 +465,73 @@ body {
 .footer-icons > a > i {
     color: #fff;
     font-size: 3vmin
+}
+
+/*---- Media Queries index.html ----*/
+
+/*---- Nav Phone----*/
+
+@media (min-width: 280px) and (max-width: 768px) {
+    .image-location > i, p {
+        position: relative;
+        left: -2.5em;
+    }
+
+    .navbar-toggler {
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 4vmin;
+    }
+
+    .nav-text {
+        padding: 0.5em;
+        margin-right: 1em;
+    }
+
+    .nav-home {
+        padding-right: 1.7em!important;
+    }
+
+    .nav-contact {
+        padding-right: 1em!important;
+    }
+
+    .navbar-brand {
+        margin-right: 0.1em;
+        margin-left: 0.5em;
+    }
+
+    .hero-text {
+        margin-left: 2em;
+    }
+
+    #catchline {
+        margin-left: 2.5em;
+    }
+}
+
+/*---- Nav Tablet ----*/
+
+@media only screen 
+and (min-width: 1024px) and (max-width: 1026px)
+and (max-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    .nav-text {
+        margin: 0.5em;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0 0.6em 0 0.8em;
+    }
+
+    .image-location > i, p {
+        position: relative;
+        left: -2em;
+    }
+
+    #catchline {
+        margin-left: 2em;
+    }
 }
