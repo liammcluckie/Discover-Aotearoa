@@ -352,6 +352,10 @@ body {
     line-height: 18px;
 }
 
+.newsletter-header {
+    font-size: 3.5vmin;
+}
+
 #newsletter-email {
     width: 60%;
     font-size: 2.5vmin;
@@ -544,6 +548,16 @@ body {
         opacity: 1;
     }
 
+    /*---- Newsletter Form ----*/
+    .newsletter-wrapper {
+        bottom: -10em;
+        width: 70%;
+    }
+
+    #newsletter-email {
+        width: 70%;
+    }
+
 }
 
 /*---- Tablet ----*/
@@ -606,6 +620,16 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .carousel-cell:hover .carousel-cell-image {
         opacity: 1;
+    }
+
+    /*---- Newsletter Form ----*/
+    .newsletter-wrapper {
+        bottom: -10em;
+        width: 70%;
+    }
+
+    #newsletter-email {
+        width: 70%;
     }
 }
 
