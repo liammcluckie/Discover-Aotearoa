@@ -443,7 +443,7 @@ body {
 
 .copyright-text {
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     left: 0;
     right: 0;
     font-size: 2vmin;
@@ -558,6 +558,16 @@ body {
         width: 70%;
     }
 
+    /*---- Footer ----*/
+    .footer-wrapper {
+        height: auto;
+        padding-bottom: 1em;
+    }
+
+    #footer-logo {
+        width: 25%;
+    }
+
 }
 
 /*---- Tablet ----*/
@@ -631,19 +641,39 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     #newsletter-email {
         width: 70%;
     }
+    
+    /*---- Footer ----*/
+    .footer-wrapper {
+        height: auto;
+        padding-bottom: 1em;
+    }
+
+    #footer-logo {
+        width: 25%;
+        position: relative;
+        left: -45px;
+    }
 }
 
 /*---- Ipad ----*/
 
 @media only screen and (device-width: 768px) {
+    /*---- Aotearoa Description ----*/ 
     .description-wrapper {
         height: 25em;
+    }
+
+    /*---- Footer ----*/
+    #footer-logo {
+        position: relative;
+        left: -35px;
     }
 }
 
 /*---- Surface Duo ----*/
 
 @media only screen and (max-width: 1366px) and (orientation : landscape) {
+     /*---- Aotearoa Description ----*/ 
 	.description-wrapper {
         height: 30em;
     }
