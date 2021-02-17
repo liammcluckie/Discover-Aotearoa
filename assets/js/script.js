@@ -26,8 +26,8 @@ AOS.init({
 
 // Nav-bar background colour change on scroll
 // Code taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
-$(document).ready(function(){
-      $(window).scroll(function() { 
+$(document).ready(function() {
+    $(window).scroll(function() { 
         if ($(document).scrollTop() > 50) { 
           $(".navbar").css("background-color", "#0C0409"); 
         } else {
@@ -36,9 +36,14 @@ $(document).ready(function(){
       });
     });
 
-// Code taken from https://flickity.metafizzy.co/ for image carousel
-$('.main-carousel').flickity({
-  cellAlign: 'left',
-  contain: true
-});
+// Function to change image carousel title
+const originalText = document.getElementById("auckland").innerText;
+
+function changeText(text) {
+    text.innerHTML = "Click to Explore More";
+}
+
+function defaultText() {
+    document.getElementById("auckland").innerHTML = originalText;
+}
 
