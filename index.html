@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> <!-- https://flickity.metafizzy.co/ For Image Carousel -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- http://michalsnik.github.io/aos/ For Animate on Scroll Library-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="logo.ico" type="image">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <title>Discover Aotearoa</title>
 </head>
 
@@ -139,16 +143,15 @@
                         <h4 id="auckland" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Explore Auckland</h4>
                     </a>
                     <div class="carousel-hover-content">
-                        <p class="destinations-carousel-text">Auckland, is a major city in the North Island home to the iconic 
-                            Sky Tower with breathtaking views of Viaduct Harbour, full of superyachts and lined with bars and cafes. Perfect for that city break but still only a stones throw
-                            away from the white sand beaches of Waiheke island</p>
+                        <p class="destinations-carousel-text">Home to the iconic Sky Tower with breathtaking views of Viaduct Harbour, full of superyachts and lined with bars and cafes. 
+                            Perfect for that city break but still only a stones throw away from the white sand beaches of Waiheke island</p>
                     </div>
                 </div>
                 <div class="carousel-cell">
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/eQabXLd.jpg"
                             alt="High vantage point image of Wellington city and harbour taken from the hills" />
-                        <h4 class="destinations-carousel-title">Explore Wellington</h4>
+                        <h4 id="wellington" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Explore Wellington</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">The capital of New Zealand, sits near the North Island’s southernmost point on the Cook Strait. A compact city, with a beautiful 
@@ -159,18 +162,18 @@
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/SFhtfeL.jpg"
                             alt="The oceanside Kaikoura train-line with the snow capped Southern Alps in the background" />
-                        <h4 class="destinations-carousel-title">Explore Kaikōura</h4>
+                        <h4 id="kaikoura" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Explore Kaikōura</h4>
                     </a>
                     <div class="carousel-hover-content">
-                        <p class="destinations-carousel-text">The picturesque coastal town of Kaikoura is the perfect place for marine life encounters and coastal walks. The village is caught 
-                            between the rugged Seaward Kaikōura Range and the Pacific Ocean, surrounded by snow-capped mountains in Winter and sun kissed beaches in summer</p>
+                        <p class="destinations-carousel-text">The picturesque coastal town of Kaikoura is the perfect place for marine life encounters. The village is caught between
+                            the rugged Seaward Kaikōura Range and the Pacific Ocean, surrounded by snow-capped mountains and sun kissed beaches</p>
                     </div>
                 </div>
                 <div class="carousel-cell">
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/iS133pv.jpg"
                             alt="Rotorua mountain bike park chair lift with the city and lake in the background" />
-                        <h4 class="destinations-carousel-title">Explore Rotorua</h4>
+                        <h4 id="rotorua" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Explore Rotorua</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">Rotorua named after the lake it's set around, renowned for its geothermal activity and Maori culture with one of the few living Maori 
@@ -181,7 +184,7 @@
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/y3HiF2V.jpg"
                             alt="View of the Remarkables mountain range and Lake Wakatipu in Queenstown" />
-                        <h4 class="destinations-carousel-title">Explore Queenstown</h4>
+                        <h4 id="queenstown" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Explore Queenstown</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">The adrenaline junkies playground. Queenstown is the home of the original bungy jump, skydiving over the Southern alps, and the hub 
@@ -210,7 +213,7 @@
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/0ctI2Yq.jpg"
                             alt="Landscape image of Auckland city scape at sunset" />
-                        <h4 class="destinations-carousel-title">Fiordland National Park</h4>
+                        <h4 id="fiordland" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Fiordland National Park</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">One of the most dramatic and beautiful parts of New Zealand; the power of Fiordland's scenery never fails to enthral 
@@ -221,7 +224,7 @@
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/XV9ktPv.jpg"
                             alt="High vantage point image of Wellington city and harbour taken from the hills" />
-                        <h4 class="destinations-carousel-title">Franz Josef Glacier</h4>
+                        <h4 id="franz" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Franz Josef Glacier</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">One of the steepest glaciers in New Zealand, descending from its origins high in the Southern Alps deep into the lush 
@@ -232,7 +235,7 @@
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/3uM4Dc8.jpg"
                             alt="The oceanside Kaikoura train-line with the snow capped Southern Alps in the background" />
-                        <h4 class="destinations-carousel-title">Abel Tasmen Coast Track</h4>
+                        <h4 id="abel" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Abel Tasmen Coast Track</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">Abel Tasman National Park is New Zealand's smallest national park, inviting sandy beaches fill the spaces between trees and 
@@ -243,7 +246,7 @@
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/vDbY8Bi.jpg"
                             alt="Rotorua mountain bike park chair lift with the city and lake in the background" />
-                        <h4 class="destinations-carousel-title">Waiheke Vineyards</h4>
+                        <h4 id="waiheke" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Waiheke Vineyards</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">Waiheke is known for it's high quality red wines. There are around 30 boutique wineries scattered about, many with tasting rooms, 
@@ -254,7 +257,7 @@
                     <a href="#">
                         <img class="carousel-cell-image" data-flickity-lazyload="https://i.imgur.com/JT07rnG.jpg"
                             alt="View of the Remarkables mountain range and Lake Wakatipu in Queenstown" />
-                        <h4 class="destinations-carousel-title">Nevis Bungy Jump</h4>
+                        <h4 id="nevis" class="destinations-carousel-title" onmouseenter="changeText(this)" onmouseleave="defaultText(this)">Nevis Bungy Jump</h4>
                     </a>
                     <div class="carousel-hover-content">
                         <p class="destinations-carousel-text">The Nevis Bungy is a bungee jumping platform in the Southern Alps near Queenstown. It is the third highest bungee jumping 
@@ -290,10 +293,10 @@
                         <img class="img-fluid" id="footer-logo" src="assets/images/fern-logo.png" alt="Silver Fern by Josh from the Noun Project">
                     </div>
                     <div class="footer-nav">
-                        <a class="hvr-grow" href="index.html">Home</a>
-                        <a class="hvr-grow" href="#">North Island</a>
-                        <a class="hvr-grow" href="">South Island</a>
-                        <a class="hvr-grow" href="">Contact</a>
+                        <a class="hvr-shrink" href="index.html">Home</a>
+                        <a class="hvr-shrink" href="#">North Island</a>
+                        <a class="hvr-shrink" href="">South Island</a>
+                        <a class="hvr-shrink" href="">Contact</a>
                     </div>
                 </div>
                 <div class="col copyright">
