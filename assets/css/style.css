@@ -62,6 +62,7 @@ body {
     color: #fff!important;
     font-size: 2.5vmin;
     letter-spacing: 1px;
+    margin-top: 0.5em
 }
 
 .navbar-brand {
@@ -76,6 +77,10 @@ body {
 .navbar-toggler {
     margin-top: 0.8em;
     color: #fff;
+}
+
+.nav-link {
+    padding: 0 1em 0 1em!important;
 }
 
 .dropdown-item {
@@ -229,6 +234,10 @@ body {
     text-align: center;
 }
 
+.carousel-heading-text {
+    font-size: 4vmin;
+}
+
 .popular-carousel-hr {
     border: 1px solid #A58961;
     margin: 0 auto;
@@ -349,7 +358,7 @@ body {
 .newsletter-form {
     color: #0C0409;
     letter-spacing: 1px;
-    line-height: 18px;
+    line-height: 2.7em;
 }
 
 .newsletter-header {
@@ -376,6 +385,7 @@ body {
     font-size: 2.5vmin;
     border-radius: 2px;
     margin-left: 0.5em;
+    background-color: #fff;
     display: inline-block;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -504,6 +514,10 @@ body {
     .navbar-brand {
         margin-right: 0.1em;
         margin-left: 0.5em;
+    }
+
+    #logo {
+        width: 8%;
     }
 
     .hero-text {
