@@ -38,13 +38,9 @@ $(document).ready(function() {
 
 // Function to change image carousel title
 const originalText = document.getElementById("auckland").innerText;
-const w = window.innerWidth || screen.width;
-const targetWidth = 768;
 
-if (w >= targetWidth) {
-    function changeText(text) {
-        text.innerHTML = "Click to Explore More";
-    }
+function changeText(text) {
+    text.innerHTML = "Click to Explore More";
 }
 
 function defaultText() {
