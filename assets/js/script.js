@@ -28,7 +28,7 @@ AOS.init({
 // Code taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
 $(document).ready(function() {
     $(window).scroll(function() { 
-        if ($(document).scrollTop() > 50) { 
+        if ($(document).scrollTop() > 90) { 
           $(".navbar").css("background-color", "#0C0409"); 
         } else {
           $(".navbar").css("background-color", "transparent");
@@ -37,13 +37,37 @@ $(document).ready(function() {
     });
 
 // Function to change image carousel title
-const originalText = document.getElementById("auckland").innerText;
+const destinationsOriginalText = popularDestinations = {
+    auckland:"Auckland", 
+    queenstown:"Queenstown", 
+    wellington:"Wellington",
+    kaikoura: "Kaikōura",
+    rotorua: "Rotorua"
+};
 
+const topAttractionsOriginalText = topAttractions = {
+    fiordland:"Fiordland National Park",
+    franz:"Franz Josef Glacier",
+    abel:"Abel Tasman Coast Track",
+    waiheke:"Waiheke Vineyards",
+    nevis:"Nevis Bungy Jump"
+};
+
+//Add document ready function
 function changeText(text) {
     text.innerHTML = "Click to Explore More";
-}
+};
 
 function defaultText() {
-    document.getElementById("auckland").innerHTML = originalText;
-}
+    document.getElementById("auckland").innerHTML = destinationsOriginalText.auckland;
+    document.getElementById("queenstown").innerHTML = destinationsOriginalText.queenstown;
+    document.getElementById("wellington").innerHTML = destinationsOriginalText.wellington;
+    document.getElementById("kaikoura").innerHTML = destinationsOriginalText.kaikoura;
+    document.getElementById("rotorua").innerHTML = destinationsOriginalText.rotorua;
+    document.getElementById("fiordland").innerHTML = topAttractionsOriginalText.fiordland;
+    document.getElementById("franz").innerHTML = topAttractionsOriginalText.franz;
+    document.getElementById("abel").innerHTML = topAttractionsOriginalText.abel;
+    document.getElementById("waiheke").innerHTML = topAttractionsOriginalText.waiheke;
+    document.getElementById("nevis").innerHTML = topAttractionsOriginalText.nevis;
+};
 
