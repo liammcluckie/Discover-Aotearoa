@@ -67,7 +67,7 @@ body {
 
 /*---- Hero Image ----*/
 
-.nav-wrapper {
+#landing-nav-wrapper {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/landing-page-hero.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
@@ -114,6 +114,10 @@ body {
     color: #A58961!important;
 }
 
+.active {
+    color: #A58961!important;
+}
+
 .navbar-nav .nav-dropdown-colour:active,
 .navbar-nav .nav-dropdown-colour:hover {
     color: #A58961!important;
@@ -146,7 +150,7 @@ body {
     color: #fff;
 }
 
-#catchline {
+.catchline {
     font-family: "Bodoni Moda", sans-serif;
     font-style: italic;
     font-size: 2.5vmin;
@@ -355,6 +359,15 @@ body {
     color: white;
     font-size: 2vmin;
     padding: 1em 2em;
+}
+
+/*---- North Island Hero Image ----*/
+
+#north-nav-wrapper {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/north-hero-image.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
 }
 
 /*---- Newsletter Form ----*/
@@ -576,7 +589,7 @@ body {
         font-size: 7vmin;
     }
 
-    #catchline {
+    .catchline {
         margin-left: 1.5em;
         font-size: 4.5vmin;
     }
@@ -686,7 +699,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         left: -2em;
     }
 
-    #catchline {
+    .catchline {
         margin-left: 2em;
     }
 
