@@ -272,12 +272,12 @@
         <div class="container newsletter-wrapper" data-aos="fade-up">
             <div class="row">
                 <div class="col">
-                    <form class="newsletter-form" onSubmit="alert('Thank you for signing up, we promise not to share your details!');">
+                    <form class="newsletter-form">
                         <h3 class="col d-flex justify-content-center newsletter-header">Be in the know...</h3>
                         <h4 class="newsletter-header">Sign up for exclusive offers</h4>
                         <label for="newsletter-email"></label>
                         <input id="newsletter-email" type="email" name="newsletter_email" placeholder="Email Address" required>
-                        <input id="sign-up" type="submit" value="Sign Up">
+                        <button id="sign-up" type="submit" value="Sign Up" onclick="this.form.reset();">Sign Up</button>
                     </form>
                 </div>
             </div>

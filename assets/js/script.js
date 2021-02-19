@@ -53,7 +53,6 @@ const topAttractionsOriginalText = topAttractions = {
     nevis:"Nevis Bungy Jump"
 };
 
-//Add document ready function
 function changeText(text) {
     text.innerHTML = "Click to Explore More";
 };
@@ -71,3 +70,7 @@ function defaultText() {
     document.getElementById("nevis").innerHTML = topAttractionsOriginalText.nevis;
 };
 
+//Newsletter Form Submit Alert
+document.getElementById("sign-up").addEventListener("click", function() {
+    alert("Thank you for signing up, we promise not to share your details!");
+});
