@@ -125,6 +125,7 @@ body {
     width: 4%;
     height: auto;
     filter: invert(1);
+    margin-top: 2.5em;
 }
 
 /*---- Hero Image Text ----*/
@@ -253,7 +254,7 @@ body {
 }
 
 .carousel-heading-text {
-    font-size: 4vmin;
+    font-size: 5vmin;
 }
 
 .popular-carousel-hr {
@@ -261,7 +262,7 @@ body {
     margin: 0 auto;
     position: relative;
     bottom: -1em;
-    width: 20em;
+    width: 10rem;
 }
 
 /*---- Code taken from https://flickity.metafizzy.co/ for Popular Destinations carousel ----*/
@@ -347,13 +348,13 @@ body {
 }
 
 .destinations-carousel-text {
-  background-color: #A58961;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-  line-height: 1.3em;
-  color: white;
-  font-size: 2vmin;
-  padding: 1em 2em;
+    background-color: #A58961;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    color: white;
+    font-size: 2vmin;
+    padding: 1em 2em;
 }
 
 /*---- Newsletter Form ----*/
@@ -501,24 +502,38 @@ body {
 
 /*---- Media Queries index.html ----*/
 
-/*---- Phone ----*/
+/*---- Galaxy Fold ----*/
+
+/*---- Navbar & Header ----*/
+@media (min-width: 280px) and (max-width: 653px) {
+    .navbar {
+        justify-content: inherit!important;
+        padding: 0!important;
+    }
+
+    .location-wrapper {
+        margin-right: 1.5em;
+    }
+}
+
+/*---- General Mobile ----*/
 
 @media (min-width: 280px) and (max-width: 768px) {
     /*---- Navbar & Header ----*/
     .image-location > i, p {
         position: relative;
-        left: -2.5em;
+        left: -1.5em;
     }
 
     .navbar-toggler {
-        margin-right: 0.5em;
-        margin-bottom: 0.5em;
-        font-size: 4vmin;
+        margin: 1em 0.5em 0.5em 0.5em;
+        font-size: 6vmin;
     }
 
     .nav-text {
         padding: 0.5em;
         margin-right: 1em;
+        font-size: 4vmin;
     }
 
     .nav-home {
@@ -532,18 +547,29 @@ body {
     .navbar-brand {
         margin-right: 0.1em;
         margin-left: 0.5em;
+        font-size: 5.5vmin;
+    }
+
+    .dropdown-item {
+        font-size: 4vmin;
     }
 
     #logo {
-        width: 8%;
+        width: 10%;
+        margin-top: 1.5em;
     }
 
     .hero-text {
         margin-left: 2em;
     }
 
+    #slogan {
+        font-size: 7vmin;
+    }
+
     #catchline {
-        margin-left: 2.5em;
+        margin-left: 1.5em;
+        font-size: 4.5vmin;
     }
 
     /*---- Aotearoa Description ----*/
@@ -580,6 +606,10 @@ body {
         opacity: 1;
     }
 
+    .popular-carousel-hr {
+        width: 6.5rem;
+    }
+
     /*---- Newsletter Form ----*/
     .newsletter-wrapper {
         bottom: -10em;
@@ -598,6 +628,18 @@ body {
 
     #footer-logo {
         width: 25%;
+    }
+
+    #footer-title, .footer-links-title {
+        font-size: 4vmin;
+    }
+
+    .footer-nav > a, .copyright-text {
+        font-size: 3vmin;
+    }
+
+    .footer-icons > a > i {
+        font-size: 4vmin;
     }
 
 }
@@ -623,6 +665,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .nav-link {
         padding: 0!important;
+    }
+
+    #logo {
+        width: 8%;
+        margin-top: 0.5em
     }
 
     .image-location > i, p {
@@ -694,6 +741,18 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 /*---- Ipad ----*/
 
 @media only screen and (device-width: 768px) {
+    /*---- Navbar & Header ----*/
+    .nav-text {
+        font-size: 4.5vmin;
+    }
+
+    .nav-link {
+        font-size: 3vmin;
+    }
+
+    .dropdown-item {
+        font-size: 3vmin;
+    }
     /*---- Aotearoa Description ----*/ 
     .description-wrapper {
         height: 25em;
@@ -702,7 +761,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Footer ----*/
     #footer-logo {
         position: relative;
-        left: -35px;
+        left: -0.5em;
     }
 }
 
