@@ -121,7 +121,7 @@ body {
 
 /*---- Logo ----*/
 
-#logo {
+.logo {
     width: 4%;
     height: auto;
     filter: invert(1);
@@ -139,7 +139,7 @@ body {
     height: 15em;
 }
 
-#slogan {
+.slogan {
     font-family: "Bodoni Moda", sans-serif;
     font-weight: 400;
     font-size: 6vmin;
@@ -434,7 +434,7 @@ body {
     align-items: center;
 }
 
-#footer-logo {
+.footer-logo {
     width: 10%;
     height: auto;
     filter: invert(1);
@@ -445,7 +445,7 @@ body {
     flex-direction: column;
 }
 
-#footer-title {
+.footer-title {
     text-decoration: none;
     font-family: "Bodoni Moda", sans-serif;
     font-size: 3vmin;
@@ -554,7 +554,11 @@ body {
         font-size: 4vmin;
     }
 
-    #logo {
+    .dropdown-menu {
+        padding: 0;
+    }
+
+    .logo {
         width: 10%;
         margin-top: 1.5em;
     }
@@ -563,7 +567,7 @@ body {
         margin-left: 2em;
     }
 
-    #slogan {
+    .slogan {
         font-size: 7vmin;
     }
 
@@ -626,11 +630,11 @@ body {
         padding-bottom: 1em;
     }
 
-    #footer-logo {
+    .footer-logo {
         width: 25%;
     }
 
-    #footer-title, .footer-links-title {
+    .footer-title, .footer-links-title {
         font-size: 4vmin;
     }
 
@@ -667,7 +671,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         padding: 0!important;
     }
 
-    #logo {
+    .logo {
         width: 8%;
         margin-top: 0.5em
     }
@@ -731,7 +735,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         padding-bottom: 1em;
     }
 
-    #footer-logo {
+    .footer-logo {
         width: 25%;
         position: relative;
         left: -45px;
@@ -759,7 +763,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
     /*---- Footer ----*/
-    #footer-logo {
+    .footer-logo {
         position: relative;
         left: -0.5em;
     }
