@@ -243,9 +243,9 @@ body {
     left: 46%;
 }
 
-/*---- Popular Destinations Carousel ----*/
+/*---- Destinations/Attractions Carousel ----*/
 
-.popular-carousel-heading {
+.carousel-heading {
     margin-top: 20em;
     height: min-content;
     font-family: "Bodoni Moda", sans-serif;
@@ -257,12 +257,12 @@ body {
     font-size: 5vmin;
 }
 
-.popular-carousel-hr {
+.carousel-hr {
     border: 1px solid #A58961;
     margin: 0 auto;
     position: relative;
     bottom: -1em;
-    width: 10rem;
+    width: 20%;
 }
 
 /*---- Code taken from https://flickity.metafizzy.co/ for Popular Destinations carousel ----*/
@@ -286,15 +286,15 @@ body {
     display: block;
 }
 
-.destinations-carousel-title {
+.carousel-image-title {
     color: #0C0409;
     font-size: 4vmin;
     padding-top: 0.5em;
 }
 
-/*Carousel Title underline hover effect code taken from https://codepen.io/colloque/pen/bDgmx*/
+/*---- Carousel Title underline hover effect code taken from https://codepen.io/colloque/pen/bDgmx ----*/
 
-.destinations-carousel-title:after {
+.carousel-image-title:after {
     content: '';
     position: absolute;
     left: 25%;
@@ -310,7 +310,7 @@ body {
 	transform: scale(0,1);
 }
 
-.destinations-carousel-title:hover:after {
+.carousel-image-title:hover:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -347,7 +347,7 @@ body {
     opacity: 1;
 }
 
-.destinations-carousel-text {
+.carousel-image-text {
     background-color: #A58961;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
