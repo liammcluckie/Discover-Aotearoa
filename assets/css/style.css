@@ -405,6 +405,13 @@ body {
     border-radius: 2px;
 }
 
+#newsletter-success {
+    font-size: 2vmin;
+    line-height: 2em;
+    margin-top: 1em;
+    display: none;
+}
+
 #newsletter-email:focus {
     border: 2px solid #708090;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -510,7 +517,7 @@ body {
 .footer-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .footer-icons > a > i {
