@@ -387,7 +387,7 @@ body {
     z-index: 1;
 }
 
-.newsletter-form {
+#newsletter-form {
     color: #0C0409;
     letter-spacing: 1px;
     line-height: 2.7em;
