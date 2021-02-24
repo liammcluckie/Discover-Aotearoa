@@ -78,3 +78,21 @@ function validateNewsletterForm(event) {
     event.preventDefault();
     return true;
 }
+
+//Toggle Destinations Content
+$(".destinations-btn-one").click(function() {
+    $(".destinations-content-one").toggle();
+});
+
+$(".destinations-btn-two").click(function() {
+    $(".destinations-content-two").toggle();
+});
+
+//Destinations Content Arrow Flip 
+$(".destinations-btn-one").click(function() {
+    $(".arrow-one").toggleClass("arrow-flip");
+});
+
+$(".destinations-btn-two").click(function() {
+    $(".arrow-two").toggleClass("arrow-flip");
+});
