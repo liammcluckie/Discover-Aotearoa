@@ -440,6 +440,36 @@ body {
   transform: scale(0.9);
 }
 
+/*---- Flights ----*/
+
+.flights-wrapper {
+    height: 50em;
+    background-color: #A58961;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
+    text-align: center;
+}
+
+#flights-header {
+    font-family: "Bodoni Moda", sans-serif;
+    margin: 1.5em 0 .5em 0;
+    color: #0C0409;
+    font-size: 5vmin;
+}
+
+#flights-catchline {
+    font-size: 3vmin;
+    color: #0C0409;
+    margin-bottom: 1.5em;
+}
+
+.flights-button {
+    padding: 0.5em 2.5em 0.5em 2.5em;
+    font-size: 2.5vmin;
+    border: 1px solid #0C0409;
+    border-radius: 2px;
+    background-color: #F5EBE0;
+}
+
 /*---- Footer ----*/
 
 .footer-wrapper {
