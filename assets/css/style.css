@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 *, ::after, ::before { 
@@ -370,6 +371,98 @@ body {
     position: relative;
 }
 
+/*---- Flights ----*/
+
+.flights-wrapper {
+    height: 50em;
+    background-color: #A58961;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
+    text-align: center;
+}
+
+#flights-header {
+    font-family: "Bodoni Moda", sans-serif;
+    margin: 1.5em 0 .5em 0;
+    letter-spacing: 1px;
+    color: #0C0409;
+    font-size: 5vmin;
+}
+
+#flights-catchline {
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    color: #0C0409;
+    margin-bottom: 1.5em;
+}
+
+.flights-button {
+    padding: 0.5em 2.5em;
+    font-size: 2.5vmin;
+    letter-spacing: 1px;
+    border: 1px solid #0C0409;
+    border-radius: 2px;
+    background-color: #F5EBE0;
+}
+
+/*---- Destinations ----*/
+
+.destinations-wrapper {
+    text-align: center;
+    border: 2px solid #A58961;
+    border-radius: 2px;
+    margin-top: 8rem;
+    height: 70rem;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /*Code taken from https://getcssscan.com/css-box-shadow-examples*/
+}
+
+.destinations-heading {
+    font-family: "Bodoni Moda", sans-serif;
+    letter-spacing: 1px;
+    color: #0C0409;
+    font-size: 5vmin;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.destinations-catchline {
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    color: #0C0409;
+    margin-bottom: 2em;
+}
+
+.destinations-content-wrapper {
+    background-color: #F5EBE0;
+    font-size: 2vmin;
+}
+
+.destinations-btn {
+    padding: 1em 2em 0.5em;
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    border: 1px solid #A58961;
+    border-radius: 2px;
+    background-color: #A58961;
+    width: 13rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*Code taken from https://getcssscan.com/css-box-shadow-examples*/
+}
+
+.destinations-btn > i {
+    padding-left: 1em;
+}
+
+.destinations-text-wrapper {
+    text-align: start;
+    width: 13rem;
+    letter-spacing: 1px;
+    margin-left: 1.7em;
+    padding-top: 0.5em;
+}
+
+.destinations-text-hr {
+    border: 1px solid #A58961;
+}
+
 /*---- Newsletter Form ----*/
 
 .newsletter-wrapper {
@@ -438,36 +531,6 @@ body {
 #sign-up:hover, #sign-up:focus, #sign-up:active {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
-}
-
-/*---- Flights ----*/
-
-.flights-wrapper {
-    height: 50em;
-    background-color: #A58961;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
-    text-align: center;
-}
-
-#flights-header {
-    font-family: "Bodoni Moda", sans-serif;
-    margin: 1.5em 0 .5em 0;
-    color: #0C0409;
-    font-size: 5vmin;
-}
-
-#flights-catchline {
-    font-size: 3vmin;
-    color: #0C0409;
-    margin-bottom: 1.5em;
-}
-
-.flights-button {
-    padding: 0.5em 2.5em 0.5em 2.5em;
-    font-size: 2.5vmin;
-    border: 1px solid #0C0409;
-    border-radius: 2px;
-    background-color: #F5EBE0;
 }
 
 /*---- Footer ----*/
