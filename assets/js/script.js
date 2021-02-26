@@ -79,14 +79,25 @@ function validateNewsletterForm(event) {
     return true;
 }
 
-//Toggle Destinations Content
-$(".destinations-btn-one").click(function() {
-    $(".destinations-content-one").toggle();
-});
-
-$(".destinations-btn-two").click(function() {
-    $(".destinations-content-two").toggle();
-});
+//Toggle Destinations Content 
+//Code taken from https://dev.to/mohdhussein/how-to-show-the-clicked-element-only-and-hide-others-in-vanilla-javascript-1ip2 and customised for this project
+let buttons = document.querySelectorAll(".destinations-content-wrapper button");
+for (let button of buttons) {
+    button.addEventListener('click', (e) => {
+        const active = document.querySelector(".default");
+        if (active) {
+            active.classList.remove("default");
+        }
+        let allContent = document.querySelectorAll(".destinations-text-wrapper")
+        for (let content of allContent) {
+            if (content.getAttribute('data-number') === button.getAttribute('data-number')) {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    });
+}
 
 //Destinations Content Arrow Flip 
 $(".destinations-btn-one").click(function() {
