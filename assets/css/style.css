@@ -434,11 +434,13 @@ body {
 .destinations-content-wrapper {
     background-color: #F5EBE0;
     font-size: 2vmin;
+    text-align: start;
 }
 
 .destinations-btn {
     padding: 1em 2em 0.5em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-left: 1em;
     font-size: 2vmin;
     letter-spacing: 1px;
     border: 1px solid #A58961;
@@ -461,13 +463,29 @@ body {
     text-align: start;
     width: 13rem;
     letter-spacing: 1px;
-    margin-left: 1.7em;
-    padding-top: 0.5em;
-    display: none;
+    margin-left: 1.5em;
+    margin-bottom: 1.7em;
 }
 
 .destinations-text-hr {
     border: 1px solid #A58961;
+    width: 12rem;
+}
+
+.destinations-img-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.destinations-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: -5em;
+}
+
+.hidden {
+    display: none; /*---- Class used to hide destinations content on click ----*/
 }
 
 /*---- Newsletter Form ----*/
