@@ -447,7 +447,7 @@ body {
     border-radius: 2px;
     background-color: #A58961;
     width: 13rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*Code taken from https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
 
 .destinations-btn > i {
@@ -473,15 +473,89 @@ body {
 }
 
 .destinations-img-wrapper {
-    width: 100%;
-    margin: 0 auto;
+    width: 40rem;
+    text-align: center;
 }
 
 .destinations-image {
     width: 100%;
     height: auto;
-    position: relative;
-    left: -5em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
+    border-radius: 2px;
+}
+
+.explore-mre-btn {
+    padding: 1em 2em 0.5em;
+    margin-top: 1.5em;
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    border: 1px solid #A58961;
+    border-radius: 2px;
+    background-color: #A58961;
+    width: 13rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
+}
+
+.explore-mre-btn-lg {
+    padding: 1em 1em 0.5em;
+    margin-top: 1.5em;
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    border: 1px solid #A58961;
+    border-radius: 2px;
+    background-color: #A58961;
+    width: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
+}
+
+/*---- Destinations image positioning ----*/
+
+#dest-img-well {
+    position: absolute;
+    left: 25em;
+    top: 0;
+}
+
+#dest-img-mart {
+    position: absolute;
+    left: 25em;
+    top: 4.5em;
+}
+
+#dest-img-taupo {
+    position: absolute;
+    left: 25em;
+    top: 8.5em;
+}
+
+#dest-img-roto {
+    position: absolute;
+    left: 25em;
+    top: 13em;
+}
+
+#dest-img-coro {
+    position: absolute;
+    left: 25em;
+    top: 17em;
+}
+
+#dest-img-maung {
+    position: absolute;
+    left: 25em;
+    top: 21em;
+}
+
+#dest-img-nap {
+    position: absolute;
+    left: 25em;
+    top: 25em;
+}
+
+#dest-img-akl {
+    position: absolute;
+    left: 25em;
+    top: 29em;
 }
 
 .hidden {
