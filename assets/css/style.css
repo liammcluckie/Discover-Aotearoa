@@ -450,15 +450,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
 
-.destinations-btn > i {
-    margin-left: 1em;
-}
-
-.arrow-flip {
-    transform: rotate(180deg);
-    margin-left: 1em;
-}
-
 .destinations-text-wrapper {
     text-align: start;
     width: 13rem;
@@ -485,25 +476,25 @@ body {
 }
 
 .explore-mre-btn {
-    padding: 1em 2em 0.5em;
+    padding: 1em 2em;
     margin-top: 1.5em;
     font-size: 2vmin;
     letter-spacing: 1px;
-    border: 1px solid #A58961;
+    border: 2px solid #A58961;
     border-radius: 2px;
-    background-color: #A58961;
+    background-color: #F5EBE0;
     width: 13rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
 
 .explore-mre-btn-lg {
-    padding: 1em 1em 0.5em;
+    padding: 1em;
     margin-top: 1.5em;
     font-size: 2vmin;
     letter-spacing: 1px;
-    border: 1px solid #A58961;
+    border: 2px solid #A58961;
     border-radius: 2px;
-    background-color: #A58961;
+    background-color: #F5EBE0;
     width: 15rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
