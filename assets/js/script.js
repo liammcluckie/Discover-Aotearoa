@@ -98,12 +98,3 @@ for (let button of buttons) {
         }
     });
 }
-
-//Destinations Content Arrow Flip 
-$(".destinations-btn-one").click(function() {
-    $(".arrow-one").toggleClass("arrow-flip");
-});
-
-$(".destinations-btn-two").click(function() {
-    $(".arrow-two").toggleClass("arrow-flip");
-});
