@@ -411,7 +411,7 @@ body {
     border: 2px solid #A58961;
     border-radius: 2px;
     margin-top: 8rem;
-    height: 70rem;
+    height: auto;
     box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /*Code taken from https://getcssscan.com/css-box-shadow-examples*/
 }
 
@@ -551,6 +551,12 @@ body {
 
 .hidden {
     display: none; /*---- Class used to hide destinations content on click ----*/
+}
+
+/*---- Google Maps API ----*/
+
+#ni-dest-map {
+    min-height: 360px;
 }
 
 /*---- Newsletter Form ----*/
