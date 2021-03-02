@@ -405,7 +405,6 @@ body {
 }
 
 /*---- Destinations ----*/
-
 .destinations-wrapper {
     text-align: center;
     border: 2px solid #A58961;
@@ -557,6 +556,8 @@ body {
 
 #ni-dest-map {
     min-height: 360px;
+    margin-bottom: 3em;
+    margin-top: 3em;
 }
 
 /*---- Newsletter Form ----*/
