@@ -129,3 +129,23 @@ $("document").ready(function() {
         setLocation(-36.85130339882221, 174.76338912848433); 
     });
 });
+
+//Function to find businesses
+//Code taken from https://developers.google.com/maps/documentation/javascript/places#place_search_requests and customised for this project
+function destHospitality(hospitalityType) {
+    var request = {
+        type: hospitalityType,
+        location: map.getCenter(),
+        radius: '900'
+    };
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+    function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            removeMarkers();
+            for (let i = 0; i < results.length; i++) {
+                addMarkers(results[i]);
+            }
+        }
+    }
+};
