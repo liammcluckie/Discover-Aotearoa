@@ -19,6 +19,7 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <!-- Google Maps -->
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJUmFV06QkhbGMPiH8aA0vpJ8CDb4gKfc&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJUmFV06QkhbGMPiH8aA0vpJ8CDb4gKfc&libraries=places"></script>
     <title>Discover Aotearoa</title>
 </head>
 
@@ -132,7 +133,7 @@
                         <hr class="destinations-text-hr">
                         <div class="destinations-img-wrapper" id="dest-img-well">
                             <img class="img-fluid destinations-image" src="assets/images/ni-dest-well.jpg" alt="">
-                            <button class="explore-mre-btn-lg hvr-shrink">Explore Wellington</button>
+                            <button id="wellington" class="explore-mre-btn-lg hvr-shrink">Explore Wellington</button>
                         </div>
                     </div>
                     <div class="destinations-content-wrapper">
@@ -147,7 +148,7 @@
                             <hr class="destinations-text-hr">
                             <div class="destinations-img-wrapper" id="dest-img-mart">
                                 <img class="img-fluid destinations-image" src="assets/images/ni-dest-mart.jpg" alt="">
-                                <button class="explore-mre-btn-lg hvr-shrink">Explore Martinborough</button>
+                                <button id="martinborough" class="explore-mre-btn-lg hvr-shrink">Explore Martinborough</button>
                             </div>
                         </div>
                     </div>
@@ -163,7 +164,7 @@
                             <hr class="destinations-text-hr">
                             <div class="destinations-img-wrapper" id="dest-img-taupo">
                                 <img class="img-fluid destinations-image" src="assets/images/ni-dest-taupo.jpg" alt="">
-                                <button class="explore-mre-btn hvr-shrink">Explore Taupo</button>
+                                <button id="taupo" class="explore-mre-btn hvr-shrink">Explore Taupo</button>
                             </div>
                         </div>
                     </div>
@@ -179,7 +180,7 @@
                             <hr class="destinations-text-hr">
                             <div class="destinations-img-wrapper" id="dest-img-roto">
                                 <img class="img-fluid destinations-image" src="assets/images/ni-dest-roto.jpg" alt="">
-                                <button class="explore-mre-btn hvr-shrink">Explore Rotorua</button>
+                                <button id="rotorua" class="explore-mre-btn hvr-shrink">Explore Rotorua</button>
                             </div>
                         </div>
                     </div>
@@ -195,7 +196,7 @@
                         <hr class="destinations-text-hr">
                         <div class="destinations-img-wrapper" id="dest-img-coro">
                                 <img class="img-fluid destinations-image" src="assets/images/ni-dest-coro.jpg" alt="">
-                                <button class="explore-mre-btn-lg hvr-shrink">Explore The Coromandel</button>
+                                <button id="coromandel" class="explore-mre-btn-lg hvr-shrink">Explore The Coromandel</button>
                             </div>
                     </div>
                 </div>
@@ -211,7 +212,7 @@
                             <hr class="destinations-text-hr">
                             <div class="destinations-img-wrapper" id="dest-img-maung">
                                 <img class="img-fluid destinations-image" src="assets/images/ni-dest-maung.jpg" alt="">
-                                <button class="explore-mre-btn-lg hvr-shrink">Explore Mt. Maunganui</button>
+                                <button id="maunganui" class="explore-mre-btn-lg hvr-shrink">Explore Mt. Maunganui</button>
                             </div>
                         </div>
                     </div>
@@ -226,7 +227,7 @@
                             <hr class="destinations-text-hr">
                             <div class="destinations-img-wrapper" id="dest-img-nap">
                                 <img class="img-fluid destinations-image" src="assets/images/ni-dest-nap.jpg" alt="">
-                                <button class="explore-mre-btn hvr-shrink">Explore Napier</button>
+                                <button id="napier" class="explore-mre-btn hvr-shrink">Explore Napier</button>
                             </div>
                         </div>
                     </div>
@@ -242,7 +243,7 @@
                             <hr class="destinations-text-hr">
                             <div class="destinations-img-wrapper" id="dest-img-akl">
                                 <img class="img-fluid destinations-image" src="assets/images/ni-dest-akl.jpg" alt="">
-                                <button class="explore-mre-btn hvr-shrink">Explore Auckland</button>
+                                <button id="auckland" class="explore-mre-btn hvr-shrink">Explore Auckland</button>
                             </div>
                         </div>
                     </div>
