@@ -4,8 +4,8 @@ var markers = [];
 var prevInfoWindow = false;
 const northIslandLocations = {
     wellington: {
-        latitude: "-41.23738666847414",
-        longitude: "174.75528006624342"
+        latitude: "-41.29235450909053,",
+        longitude: "174.77948265394016"
     },
     martinborough: {
         latitude: "-41.21998622909235",
@@ -39,8 +39,8 @@ const northIslandLocations = {
 
 //Set default map location
 function initMap() {
-    let map = new google.maps.Map(document.getElementById("ni-dest-map"), {
-        zoom: 5,
+    map = new google.maps.Map(document.getElementById("ni-dest-map"), {
+        zoom: 4,
         center: {
             lat: -39.52916921878557,
             lng: 175.08429833641372
@@ -54,7 +54,7 @@ function setLocation(newLat, newLng) {
         lat: newLat,
         lng: newLng,
     });
-    map.setZoom(10);
+    map.setZoom(14);
     let marker = new google.maps.Marker({
         position: { lat: newLat, lng: newLng },
         map: map
@@ -93,3 +93,59 @@ function addMarkers(place) {
     });
     markers.push(marker);
 };
+
+//Function to find businesses
+//Code taken from https://developers.google.com/maps/documentation/javascript/places#place_search_requests and customised for this project
+function destHospitality(hospitalityType) {
+    var request = {
+        type: hospitalityType,
+        location: map.getCenter(),
+        radius: '900'
+    };
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+    function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            removeMarkers();
+            for (let i = 0; i < results.length; i++) {
+                addMarkers(results[i]);
+            }
+        }
+    }
+};
+
+//Function to display destination markers
+$("document").ready(function() {
+    $("#wellington").click(function() {
+        removeMarkers();
+        setLocation(-41.29235450909053, 174.77948265394016);
+    }),
+    $("#martinborough").click(function() {
+        removeMarkers();
+        setLocation(-41.21998622909235, 175.46008741862477);
+    }),
+    $("#taupo").click(function() {
+        removeMarkers();
+        setLocation(-38.690234522533515, 176.08205250434554);
+    }),
+    $("#rotorua").click(function() {
+        removeMarkers();
+        setLocation(-38.14450009493867, 176.2374791885155);
+    }),
+    $("#coromandel").click(function() {
+        removeMarkers();
+        setLocation(-36.758700792793924, 175.4991370198656);
+    }),
+    $("#maunganui").click(function() {
+        removeMarkers();
+        setLocation(-37.67236816425535, 176.2249385212569);
+    }),
+    $("#napier").click(function() {
+        removeMarkers();
+        setLocation(-39.51047145465511, 176.87814419646284);
+    }),
+    $("#auckland").click(function() {
+        removeMarkers();
+        setLocation(-36.85130339882221, 174.76338912848433); 
+    });
+});
