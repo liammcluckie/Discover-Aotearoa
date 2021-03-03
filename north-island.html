@@ -16,10 +16,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <!-- Google Maps -->
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJUmFV06QkhbGMPiH8aA0vpJ8CDb4gKfc&callback=initMap"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJUmFV06QkhbGMPiH8aA0vpJ8CDb4gKfc&libraries=places"></script>
     <title>Discover Aotearoa</title>
 </head>
 
@@ -258,7 +254,14 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <a href="#anchor-link-one"><button class="dest-top-anchor-btn">Back to Destinations</button></a>
+                        <button id="ni-rest" class="dest-business">Restaurants</button>
+                        <button id="ni-hotel" class="dest-business">Accommodation</button>
+                        <button id="ni-attractions" class="dest-business">Attractions</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#anchor-link-one"><button class="dest-top-anchor-btn hvr-shrink">Back to Destinations</button></a>
                     </div>
                 </div>
             </aside>
@@ -324,6 +327,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/maps.js"></script>
+    <!-- Google Maps -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJUmFV06QkhbGMPiH8aA0vpJ8CDb4gKfc&libraries=places&callback=initMap"></script>
     <!-- Google Maps Markers -->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 </body>
