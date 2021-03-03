@@ -552,12 +552,25 @@ body {
     display: none; /*---- Class used to hide destinations content on click ----*/
 }
 
-/*---- Google Maps API ----*/
+/*---- Google Maps ----*/
 
 #ni-dest-map {
     min-height: 360px;
     margin-bottom: 3em;
     margin-top: 3em;
+}
+
+.dest-business {
+    padding: 1em 2em 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    border: 1px solid #A58961;
+    border-radius: 2px;
+    background-color: #A58961;
+    width: 13rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .dest-top-anchor-btn {
