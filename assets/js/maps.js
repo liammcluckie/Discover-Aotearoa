@@ -1,7 +1,7 @@
 //Google Maps
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var markers = [];
-var prevInfoWindow = false;
+let markers = [];
+let prevInfoWindow = false;
 const northIslandLocations = {
     wellington: {
         latitude: "-41.29235450909053,",
@@ -37,10 +37,19 @@ const northIslandLocations = {
     }
 };
 
+const wellingtonRestaurants = [{
+    coords: {
+        lat: -41.28906451803169, 
+        lng: 174.77615901105983
+    },
+    content: `<h4>The Lido</h4>`
+}];
+
 //Set default map location
 function initMap() {
     map = new google.maps.Map(document.getElementById("ni-dest-map"), {
         zoom: 4,
+        disableDefaultUI: true,
         center: {
             lat: -39.52916921878557,
             lng: 175.08429833641372
@@ -57,7 +66,8 @@ function setLocation(newLat, newLng) {
     map.setZoom(14);
     let marker = new google.maps.Marker({
         position: { lat: newLat, lng: newLng },
-        map: map
+        map: map,
+        animation: google.maps.Animation.DROP
     });
     markers.push(marker);
 };
@@ -78,6 +88,7 @@ function addMarkers(place) {
     if (!place.geometry || !place.geometry.location) return;
     const marker = new google.maps.Marker({
         map: map,
+        animation: google.maps.Animation.DROP,
         position: place.geometry.location,
         title: place.name,
     });
@@ -94,8 +105,42 @@ function addMarkers(place) {
     markers.push(marker);
 };
 
+//Function to find businesses
+//Code taken from https://developers.google.com/maps/documentation/javascript/places#place_search_requests and customised for this project
+function destHospitality(hospitalityType) {
+    let request = {
+        type: hospitalityType,
+        location: map.getCenter(),
+        radius: '900'
+    };
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+    function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+            removeMarkers();
+            for (let i = 0; i < results.length; i++) {
+                addMarkers(results[i]);
+            }
+        }
+    }
+};
+
 //Function to display destination markers
 $("document").ready(function() {
+    //Display local places of interest
+    $("#ni-rest").click(function() {
+        map.setZoom(15);
+        initMap(['restaurant']);
+    });
+    $("#ni-hotel").click(function() {
+        map.setZoom(15);
+        destHospitality(['lodging']);
+    });
+    $("#ni-attractions").click(function() {
+        map.setZoom(15);
+        destHospitality(['tourist_attraction']);
+    });
+    //Display destination
     $("#wellington").click(function() {
         removeMarkers();
         setLocation(-41.29235450909053, 174.77948265394016);
@@ -129,23 +174,3 @@ $("document").ready(function() {
         setLocation(-36.85130339882221, 174.76338912848433); 
     });
 });
-
-//Function to find businesses
-//Code taken from https://developers.google.com/maps/documentation/javascript/places#place_search_requests and customised for this project
-function destHospitality(hospitalityType) {
-    var request = {
-        type: hospitalityType,
-        location: map.getCenter(),
-        radius: '900'
-    };
-    service = new google.maps.places.PlacesService(map);
-    service.nearbySearch(request, callback);
-    function callback(results, status) {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-            removeMarkers();
-            for (let i = 0; i < results.length; i++) {
-                addMarkers(results[i]);
-            }
-        }
-    }
-};
