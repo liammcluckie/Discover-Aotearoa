@@ -560,6 +560,18 @@ body {
     margin-top: 3em;
 }
 
+.dest-top-anchor-btn {
+    padding: 1em;
+    margin-bottom: 1.5em;
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    border: 2px solid #A58961;
+    border-radius: 2px;
+    background-color: #F5EBE0;
+    width: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 /*---- Newsletter Form ----*/
 
 .newsletter-wrapper {
