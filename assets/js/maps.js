@@ -97,3 +97,10 @@ $("document").ready(function() {
         setLocation(-36.85130339882221, 174.76338912848433); 
     });
 });
+
+//Display top picks info
+document.getElementById("wellington").addEventListener("click", wellingtonPicks);
+function wellingtonPicks() {
+    let recommendWellington = document.getElementById("recommend-wellington")
+    recommendWellington.style.display = "block";
+}
