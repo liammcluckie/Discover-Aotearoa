@@ -572,6 +572,46 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+/*---- Top Pick Cards ----*/
+
+.top-pick-heading {
+    font-family: "Bodoni Moda", sans-serif;
+    letter-spacing: 0.5px;
+    color: #0C0409;
+    font-size: 5vmin;
+    margin-bottom: 0.5em;
+}
+
+.top-pick-card {
+    width: 18rem;
+    margin: 0 auto;
+    border: 1px solid #A58961;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+
+.top-pick-card-text {
+    text-align: left;
+}
+
+.top-pick-card-title {
+    font-family: "Bodoni Moda", sans-serif;
+    margin-bottom: 1em;
+}
+
+.top-pick-card-text > a {
+    text-decoration: none;
+    color: #0C0409;
+    letter-spacing: 1px;
+    font-size: 2vmin;
+}
+
+.top-pick-card-text > p {
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    color: #0C0409;
+}
+
 /*---- Newsletter Form ----*/
 
 .newsletter-wrapper {
