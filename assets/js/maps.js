@@ -1,5 +1,4 @@
 //Google Maps
-let markers = [];
 let currentInfoWindow = false;
 
 //Set default map 
@@ -37,29 +36,6 @@ function removeMarkers() {
         }
     }
     markers = [];
-};
-
-//Add markers
-//Code used from https://developers.google.com/maps/documentation/javascript/examples/place-search
-function addMarkers(place) {
-    if (!place.geometry || !place.geometry.location) return;
-    const marker = new google.maps.Marker({
-        map: map,
-        animation: google.maps.Animation.DROP,
-        position: place.geometry.location,
-        title: place.name,
-    });
-    var infoWindow = new google.maps.InfoWindow({
-        content: place.name,
-    });
-    marker.addListener("click", function() {
-        if (currentInfoWindow) {
-            currentInfoWindow.close();
-        }
-        currentInfoWindow = infoWindow;
-        infoWindow.open(map, marker);
-    });
-    markers.push(marker);
 };
 
 //Function to display destination markers
@@ -100,7 +76,7 @@ $("document").ready(function() {
 
 $("document").ready(function() {
     $("#welly-rest").click(function() {
-        setLocation(-41.2950004986167, 174.78421241048974); //La Boca Loca
+        setLocation(-41.29511389681103, 174.78352059261476); //Boquita
         setLocation(-41.291911555689836, 174.77529899514886); //Little Penang
         setLocation(-41.29436051901506, 174.7751597004475); //Olive
         map.setZoom(15);
