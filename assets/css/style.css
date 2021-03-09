@@ -540,12 +540,6 @@ body {
     top: 4.5em;
 }
 
-#dest-img-taupo {
-    position: absolute;
-    left: 25em;
-    top: 8.5em;
-}
-
 #dest-img-roto {
     position: absolute;
     left: 25em;
@@ -561,19 +555,13 @@ body {
 #dest-img-maung {
     position: absolute;
     left: 25em;
-    top: 21em;
-}
-
-#dest-img-nap {
-    position: absolute;
-    left: 25em;
-    top: 25em;
+    top: 17em;
 }
 
 #dest-img-akl {
     position: absolute;
     left: 25em;
-    top: 29em;
+    top: 27em;
 }
 
 .hidden {
@@ -585,7 +573,7 @@ body {
 #ni-dest-map {
     min-height: 360px;
     margin-bottom: 3em;
-    margin-top: 3em;
+    margin-top: 8em;
 }
 
 .dest-top-anchor-btn {
