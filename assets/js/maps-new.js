@@ -26,13 +26,6 @@ function mapWell() {
     });
 };
 
-//Display Wellington top picks info
-document.getElementById("wellington").addEventListener("click", wellingtonPicks);
-function wellingtonPicks() {
-    let recommendWellington = document.getElementById("recommend-wellington")
-    recommendWellington.style.display = "block";
-};
-
 //Set map to Wellington Restaurants
 document.getElementById("welly-rest").addEventListener("click", wellRestaurants);
 
@@ -134,15 +127,6 @@ function mapMart() {
         map: map,
         animation: google.maps.Animation.DROP
     });
-};
-
-//Display Martinborough top picks info
-document.getElementById("martinborough").addEventListener("click", martinboroughPicks);
-function martinboroughPicks() {
-    let recommendMartinborough = document.getElementById("recommend-martinborough")
-    let recommendWellington = document.getElementById("recommend-wellington")
-    recommendMartinborough.style.display = "block";
-    recommendWellington.style.display = "none";
 };
 
 //Set map to Martinborough Restaurants
@@ -643,3 +627,18 @@ function aklAttractions() {
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 };
+
+//Function to only display relevant destination picks
+let topPickButtons = document.querySelectorAll(".ex-btn");
+for (let button of topPickButtons) {
+    button.addEventListener('click', (e) => {
+        let allContent = document.querySelectorAll(".top-picks")
+        for (let content of allContent) {
+            if (content.getAttribute('data-number') === button.getAttribute('data-number')) {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    });
+}
