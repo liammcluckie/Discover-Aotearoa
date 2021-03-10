@@ -89,7 +89,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="flights-button hvr-shrink">Lorem</button>
+                    <button class="flights-button hvr-shrink">Auckland</button>
                 </div>
                 <div class="col">
                     <button class="flights-button hvr-shrink">Ipsum</button>
@@ -103,6 +103,38 @@
             </div>
         </div>
     </section>
+    <aside>
+        <!-- Original Table Code taken from https://getbootstrap.com/docs/4.6/content/tables/ and customised for this project-->
+        <div class="container table-wrapper">
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">From:</th>
+                                <th scope="col">To:</th>
+                                <th scope="col">Airline:</th>
+                                <th scope="col">Price:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" id="akl-start-dest"></td>
+                                <td id="akl-end-dest"></td>
+                                <td id="akl-carrier"></td>
+                                <td id="akl-quote"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col skyscanner-col">
+                    <a href="https://www.skyscanner.net/" class="skyscanner-link hvr-underline-from-center" target="_blank" rel="noopener">Book your flights here</a>
+                </div>
+            </div>
+        </div>
+    </aside>
     <!-- North Island Destinations -->
     <section data-aos="fade-up">
         <div class="container destinations-wrapper">
@@ -725,6 +757,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/maps-new.js"></script>
+    <script src="assets/js/flights.js"></script>
     <!-- Google Maps -->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJUmFV06QkhbGMPiH8aA0vpJ8CDb4gKfc&libraries=places&callback=initMap"></script>
     <!-- Google Maps Markers -->
