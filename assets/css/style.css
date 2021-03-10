@@ -402,7 +402,7 @@ body {
 /*---- Flights ----*/
 
 .flights-wrapper {
-    height: 50em;
+    height: 40em;
     background-color: #A58961;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
     text-align: center;
@@ -432,14 +432,57 @@ body {
     background-color: #F5EBE0;
 }
 
+.table {
+    margin-top: 6em
+}
+
+th {
+    font-size: 2.75vmin;
+    letter-spacing: 1px;
+    color: #0C0409;
+}
+
+td {
+    font-size: 2vmin;
+    letter-spacing: 1px;
+    color: #0C0409;
+}
+
+table {
+    border: 1px solid #A58961!important;
+}
+
+table > thead > tr > th {
+    border: 1px solid #A58961!important;
+}
+
+table > tbody > tr > td {
+    border: 1px solid #A58961!important;
+}
+
+.skyscanner-col {
+    text-align: center;
+}
+
+.skyscanner-link {
+    text-decoration: none;
+    color: #0C0409;
+    font-size: 3vmin;
+}
+
+.skyscanner-link:hover {
+    text-decoration: none;
+    color: #0C0409;
+}
+
 /*---- Destinations ----*/
 .destinations-wrapper {
     text-align: center;
     border: 2px solid #A58961;
     border-radius: 2px;
-    margin-top: 8rem;
+    margin-top: 5rem;
     height: auto;
-    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /*Code taken from https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
 }
 
 .destinations-heading {
