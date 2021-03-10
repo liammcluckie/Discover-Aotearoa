@@ -46,7 +46,8 @@ function wellRestaurants() {
     let markers = wellRestLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(restMap, markers, {
@@ -75,7 +76,8 @@ function wellAccommodation() {
     let markers = wellAccommLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(accommMap, markers, {
@@ -104,7 +106,8 @@ function wellAttractions() {
     let markers = wellAttrLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(attrMap, markers, {
@@ -149,7 +152,8 @@ function martRestaurant() {
     let markers = martRestLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(restMap, markers, {
@@ -178,7 +182,8 @@ function martAccommodation() {
     let markers = martAccommLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(accommMap, markers, {
@@ -207,7 +212,8 @@ function martAttraction() {
     let markers = martAttrLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(attrMap, markers, {
@@ -252,7 +258,8 @@ function rotRestaurant() {
     let markers = rotRestLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(restMap, markers, {
@@ -281,7 +288,8 @@ function rotAccommodation() {
     let markers = rotAccommLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(accommMap, markers, {
@@ -310,7 +318,8 @@ function rotAttractions() {
     let markers = rotAttrLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(attrMap, markers, {
@@ -355,7 +364,8 @@ function coroRestaurant() {
     let markers = coroRestLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(restMap, markers, {
@@ -384,7 +394,8 @@ function coroAccommodation() {
     let markers = coroAccommLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(accommMap, markers, {
@@ -413,7 +424,8 @@ function coroAttractions() {
     let markers = coroAttrLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(attrMap, markers, {
@@ -458,7 +470,8 @@ function maungRestaurant() {
     let markers = maungRestLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(restMap, markers, {
@@ -487,7 +500,8 @@ function maungAccommodation() {
     let markers = maungAccommLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(accommMap, markers, {
@@ -516,7 +530,8 @@ function maungAttractions() {
     let markers = maungAttrLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(attrMap, markers, {
@@ -561,7 +576,8 @@ function aklRestaurant() {
     let markers = aklRestLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(restMap, markers, {
@@ -590,7 +606,8 @@ function aklAccommodation() {
     let markers = aklAccommLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(accommMap, markers, {
@@ -619,7 +636,8 @@ function aklAttractions() {
     let markers = aklAttrLocation.map(function (location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: labels[i % labels.length],
+            animation: google.maps.Animation.DROP
         });
     });
     new MarkerClusterer(attrMap, markers, {
