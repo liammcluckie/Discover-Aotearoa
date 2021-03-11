@@ -425,6 +425,7 @@ body {
 
 .flights-button {
     padding: 0.5em 2.5em;
+    margin: 0 2em;
     font-size: 2.5vmin;
     letter-spacing: 1px;
     border: 1px solid #0C0409;
@@ -432,8 +433,14 @@ body {
     background-color: #F5EBE0;
 }
 
+.flights-error {
+    text-align: center;
+    font-size: 2.5vmin;
+    margin-top: 1.5em;
+}
+
 .table {
-    margin-top: 6em
+    margin-top: 6em;
 }
 
 th {
@@ -468,6 +475,11 @@ table > tbody > tr > td {
     text-decoration: none;
     color: #0C0409;
     font-size: 3vmin;
+    margin-bottom: 0.25em;
+}
+
+.skyscanner-link ~ p {
+    font-size: 1.25vmin;
 }
 
 .skyscanner-link:hover {
@@ -1119,4 +1131,22 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.description-wrapper {
         height: 30em;
     }
+}
+
+/*---- Media Queries north-island.html ----*/
+
+/*---- General Mobile ----*/
+
+@media (min-width: 280px) and (max-width: 768px) {
+    /*---- Flights ----*/
+    .flights-wrapper {
+        height: 23em;
+    }
+    #flights-catchline {
+        margin-left: 3em;
+    }
+    .skyscanner-link ~ p {
+        margin-left: 2em;
+    }
+    /*---- Destinations ----*/
 }
