@@ -1,7 +1,30 @@
+//Display flight table data
+
+//AKL
+document.getElementById("akl-flight").addEventListener("click", aklFlightTable);
+
+function aklFlightTable() {
+    const flightTable = document.getElementById("display-flights");
+    flightTable.style.display = "block";
+};
+
+//Wellington
+document.getElementById("well-flight").addEventListener("click", wellFlightTable);
+
+function wellFlightTable() {
+    const flightTable = document.getElementById("display-flights");
+    flightTable.style.display = "block";
+};
+
+
+
+//Initial fetch code taken from https://rapidapi.com/skyscanner/api/skyscanner-flight-search
+
 //Display cheapest flights from Skyscanner Database
 
 //AKL Flights
 document.getElementById("akl-flight").addEventListener("click", flightsAkl);
+
 function flightsAkl() {
     fetch("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/UK/GBP/en-UK/UK-sky/AKL-sky/anytime?inboundpartialdate=2019-12-01", {
 	"method": "GET",
@@ -26,6 +49,8 @@ function flightsAkl() {
 };
 
 //Wellington Flights
+document.getElementById("well-flight").addEventListener("click", flightsWell);
+
 function flightsWell() {
     fetch("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/UK/GBP/en-UK/UK-sky/WLGN-sky/anytime?inboundpartialdate=2019-12-01", {
 	"method": "GET",
@@ -34,9 +59,12 @@ function flightsWell() {
 		"x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com"
 	}
     })
+    .then(response => {
+        return response.json();
+    })
     .then(json => {
-        const startDest = json.Places[0].CityName;
-        const endDest = json.Places[1].CityName;
+        const startDest = json.Places[2].CityName;
+        const endDest = json.Places[6].CityName;
         const carriers = json.Carriers[0].Name;
         const quotes = json.Quotes[0].MinPrice;
         document.getElementById("start-dest").innerHTML = startDest;
@@ -45,10 +73,6 @@ function flightsWell() {
         document.getElementById("quote").innerHTML = `£` + quotes;
     })
 };
-
-$(document).ready(function() {
-    flightsWell();
-});
 
 
 
