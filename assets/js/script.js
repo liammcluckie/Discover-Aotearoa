@@ -72,7 +72,7 @@ function defaultText() {
 
 //Display success message signing up for newsletter
 function validateNewsletterForm(event) {
-    let successMessage = document.getElementById("newsletter-success")
+    let successMessage = document.getElementById("newsletter-success");
     successMessage.style.display = 'block';
     document.getElementById("newsletter-form").reset();
     event.preventDefault();
