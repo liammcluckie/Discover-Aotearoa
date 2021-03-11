@@ -1150,9 +1150,35 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 }
 
+/*---- Galaxy Fold ----*/
+@media (device-width: 280px) and (device-height: 653px) {
+    /*---- Destinations ----*/
+    .destinations-wrapper {
+        margin-top: 2em;
+    }
+    .destinations-btn {
+        width: 5rem!important;
+    }
+    .destinations-text-wrapper {
+        width: 5rem!important;
+    }
+    .destinations-text-hr {
+        width: 3.5rem!important;
+    }
+    .destinations-img-wrapper {
+        width: 9.5rem!important;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 18em!important;;
+    }
+    /*---- Top picks ----*/
+    .top-pick-card {
+        width: 95%;
+    }
+}
 /*---- General Mobile ----*/
 
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 414px) {
     /*---- Flights ----*/
     .flights-wrapper {
         height: 23em;
@@ -1214,4 +1240,159 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .dest-top-anchor-btn {
         width: 8rem;
     }
+}
+
+/*---- Ipad ----*/
+
+@media only screen and (device-width: 768px){
+    /*---- Hero Img Loc ----*/
+    .location-wrapper {
+        right: -60%;
+    }
+    /*---- Flights ----*/
+    .flights-wrapper {
+        height: 30em;
+    }
+    /*---- Destinations ----*/
+    .destinations-catchline {
+        padding-left: 2em;
+    }
+    .explore-mre-btn {
+        width: 14rem;
+    }
+    .explore-mre-btn-lg {
+        width: 16rem;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 1.5em;
+    }
+    .destinations-img-wrapper {
+        width: 27rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 17em;
+    }
+    /*---- Top Picks ----*/
+    .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-card-text > p {
+        margin-left: 2em;
+    }
+    .dest-business-name {
+        margin-left: 0.25em;
+    }
+    .top-pick-container {
+        margin-bottom: 2em;
+    }
+}
+
+/*---- Ipad Pro ----*/
+
+@media only screen 
+and (min-width: 1024px) and (max-width: 1026px)
+and (max-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    /*---- Flights ----*/
+    .flights-wrapper {
+        height: 29em;
+    }
+    #flights-catchline {
+        padding-left: 3em;
+    }
+    /*---- Destinations ----*/
+    .destinations-catchline {
+        padding-left: 3em;
+    }
+    .explore-mre-btn {
+        width: 20rem;
+    }
+    .explore-mre-btn-lg {
+        width: 22rem;
+    }
+    .destinations-btn {
+        width: 16rem;
+    }
+    .destinations-text-hr {
+        width: 14rem;
+    }
+    .destinations-text-wrapper {
+        width: 18rem;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
+    .destinations-img-wrapper {
+        width: 38rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 15.5em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-card-text > p {
+        padding-left: 2em;
+    }
+    .top-pick-card-title {
+        font-size: 3.25vmin;
+    }
+    .dest-top-anchor-btn {
+        width: 18rem;
+    }
+}
+
+/*---- Surface Duo ----*/
+
+@media (device-width: 540px) and (device-height: 720px) {
+    /*---- Hero Img Loc ----*/
+    .location-wrapper {
+        right: -65%;
+    }
+    /*---- Flights ----*/
+    .flights-wrapper {
+        height: 30em;
+    }
+    /*---- Destinations ----*/
+    .destinations-wrapper {
+        width: 95%;
+    }
+    .destinations-btn {
+        width: 10rem;
+    }
+    .destinations-catchline {
+        padding-left: 2em;
+    }
+    .destinations-text-wrapper {
+        width: 9rem;
+    }
+    .destinations-text-hr {
+        width: 8rem;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
+     .destinations-img-wrapper {
+        width: 18rem;
+    }
+     #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 19em;
+    }
+     .explore-mre-btn {
+        width: 8rem;
+    }
+    .explore-mre-btn-lg {
+        width: 13rem;
+    }
+    /*---- Top Pick ----*/
+     .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-card-text > p {
+        margin-left: 1.65em;
+    }
+    .top-pick-container {
+        margin-bottom: 2em;
+    }
+    .dest-top-anchor-btn {
+        width: 10rem;
+    } 
 }
