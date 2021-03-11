@@ -16,8 +16,6 @@ function wellFlightTable() {
     flightTable.style.display = "block";
 };
 
-
-
 //Initial fetch code taken from https://rapidapi.com/skyscanner/api/skyscanner-flight-search
 
 //Display cheapest flights from Skyscanner Database
@@ -46,6 +44,9 @@ function flightsAkl() {
         document.getElementById("carrier").innerHTML = carriers;
         document.getElementById("quote").innerHTML = `£` + quotes;
     })
+    .catch(err => {
+	    document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
+    });
 };
 
 //Wellington Flights
@@ -72,6 +73,9 @@ function flightsWell() {
         document.getElementById("carrier").innerHTML = carriers;
         document.getElementById("quote").innerHTML = `£` + quotes;
     })
+    .catch(err => {
+	    document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
+    });
 };
 
 
