@@ -1151,7 +1151,22 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 /*---- Media Queries north-island.html ----*/
 
+/*---- Iphone 5/se Landscape----*/
+
+@media (device-height : 320px) 
+   and (device-width : 568px) 
+   and (-webkit-min-device-pixel-ratio: 2) {
+    /*---- Destinations ----*/
+    .destinations-img-wrapper {
+        width: 16rem!important;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
+}
+
 /*---- Iphone 5/se ----*/
+
 @media (device-height : 568px) 
    and (device-width : 320px) 
    and (-webkit-min-device-pixel-ratio: 2) {
@@ -1168,9 +1183,34 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 }
 
+/*---- Galaxy Fold Landscape ----*/
+
+@media (device-width: 653px) and (device-height: 280px) {
+    /*---- Destinations ----*/
+    .destinations-img-wrapper {
+        width: 20rem!important;
+    }
+    .destinations-text-wrapper {
+        width: 10rem;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
+    .destinations-text-hr {
+        width: 9rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 35em!important;;
+    }
+}
+
 /*---- Galaxy Fold ----*/
+
 @media (device-width: 280px) and (device-height: 653px) {
     /*---- Destinations ----*/
+    .destinations-text-wrapper > p {
+        margin-left: 2em!important;
+    } 
     .destinations-wrapper {
         margin-top: 2em;
     }
@@ -1179,6 +1219,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .destinations-text-wrapper {
         width: 5rem!important;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 0!important;
     }
     .destinations-text-hr {
         width: 3.5rem!important;
@@ -1194,6 +1237,180 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         width: 95%;
     }
 }
+
+/*---- Galaxy and Moto Landscape ----*/
+
+@media (device-width: 640px) and (device-height: 360px) {
+    /*---- Destinations ----*/
+    .destinations-text-wrapper {
+        width: 10.5rem;
+    }
+    .destinations-text-hr {
+        width: 9rem;
+    }
+}
+
+/*---- Pixel 2 Landscape ----*/
+
+@media screen 
+  and (device-width: 731px) 
+  and (device-height: 411px)  
+  and (orientation: landscape) {
+    /*---- Destinations ----*/
+    .destinations-img-wrapper {
+        width: 17rem;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 31em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-card-text > p {
+        margin-left: 1.5em;
+    }
+    .top-pick-container {
+        margin-bottom: 3em;
+    }
+}
+
+/*---- Pixel 2 XL Landscape ----*/
+
+@media screen 
+  and (device-width: 823px) 
+  and (device-height: 411px)  
+  and (orientation: landscape) {
+    /*---- Destinations ----*/
+    .destinations-img-wrapper {
+        width: 27rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 31em;
+    }
+    /*---- Maps ----*/
+    .map-col {
+        margin-top: 23em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-container {
+        margin-bottom: 3em;
+    }
+}
+
+/*---- Iphone X Landscape ----*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    /*---- Destinations ----*/ 
+    .destinations-btn {
+        width: 12rem;
+    }
+    .destinations-img-wrapper {
+        width: 28rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 32em;
+    }
+    /*---- Maps ----*/
+    .map-col {
+        margin-top: 30em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-container {
+        margin-bottom: 3em;
+    }
+}
+
+/*---- Iphone 6/7/8 plus Landscape ----*/
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    /*---- Destinations ----*/
+    .destinations-btn {
+        width: 10rem;
+    }
+    .destinations-img-wrapper {
+        width: 20rem;
+    }
+    .destinations-text-wrapper {
+        width: 10rem;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
+    .destinations-text-hr {
+        width: 9rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 24em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-card-text > p {
+        margin-left: 1.5em;
+    }
+}
+
+/*---- Iphone 6/7/8 Landscape ----*/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    /*---- Destinations ----*/
+    .destinations-img-wrapper {
+        width: 18rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 32em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-card-text > p {
+        margin-left: 1.5em;
+    }
+    .top-pick-container {
+        margin-bottom: 3em;
+    }
+}
+
+/*---- Iphone 5/se Landscape ----*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    /*---- Destinations ----*/
+    .destinations-wrapper {
+        width: 95%;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 39em;
+    }
+    /*---- Maps ----*/
+    .map-col {
+        margin-top: 22em;
+    }
+}
+
 /*---- General Mobile ----*/
 
 @media (min-width: 280px) and (max-width: 414px) {
@@ -1271,7 +1488,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 0.75rem;
     }
     .top-pick-container {
-        margin-bottom: 2.25em;
+        margin-bottom: 3em;
     }
     .explore-business-btn {
         font-size: 0.5rem;
@@ -1281,9 +1498,24 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 }
 
+/*---- Ipad Landscape----*/
+
+@media all and (width: 1024px) and (height: 768px) and (orientation:landscape) {
+    /*---- Flights ----*/
+    .flights-wrapper {
+        height: 40em!important;
+    }
+    .destinations-img-wrapper {
+        width: 35rem!important;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 22em!important;
+    }
+}
+
 /*---- Ipad ----*/
 
-@media only screen and (device-width: 768px){
+@media only screen and (device-width: 768px) {
     /*---- Hero Img Loc ----*/
     .location-wrapper {
         right: -60%;
@@ -1325,7 +1557,46 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-left: 0.25em;
     }
     .top-pick-container {
-        margin-bottom: 2em;
+        margin-bottom: 3em;
+    }
+}
+
+/*---- Ipad Pro Landscape ----*/
+
+@media only screen 
+and (min-width: 1366px) and (max-width: 1366px)
+and (max-height: 1026px) 
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    /*---- Destinations ----*/
+    .destinations-btn {
+        width: 16rem;
+    }
+    .destinations-text-wrapper {
+        width: 18rem;
+        margin-left: 0;
+    }
+    .destinations-text-hr {
+        margin-left: 2em;
+    }
+    .destinations-img-wrapper {
+        width: 44rem;
+    }
+    #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 17em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-row {
+        display: block;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    }
+    .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-container {
+        margin-bottom: 3em;
     }
 }
 
@@ -1345,7 +1616,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .skyscanner-link ~ p {
         margin-left: 2.75em;
     }
-
     /*---- Destinations ----*/
     .destinations-catchline {
         padding-left: 3em;
@@ -1388,10 +1658,38 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         padding-left: 2em;
     }
     .top-pick-container {
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
     .dest-top-anchor-btn {
         width: 18rem;
+    }
+}
+
+/*---- Surface Duo Landscape ----*/
+
+@media (device-width: 720px) and (device-height: 540px) {
+    /*---- Destinations ----*/
+    .destinations-text-wrapper {
+        width: 12rem;
+    }
+    .destinations-img-wrapper {
+        width: 17rem;
+    }
+     #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
+        left: 23em;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
+    /*---- Top Pick ----*/
+    .top-pick-card {
+        width: 95%;
+    }
+    .top-pick-card-text > p {
+        margin-left: 1.65em;
+    }
+    .top-pick-container {
+        margin-bottom: 3em;
     }
 }
 
@@ -1429,7 +1727,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .destinations-text-wrapper > p {
         margin-left: 2em;
     }
-     .destinations-img-wrapper {
+    .destinations-img-wrapper {
         width: 18rem;
     }
      #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
@@ -1442,14 +1740,14 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         width: 13rem;
     }
     /*---- Top Pick ----*/
-     .top-pick-card {
+    .top-pick-card {
         width: 95%;
     }
     .top-pick-card-text > p {
         margin-left: 1.65em;
     }
     .top-pick-container {
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
     .dest-top-anchor-btn {
         width: 10rem;
