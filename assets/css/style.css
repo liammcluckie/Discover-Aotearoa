@@ -658,7 +658,7 @@ table > tbody > tr > td {
     margin: 0 auto;
     border: 1px solid #A58961;
     border-radius: 4px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .top-pick-card-text {
@@ -1139,12 +1139,14 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 @media (device-height : 568px) 
    and (device-width : 320px) 
    and (-webkit-min-device-pixel-ratio: 2) {
+    /*---- Destinations ----*/
     .destinations-img-wrapper {
         width: 11rem!important;
     }
     #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
         left: 18em!important;
     }
+    /*---- Top Pick ----*/
     .top-pick-card {
         width: 95%;
     }
@@ -1179,6 +1181,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 /*---- General Mobile ----*/
 
 @media (min-width: 280px) and (max-width: 414px) {
+    /*---- Navbar ----*/
+     .dropdown-menu {
+        margin-right: 1em;
+    }
     /*---- Flights ----*/
     .flights-wrapper {
         height: 23em;
@@ -1186,16 +1192,23 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     #flights-catchline {
         margin-left: 3em;
     }
+    .skyscanner-link {
+        font-size: 1rem;
+    }
     .skyscanner-link ~ p {
         margin-left: 2em;
+        font-size: 0.5rem;
     }
     /*---- Destinations ----*/
     .destinations-wrapper {
         width: 95%;
     }
+    .destinations-catchline {
+        padding-left: 2em;
+    }
     .destinations-btn {
         margin-left: 0;
-        margin-bottom: 0.5em;
+        margin-bottom: 1.75em;
         width: 6rem;
     }
     .destinations-text-hr {
@@ -1231,11 +1244,21 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-top: 5em;
     }
     /*---- Top Picks ----*/
+    .top-pick-card-title {
+        font-size: 1.5rem;
+    }
+    .dest-business-name {
+        font-size: 1.25rem;
+    }
     .top-pick-card-text > p {
         margin-left: 1.5em;
+        font-size: 0.75rem;
     }
     .top-pick-container {
-        margin-bottom: 1.75em;
+        margin-bottom: 2.25em;
+    }
+    .explore-business-btn {
+        font-size: 0.5rem;
     }
     .dest-top-anchor-btn {
         width: 8rem;
@@ -1252,6 +1275,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Flights ----*/
     .flights-wrapper {
         height: 30em;
+    }
+    .skyscanner-link ~ p {
+        margin-left: 2.75em;
     }
     /*---- Destinations ----*/
     .destinations-catchline {
@@ -1300,6 +1326,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     #flights-catchline {
         padding-left: 3em;
     }
+    .skyscanner-link ~ p {
+        margin-left: 2.75em;
+    }
+
     /*---- Destinations ----*/
     .destinations-catchline {
         padding-left: 3em;
@@ -1352,6 +1382,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 /*---- Surface Duo ----*/
 
 @media (device-width: 540px) and (device-height: 720px) {
+    /*---- Navbar ----*/
+    .dropdown-menu {
+        margin-right: 1em;
+    }
     /*---- Hero Img Loc ----*/
     .location-wrapper {
         right: -65%;
