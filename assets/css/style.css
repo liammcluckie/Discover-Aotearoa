@@ -873,6 +873,12 @@ table > tbody > tr > td {
 
 /*---- General Mobile ----*/
 
+@media (min-width: 280px) and (max-width: 768px) and (orientation: landscape) {
+    .image-location {
+        display: none;
+    }
+}
+
 @media (min-width: 280px) and (max-width: 768px) {
     /*---- Navbar & Header ----*/
     .image-location > i, p {
@@ -1006,6 +1012,16 @@ table > tbody > tr > td {
 /*---- Tablet ----*/
 
 /*---- Ipad Pro ----*/
+
+@media only screen 
+and (device-width: 1366px)
+and (device-height: 1024px) 
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    .location-wrapper {
+        right: -55%!important;
+    }
+}
 
 @media only screen 
 and (min-width: 1024px) and (max-width: 1026px)
