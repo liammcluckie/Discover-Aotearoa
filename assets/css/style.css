@@ -859,8 +859,8 @@ table > tbody > tr > td {
 
 /*---- Galaxy Fold ----*/
 
-/*---- Navbar & Header ----*/
 @media (min-width: 280px) and (max-width: 653px) {
+    /*---- Navbar & Header ----*/
     .navbar {
         justify-content: inherit!important;
         padding: 0!important;
@@ -868,6 +868,128 @@ table > tbody > tr > td {
 
     .location-wrapper {
         margin-right: 1.5em;
+    }
+}
+
+/*---- Galaxy Fold Landscape ----*/
+
+@media (device-width: 653px) and (device-height: 280px) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 32%!important;
+    }
+    #go-text {
+        left: 41%!important;
+    }
+    #explore-text {
+        left: 48%!important;
+    }
+}
+
+/*---- Galaxy and Moto Landscape ----*/
+
+@media (device-width: 640px) and (device-height: 360px) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 30%;
+    }
+    #go-text {
+        left: 39%;
+    }
+    #explore-text {
+        left: 46%;
+    }
+}
+
+/*---- Pixel 2 Landscape ----*/
+
+@media screen 
+  and (device-width: 731px) 
+  and (device-height: 411px)  
+  and (orientation: landscape) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 30%!important;
+    }
+    #go-text {
+        left: 40%!important;
+    }
+    #explore-text {
+        left: 46%!important;
+    }
+}
+
+/*---- Iphone 5/se Landscape----*/
+
+@media (device-height : 320px) 
+   and (device-width : 568px) 
+   and (-webkit-min-device-pixel-ratio: 2) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 30%!important;
+    }
+    #go-text {
+        left: 40%!important;
+    }
+    #explore-text {
+        left: 46%!important;
+    }
+}
+
+/*---- Iphone 6/7/8 Landscape ----*/
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 30%!important;
+    }
+    #go-text {
+        left: 42%!important;
+    }
+    #explore-text {
+        left: 46%!important;
+    }
+}
+
+/*---- Iphone 6/7/8 plus Landscape ----*/
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 30%!important;
+    }
+    #go-text {
+        left: 42%!important;
+    }
+    #explore-text {
+        left: 46%!important;
+    }
+}
+
+/*---- Iphone X Landscape ----*/
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 30%;
+    }
+    #go-text {
+        left: 42%;
+    }
+    #explore-text {
+        left: 46%;
     }
 }
 
@@ -1011,17 +1133,30 @@ table > tbody > tr > td {
 
 /*---- Tablet ----*/
 
-/*---- Ipad Pro ----*/
+/*---- Ipad Pro Landscape ----*/
 
 @media only screen 
-and (device-width: 1366px)
-and (device-height: 1024px) 
+and (min-width: 1366px) and (max-width: 1366px)
+and (max-height: 1026px) 
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1.5) {
+    /*---- Navbar & Header ----*/
     .location-wrapper {
         right: -55%!important;
     }
+    /*---- What we do ---*/
+    #plan-text {
+        left: 26%;
+    }
+    #go-text {
+        left: 38%;
+    }
+    #explore-text {
+        left: 42%;
+    }
 }
+
+/*---- Ipad Pro ----*/
 
 @media only screen 
 and (min-width: 1024px) and (max-width: 1026px)
@@ -1030,6 +1165,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Navbar & Header ----*/
     .nav-text {
         margin: 0.5em;
+    }
+    .location-wrapper {
+        right: -55%!important;
     }
 
     .navbar-brand {
@@ -1113,6 +1251,25 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 }
 
+/*---- Ipad Landscape----*/
+
+@media all and (width: 1024px) and (height: 768px) and (orientation:landscape) {
+     /*---- Navbar & Header ----*/
+    .location-wrapper {
+        right: -65%!important;
+    }
+    /*---- What we do ---*/
+    #plan-text {
+        left: 26%;
+    }
+    #go-text {
+        left: 38%;
+    }
+    #explore-text {
+        left: 42%;
+    }
+}
+
 /*---- Ipad ----*/
 
 @media only screen and (device-width: 768px) {
@@ -1137,6 +1294,21 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .footer-logo {
         position: relative;
         left: -0.5em;
+    }
+}
+
+/*---- Surface Duo Landscape ----*/
+
+@media (device-width: 720px) and (device-height: 540px) {
+    /*---- What we do ---*/
+    #plan-text {
+        left: 26%;
+    }
+    #go-text {
+        left: 38%;
+    }
+    #explore-text {
+        left: 42%;
     }
 }
 
@@ -1376,8 +1548,20 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .destinations-img-wrapper {
         width: 18rem;
     }
+    .destinations-btn {
+        width: 10rem;
+    }
+    .destinations-text-wrapper {
+        width: 10rem;
+    }
+    .destinations-text-hr {
+        width: 9rem;
+    }
+    .destinations-text-wrapper > p {
+        margin-left: 2em;
+    }
     #dest-img-well, #dest-img-mart, #dest-img-roto, #dest-img-coro, #dest-img-maung, #dest-img-akl {
-        left: 32em;
+        left: 29em;
     }
     /*---- Top Pick ----*/
     .top-pick-card {
