@@ -65,7 +65,7 @@ function flightsWell() {
     })
     .then(json => {
         const startDest = json.Places[2].CityName;
-        const endDest = json.Places[6].CityName;
+        const endDest = json.Places[6].Name;
         const carriers = json.Carriers[0].Name;
         const quotes = json.Quotes[0].MinPrice;
         document.getElementById("start-dest").innerHTML = startDest;
