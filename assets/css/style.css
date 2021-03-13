@@ -495,6 +495,7 @@ table > tbody > tr > td {
     margin-top: 5rem;
     height: auto;
     box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
+    position: relative;
 }
 
 .destinations-heading {
@@ -517,6 +518,7 @@ table > tbody > tr > td {
     background-color: #F5EBE0;
     font-size: 2vmin;
     text-align: start;
+    position: relative;
 }
 
 .destinations-btn {
@@ -548,6 +550,7 @@ table > tbody > tr > td {
 .destinations-img-wrapper {
     width: 40rem;
     text-align: center;
+    position: relative;
 }
 
 .destinations-image {
