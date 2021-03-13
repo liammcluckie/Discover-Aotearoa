@@ -190,9 +190,9 @@ body {
 /*---- Hero Image Location Text ----*/
 
 .location-wrapper {
-    position: absolute;
-    bottom: 0;
-    right: -62%;
+    position: relative;
+    top: 91%;
+    right: -70%;
 }
 
 .image-location {
@@ -495,7 +495,6 @@ table > tbody > tr > td {
     margin-top: 5rem;
     height: auto;
     box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
-    position: relative;
 }
 
 .destinations-heading {
@@ -518,7 +517,6 @@ table > tbody > tr > td {
     background-color: #F5EBE0;
     font-size: 2vmin;
     text-align: start;
-    position: relative;
 }
 
 .destinations-btn {
@@ -870,7 +868,7 @@ table > tbody > tr > td {
     }
 
     .location-wrapper {
-        margin-right: 1.5em;
+        display: none;
     }
 }
 
@@ -1161,7 +1159,7 @@ and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Navbar & Header ----*/
     .location-wrapper {
-        right: -55%!important;
+        display: none;
     }
 
     /*---- What we do ---*/
@@ -1190,7 +1188,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
     .location-wrapper {
-        right: -55%!important;
+        display: none;
     }
 
     .navbar-brand {
@@ -1282,7 +1280,7 @@ and (height: 768px)
 and (orientation:landscape) {
      /*---- Navbar & Header ----*/
     .location-wrapper {
-        right: -65%!important;
+        display: none;
     }
 
     /*---- What we do ---*/
@@ -1307,6 +1305,10 @@ and (orientation:landscape) {
         font-size: 4.5vmin;
     }
 
+    .location-wrapper {
+        display: none;
+    }
+    
     .nav-link {
         font-size: 3vmin;
     }
@@ -1807,11 +1809,6 @@ and (orientation:landscape) {
 /*---- Ipad ----*/
 
 @media only screen and (device-width: 768px) {
-    /*---- Hero Img Loc ----*/
-    .location-wrapper {
-        right: -60%;
-    }
-
     /*---- Flights ----*/
     .flights-wrapper {
         height: 30em;
@@ -2031,11 +2028,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Navbar ----*/
     .dropdown-menu {
         margin-right: 1em;
-    }
-
-    /*---- Hero Img Loc ----*/
-    .location-wrapper {
-        right: -65%;
     }
 
     /*---- Flights ----*/
