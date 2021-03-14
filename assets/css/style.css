@@ -681,6 +681,15 @@ table > tbody > tr > td {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+/*---- South Island Hero Image ----*/
+
+#south-nav-wrapper {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/south-hero-image.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
 /*---- Newsletter Form ----*/
 
 .newsletter-wrapper {
@@ -1448,6 +1457,12 @@ and (orientation: landscape) {
     /*---- Maps ----*/
     #ni-dest-map {
         margin-top: 5em;
+    }
+
+    /*---- Destinations ----*/
+
+    .destinations-text-wrapper {
+        font-size: 0.75rem;
     }
 
     /*---- Top Picks ----*/
