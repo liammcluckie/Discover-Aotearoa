@@ -77,6 +77,3 @@ function flightsWell() {
 	    document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
     });
 };
-
-
-
