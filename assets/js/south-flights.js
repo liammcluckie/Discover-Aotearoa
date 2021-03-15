@@ -44,7 +44,7 @@ function flightsChrist() {
     })
     .then(json => {
         const startDest = json.Places[0].CityName;
-        const endDest = json.Places[1].CityName;
+        const endDest = json.Places[2].CityName;
         const carriers = json.Carriers[0].Name;
         const quotes = json.Quotes[0].MinPrice;
         document.getElementById("start-dest").innerHTML = startDest;
@@ -73,7 +73,7 @@ function flightsQueens() {
     })
     .then(json => {
         const startDest = json.Places[0].CityName;
-        const endDest = json.Places[5].Name;
+        const endDest = json.Places[8].Name;
         const carriers = json.Carriers[2].Name;
         const quotes = json.Quotes[0].MinPrice;
         document.getElementById("start-dest").innerHTML = startDest;
