@@ -562,13 +562,13 @@ table > tbody > tr > td {
 .destinations-text-hr {
     border: 1px solid #A58961;
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .destinations-img-wrapper {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
-    
 }
 
 .destinations-image {
@@ -600,9 +600,6 @@ table > tbody > tr > td {
     width: 15rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
-
-/*---- Destinations image positioning ----*/
-
 
 /*---- Google Maps ----*/
 
