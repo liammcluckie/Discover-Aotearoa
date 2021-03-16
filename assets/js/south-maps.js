@@ -645,3 +645,18 @@ function blenAttractions() {
             "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
 };
+
+//Function to only display relevant destination picks
+let topPickButtons = document.querySelectorAll(".ex-btn");
+for (let button of topPickButtons) {
+    button.addEventListener('click', (e) => {
+        let allContent = document.querySelectorAll(".top-picks")
+        for (let content of allContent) {
+            if (content.getAttribute('data-number') === button.getAttribute('data-number')) {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    });
+}
