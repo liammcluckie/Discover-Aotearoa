@@ -130,7 +130,7 @@ body {
 .nav-text {
     color: #fff!important;
     font-size: 2.5vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     margin-top: 0.5em
 }
 
@@ -206,21 +206,38 @@ body {
     font-style: italic;
     font-size: 2.5vmin;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
 }
 
 /*---- Hero Image Location Text ----*/
+.index-location-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: -58%;
+}
 
-.location-wrapper {
-    position: relative;
-    top: 91%;
-    right: -70%;
+.ni-location-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: -60%;
+}
+
+.si-location-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: -65%;
 }
 
 .image-location {
     color: #fff;
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
 }
 
 /*---- Aotearoa Description ----*/
@@ -242,7 +259,7 @@ body {
 
 #description-content {
     font-size: 3vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
 }
 
@@ -254,7 +271,7 @@ body {
     color: #0C0409;
     font-size: 5vmin;
     margin-top: 1.5em;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     text-align: center;
 }
 
@@ -381,7 +398,7 @@ body {
 .carousel-image-text {
     background-color: #A58961;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     line-height: 1.3em;
     color: white;
     font-size: 2vmin;
@@ -409,14 +426,14 @@ body {
 #flights-header {
     font-family: "Bodoni Moda", sans-serif;
     margin: 1.5em 0 .5em 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
     font-size: 5vmin;
 }
 
 #flights-catchline {
     font-size: 3vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
     margin-bottom: 1.5em;
 }
@@ -425,10 +442,21 @@ body {
     padding: 0.5em 2.5em;
     margin: 0 2em;
     font-size: 2.5vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     border: 1px solid #0C0409;
     border-radius: 2px;
     background-color: #F5EBE0;
+}
+
+.si-flights-button {
+    padding: 0.5em 2.5em;
+    margin: 0.5em 2em;
+    font-size: 2.5vmin;
+    letter-spacing: 0.1em;
+    border: 1px solid #0C0409;
+    border-radius: 2px;
+    background-color: #F5EBE0;
+    width: 50%;
 }
 
 .flights-error {
@@ -443,13 +471,13 @@ body {
 
 th {
     font-size: 2.75vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
 }
 
 td {
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
 }
 
@@ -497,7 +525,7 @@ table > tbody > tr > td {
 
 .destinations-heading {
     font-family: "Bodoni Moda", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
     font-size: 5vmin;
     padding-top: 1em;
@@ -506,7 +534,7 @@ table > tbody > tr > td {
 
 .destinations-catchline {
     font-size: 3vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
     margin-bottom: 2em;
 }
@@ -521,7 +549,7 @@ table > tbody > tr > td {
     padding: 1em 2em;
     margin-bottom: 1em;
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     border: 1px solid #A58961;
     border-radius: 2px;
     background-color: #A58961;
@@ -530,7 +558,7 @@ table > tbody > tr > td {
 }
 
 .destinations-text-wrapper {
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     margin-left: 1.5em;
     margin-bottom: 1.7em;
 }
@@ -557,7 +585,7 @@ table > tbody > tr > td {
     padding: 1em 2em;
     margin-top: 1.5em;
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
@@ -569,7 +597,7 @@ table > tbody > tr > td {
     padding: 1em;
     margin-top: 1.5em;
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
@@ -595,7 +623,7 @@ table > tbody > tr > td {
     padding: 1em;
     margin: 1.5em 0;
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
@@ -607,7 +635,6 @@ table > tbody > tr > td {
 
 .top-pick-heading {
     font-family: "Bodoni Moda", sans-serif;
-    letter-spacing: 0.5px;
     color: #0C0409;
     font-size: 5vmin;
     margin-bottom: 1em;
@@ -634,7 +661,7 @@ table > tbody > tr > td {
 .top-pick-card-text > a {
     text-decoration: none;
     color: #0C0409;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
 }
 
 .dest-business-name {
@@ -643,7 +670,7 @@ table > tbody > tr > td {
 
 .top-pick-card-text > p {
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     color: #0C0409;
     margin-bottom: 1em;
 }
@@ -653,7 +680,7 @@ table > tbody > tr > td {
     color: #0C0409;
     margin: 1.5em 0;
     font-size: 2vmin;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
@@ -688,7 +715,7 @@ table > tbody > tr > td {
 
 #newsletter-form {
     color: #0C0409;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     line-height: 2.7em;
 }
 
@@ -785,7 +812,7 @@ table > tbody > tr > td {
     font-size: 2vmin;
     padding: 0.5em;
     margin-left: 1em;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
 }
 
 .copyright {
@@ -810,7 +837,7 @@ table > tbody > tr > td {
     color: #fff;
     font-size: 3vmin;
     padding: 1em;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
 }
 
 .footer-icons {
@@ -833,10 +860,6 @@ table > tbody > tr > td {
     .navbar {
         justify-content: inherit!important;
         padding: 0!important;
-    }
-
-    .location-wrapper {
-        display: none;
     }
 }
 
@@ -1035,7 +1058,6 @@ and (orientation: landscape) {
     }
 
     .catchline {
-        margin-left: 1.5em;
         font-size: 4.5vmin;
     }
 
@@ -1159,10 +1181,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin: 0.5em;
     }
 
-    .location-wrapper {
-        display: none;
-    }
-
     .navbar-brand {
         margin-right: 0;
         margin-left: 0;
@@ -1176,15 +1194,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .logo {
         width: 8%;
         margin-top: 0.5em
-    }
-
-    .image-location > i, p {
-        position: relative;
-        left: -2em;
-    }
-
-    .catchline {
-        margin-left: 2em;
     }
 
     /*---- Aotearoa Description ----*/ 
@@ -1282,7 +1291,7 @@ and (orientation:landscape) {
     }
 
     .location-wrapper {
-        display: none;
+        display: 
     }
 
     .nav-link {
@@ -1608,3 +1617,5 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         width: 10rem;
     } 
 }
+
+/*---- Media Queries south-island.html ----*/
