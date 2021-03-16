@@ -16,7 +16,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
     <title>Discover Aotearoa</title>
 </head>
 
@@ -64,7 +63,7 @@
             </div>
         </div>
         <!-- Hero Image Location -->
-        <div class="container location-wrapper">
+        <div class="container si-location-wrapper">
             <div class="row">
                 <div class="col">
                      <div class="image-location">
@@ -84,15 +83,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-sm-12">
                     <p id="flights-catchline">We've found the best deals on flights to the South Island</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <button class="flights-button hvr-shrink" id="christ-flight">Christchurch</button>
-                    <button class="flights-button hvr-shrink" id="queens-flight">Queenstown</button>
-                    <button class="flights-button hvr-shrink" id="dun-flight">Dunedin</button>
+            <div class="row flights-row">
+                <div class="col-sm-4">
+                    <button class="si-flights-button hvr-shrink" id="christ-flight">Christchurch</button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="si-flights-button hvr-shrink" id="queens-flight">Queenstown</button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="si-flights-button hvr-shrink" id="dun-flight">Dunedin</button>
                 </div>
             </div>
         </div>
@@ -644,7 +647,7 @@
                     </div>
                 </div>
                 <!-- Top Pick Cards Blenheim -->
-                <div id="recommend-blenheim" class=" top-picks" data-number="12">
+                <div id="recommend-blenheim" class="hidden top-picks" data-number="12">
                     <div class="row">
                         <div class="col">
                             <h3 class="top-pick-heading">Our Top Picks Blenheim</h3>
