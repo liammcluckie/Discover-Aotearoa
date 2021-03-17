@@ -162,6 +162,7 @@ body {
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color: #A58961!important;
+    font-weight: ;
 }
 
 .active {
@@ -679,7 +680,28 @@ table > tbody > tr > td {
     position: relative;
 }
 
+/*---- Contact Intro ----*/
 
+.contact-intro-wrapper {
+    height: auto;
+    background-color: #A58961;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
+    text-align: center;
+}
+
+#contact-intro-title {
+    font-family: "Bodoni Moda", sans-serif;
+    font-size: 8vmin;
+    padding-top: 0.8em;
+    margin-bottom: 0.5em;
+    color: #0C0409;
+}
+
+#contact-intro-content {
+    font-size: 3vmin;
+    color: #0C0409;
+    margin-bottom: 1.5em;
+}
 /*---- Newsletter Form ----*/
 
 .newsletter-wrapper {
