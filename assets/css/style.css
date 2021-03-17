@@ -641,11 +641,11 @@ table > tbody > tr > td {
 }
 
 .top-pick-text {
-    height: 5rem;
+    height: auto;
 }
 
 .business-btn-wrapper {
-    height: 3.5rem;
+    height: 10vh;
 }
 
 .explore-business-btn {
