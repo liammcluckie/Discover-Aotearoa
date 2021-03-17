@@ -396,6 +396,7 @@ body {
     background-color: #A58961;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 #flights-header {
@@ -475,6 +476,7 @@ table > tbody > tr > td {
 
 .skyscanner-link ~ p {
     font-size: 1.25vmin;
+    margin-bottom: 3rem;
 }
 
 .skyscanner-link:hover {
@@ -486,8 +488,9 @@ table > tbody > tr > td {
 .destinations-wrapper {
     text-align: center;
     border: 2px solid #A58961;
+    width: 80%;
     border-radius: 2px;
-    margin-top: 5rem;
+    margin: 0 auto;
     height: auto;
     box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
 }
@@ -584,7 +587,7 @@ table > tbody > tr > td {
 
 .dest-top-anchor-btn {
     padding: 1em;
-    margin: 1.5em 0;
+    margin-bottom: 1.5em;
     font-size: 2vmin;
     border: 2px solid #A58961;
     border-radius: 2px;
@@ -602,9 +605,11 @@ table > tbody > tr > td {
     margin-bottom: 1em;
 }
 
+.top-pick-container {
+    margin-bottom: 2rem;
+}
+
 .top-pick-card {
-    width: 18rem;
-    margin: 0 auto;
     border: 1px solid #A58961;
     border-radius: 4px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
