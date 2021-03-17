@@ -397,6 +397,8 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
     text-align: center;
     margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    height: auto;
 }
 
 #flights-header {
@@ -413,7 +415,7 @@ body {
 }
 
 .flights-button {
-    padding: 0.5em 2.5em;
+    padding: 1em;
     margin: 0 2em;
     font-size: 2.5vmin;
     border: 1px solid #0C0409;
@@ -422,13 +424,13 @@ body {
 }
 
 .si-flights-button {
-    padding: 0.5em 2.5em;
+    padding: 1em;
     margin: 0.5em 2em;
     font-size: 2.5vmin;
     border: 1px solid #0C0409;
     border-radius: 2px;
     background-color: #F5EBE0;
-    width: 50%;
+    width: 80%;
 }
 
 .flights-error {
@@ -556,7 +558,6 @@ table > tbody > tr > td {
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
-    width: 13rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
 
@@ -567,20 +568,19 @@ table > tbody > tr > td {
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
-    width: 15rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
 
 /*---- Google Maps ----*/
 
 #ni-dest-map {
-    min-height: 360px;
+    min-height: 22.5rem;
     margin-bottom: 3em;
     margin-top: 5em;
 }
 
 #si-dest-map {
-    min-height: 360px;
+    min-height: 22.5rem;
     margin-bottom: 3em;
     margin-top: 5em;
 }
@@ -592,7 +592,6 @@ table > tbody > tr > td {
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
-    width: 15rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -613,6 +612,7 @@ table > tbody > tr > td {
     border: 1px solid #A58961;
     border-radius: 4px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0 auto;
 }
 
 .top-pick-card-text {
@@ -1370,10 +1370,6 @@ and (orientation: landscape) {
     }
     
     /*---- Flights ----*/
-    .flights-wrapper {
-        height: 23em;
-    }
-
     .skyscanner-link {
         font-size: 1rem;
     }
@@ -1481,10 +1477,6 @@ and (min-width: 1024px) and (max-width: 1026px)
 and (max-height: 1366px) 
 and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Flights ----*/
-    .flights-wrapper {
-        height: 29em;
-    }
-
     #flights-catchline {
         padding-left: 3em;
     }
@@ -1503,10 +1495,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .top-pick-card {
         width: 95%;
-    }
-
-    .top-pick-card-text > p {
-        padding-left: 2em;
     }
 
     .top-pick-container {
@@ -1537,11 +1525,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Navbar ----*/
     .dropdown-menu {
         margin-right: 1em;
-    }
-
-    /*---- Flights ----*/
-    .flights-wrapper {
-        height: 30em;
     }
 
     /*---- Top Pick ----*/
