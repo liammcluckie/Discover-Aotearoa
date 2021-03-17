@@ -639,15 +639,26 @@ table > tbody > tr > td {
     margin-bottom: 1em;
 }
 
+.top-pick-text {
+    height: 5rem;
+}
+
+.business-btn-wrapper {
+    height: 3.5rem;
+}
+
 .explore-business-btn {
     padding: 1em;
     color: #0C0409;
-    margin: 1.5em 0;
     font-size: 2vmin;
     border: 2px solid #A58961;
     border-radius: 2px;
-    background-color: #F5EBE0;
+    background-color: #A58961;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
 }
 
 /*---- South Island Hero Image ----*/
@@ -1272,7 +1283,7 @@ and (orientation : landscape) {
     }
 }
 
-/*---- Media Queries north-island.html ----*/
+/*---- Media Queries north-island.html & south-island.html ----*/
 
 /*---- Pixel 2 Landscape ----*/
 
@@ -1286,8 +1297,26 @@ and (orientation: landscape) {
         width: 95%;
     }
 
+    .top-pick-text {
+        height: 2rem;
+    }
+
+    .business-btn-wrapper {
+        height: 1.5rem;
+    }
+
     .top-pick-container {
         margin-bottom: 3em;
+    }
+}
+
+/*---- Iphone 5/se ----*/
+
+@media (device-height : 568px) 
+and (device-width : 320px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    .martin-btn {
+        font-size: 0.35rem!important;
     }
 }
 
@@ -1305,6 +1334,14 @@ and (orientation: landscape) {
     .top-pick-container {
         margin-bottom: 3em;
     }
+
+    .top-pick-text {
+        height: 2rem;
+    }
+
+    .business-btn-wrapper {
+        height: 1.5rem;
+    }
 }
 
 /*---- Iphone X Landscape ----*/
@@ -1321,6 +1358,14 @@ and (orientation: landscape) {
     .top-pick-container {
         margin-bottom: 3em;
     }
+
+    .top-pick-text {
+        height: 2rem;
+    }
+
+    .business-btn-wrapper {
+        height: 1.5rem;
+    }
 }
 
 /*---- Iphone 6/7/8 Landscape ----*/
@@ -1333,6 +1378,14 @@ and (orientation: landscape) {
     /*---- Top Pick ----*/
     .top-pick-card {
         width: 95%;
+    }
+
+    .top-pick-text {
+        height: 2rem;
+    }
+
+    .business-btn-wrapper {
+        height: 1.5rem;
     }
 
     .top-pick-container {
@@ -1349,7 +1402,19 @@ and (orientation: landscape) {
     }
     /*---- Top Pick ----*/
     .top-pick-card {
-        width: 95%!important;
+        width: 100%!important;
+    }
+
+    .top-pick-text {
+        height: 7rem;
+    }
+
+    .business-btn-wrapper {
+        height: 1.5rem;
+    }
+
+    .top-pick-card-title {
+        font-size: 1.25rem!important;
     }
 }
 
@@ -1374,6 +1439,10 @@ and (orientation: landscape) {
 
     .destinations-text-wrapper {
         font-size: 0.75rem;
+    }
+
+    .martin-btn {
+        font-size: 0.4rem;
     }
 
     /*---- Top Picks ----*/
@@ -1407,6 +1476,10 @@ and (orientation:landscape) {
     /*---- Flights ----*/
     .flights-wrapper {
         height: 40em!important;
+    }
+    /*---- Top Pick ----*/
+    .business-btn-wrapper {
+        height: 4rem;
     }
 }
 
@@ -1448,6 +1521,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         width: 95%;
     }
 
+    .business-btn-wrapper {
+        height: 6rem;
+    }
+
     .top-pick-container {
         margin-bottom: 3em;
     }
@@ -1484,6 +1561,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-bottom: 3em;
     }
 
+    .business-btn-wrapper {
+        height: 6rem;
+    }
+
     .dest-top-anchor-btn {
         width: 18rem;
     }
@@ -1499,6 +1580,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .top-pick-container {
         margin-bottom: 3em;
+    }
+
+    .top-pick-text {
+        height: 3rem;
     }
 }
 
@@ -1517,6 +1602,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
     .top-pick-container {
         margin-bottom: 3em;
+    }
+
+    .top-pick-text {
+        height: 3rem;
     }
     
     .dest-top-anchor-btn {
