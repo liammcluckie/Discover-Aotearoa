@@ -43,7 +43,7 @@ function flightsChrist() {
         return response.json();
     })
     .then(json => {
-        const startDest = json.Places[0].CityName;
+        const startDest = json.Places[1].CityName;
         const endDest = json.Places[2].CityName;
         const carriers = json.Carriers[0].Name;
         const quotes = json.Quotes[0].MinPrice;
