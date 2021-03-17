@@ -1330,7 +1330,7 @@ and (orientation: landscape) {
     }
 
     .top-pick-text {
-        height: 2rem;
+        height: auto;
     }
 
     .business-btn-wrapper {
@@ -1368,7 +1368,7 @@ and (orientation: landscape) {
     }
 
     .top-pick-text {
-        height: 2rem;
+        height: auto;
     }
 
     .business-btn-wrapper {
@@ -1392,7 +1392,7 @@ and (orientation: landscape) {
     }
 
     .top-pick-text {
-        height: 2rem;
+        height: auto;
     }
 
     .business-btn-wrapper {
@@ -1413,7 +1413,7 @@ and (orientation: landscape) {
     }
 
     .top-pick-text {
-        height: 2rem;
+        height: auto;
     }
 
     .business-btn-wrapper {
@@ -1438,7 +1438,7 @@ and (orientation: landscape) {
     }
 
     .top-pick-text {
-        height: 7rem;
+        height: auto;
     }
 
     .business-btn-wrapper {
@@ -1484,6 +1484,10 @@ and (orientation: landscape) {
 
     .dest-business-name {
         font-size: 1.25rem;
+    }
+
+    .top-pick-text {
+        height: auto;
     }
 
     .top-pick-card-text > p {
@@ -1615,7 +1619,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
     .top-pick-text {
-        height: 3rem;
+        height: auto;
     }
 }
 
@@ -1637,7 +1641,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
     .top-pick-text {
-        height: 3rem;
+        height: auto;
     }
     
     .dest-top-anchor-btn {
