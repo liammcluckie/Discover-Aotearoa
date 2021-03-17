@@ -416,7 +416,7 @@ body {
 
 .flights-button {
     padding: 1em;
-    margin: 0 2em;
+    margin: 0.5em 2em;
     font-size: 2.5vmin;
     border: 1px solid #0C0409;
     border-radius: 2px;
@@ -1018,10 +1018,6 @@ and (orientation: landscape) {
         height: 23em;
     }
 
-    #description-content {
-        margin-left: 4em;
-    }
-
     /*---- What We Do ----*/
     #plan-text {
         position: absolute;
@@ -1147,10 +1143,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     /*---- Aotearoa Description ----*/ 
     .description-wrapper {
         height: 25em;
-    }
-
-    #description-content {
-        margin-left: 3em;
     }
 
     /*---- What We Do ----*/
