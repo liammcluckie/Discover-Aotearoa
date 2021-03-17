@@ -518,7 +518,7 @@ table > tbody > tr > td {
 }
 
 .destinations-btn {
-    padding: 1em 2em;
+    padding: 1.25em;
     margin-bottom: 1em;
     font-size: 2vmin;
     border: 1px solid #A58961;
@@ -529,7 +529,6 @@ table > tbody > tr > td {
 }
 
 .destinations-text-wrapper {
-    margin-left: 1.5em;
     margin-bottom: 1.7em;
 }
 
@@ -1352,8 +1351,9 @@ and (orientation: landscape) {
 /*---- Galaxy Fold ----*/
 
 @media (device-width: 280px) and (device-height: 653px) {
-    #dest-btn-two {
-        font-size: 1.5vmin!important;
+    /*---- Destinations ----*/
+    .destinations-btn {
+        font-size: 0.3rem;
     }
     /*---- Top Pick ----*/
     .top-pick-card {
@@ -1376,11 +1376,6 @@ and (orientation: landscape) {
 
     .skyscanner-link ~ p {
         font-size: 0.5rem;
-    }
-
-    /*---- Maps ----*/
-    #ni-dest-map {
-        margin-top: 5em;
     }
 
     /*---- Destinations ----*/
@@ -1408,10 +1403,6 @@ and (orientation: landscape) {
 
     .explore-business-btn {
         font-size: 0.5rem;
-    }
-
-    .dest-top-anchor-btn {
-        width: 8rem;
     }
 }
 
