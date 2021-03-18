@@ -722,6 +722,24 @@ table > tbody > tr > td {
     width: 100%!important;
 }
 
+textarea:active, 
+input:active,
+select:active, 
+textarea:focus, 
+input:focus,
+select:focus,
+label:focus {
+    border: #A58961 solid 1px!important;
+    -webkit-appearance:none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px!important; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
+    border-radius: 2px!important;
+}
+ 
+
+.form-control {
+    border:none!important;
+}
+
 .contact-btn-container {
     text-align: center;
 }
