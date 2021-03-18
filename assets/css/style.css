@@ -359,7 +359,7 @@ body {
     text-align: start;
     width: 80%;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -702,6 +702,41 @@ table > tbody > tr > td {
     color: #0C0409;
     margin-bottom: 1.5em;
 }
+
+/*---- Contact Form ----*/
+
+.form-wrapper {
+    margin-top: 3rem!important;
+    padding: 2rem;
+    border: 2px solid #A58961;
+    border-radius: 2px;
+    margin: 0 auto;
+    height: auto;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
+    font-size: 2.5vmin;
+    color: #0C0409;
+    width: 50%;
+}
+
+.form-group > input, select {
+    width: 100%!important;
+}
+
+.contact-btn-container {
+    text-align: center;
+}
+
+.contact-btn {
+    padding: 0.5em 2.5em;
+    font-size: 2vmin;
+    border: 2px solid #A58961;
+    border-radius: 2px;
+    background-color: #F5EBE0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 2.5vmin;
+    color: #0C0409;
+}
+
 /*---- Newsletter Form ----*/
 
 .newsletter-wrapper {
