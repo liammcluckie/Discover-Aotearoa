@@ -715,7 +715,7 @@ table > tbody > tr > td {
     box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
     font-size: 2.5vmin;
     color: #0C0409;
-    width: 50%;
+    width: 70%;
 }
 
 .form-group > input, select {
