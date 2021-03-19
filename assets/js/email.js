@@ -1,3 +1,4 @@
+//Original code taken from CI learning material and customised for this project
 (function () {
     emailjs.init("user_7Zuhihp6HZgdp93yn7Cpc");
 })();
@@ -13,11 +14,17 @@ function sendMail(contactForm) {
         "booking_request": contactForm.message.value
     })
     .then(
-        function(response) {
-            console.log("success", response);
+        function success(event) {
+            const success = document.getElementById("contact-success");
+            success.style.display = "block";
+            event.preventDefault;
+            console.log("success");
         },
-        function(error) {
-            console.log("fail", error);
+        function error(event) {
+            const error = document.getElementById("contact-error");
+            error.style.display = "block";
+            event.preventDefault;
+            console.log("fail");
         }
     );
     document.getElementById("contact-form").reset();
