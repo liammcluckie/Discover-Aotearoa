@@ -51,6 +51,7 @@ function flightsChrist() {
         document.getElementById("end-dest").innerHTML = endDest;
         document.getElementById("carrier").innerHTML = carriers;
         document.getElementById("quote").innerHTML = `£` + quotes;
+        document.getElementById("flights-error-msg").innerHTML = "";
     })
     .catch(err => {
         document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
@@ -84,6 +85,7 @@ function flightsQueens() {
         document.getElementById("end-dest").innerHTML = endDest;
         document.getElementById("carrier").innerHTML = carriers;
         document.getElementById("quote").innerHTML = `£` + quotes;
+        document.getElementById("flights-error-msg").innerHTML = "";
     })
     .catch(err => {
         document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
@@ -117,6 +119,7 @@ function flightsDun() {
         document.getElementById("end-dest").innerHTML = endDest;
         document.getElementById("carrier").innerHTML = carriers;
         document.getElementById("quote").innerHTML = `£` + quotes;
+        document.getElementById("flights-error-msg").innerHTML = "";
     })
     .catch(err => {
         document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
