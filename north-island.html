@@ -20,6 +20,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
     <title>Discover Aotearoa</title>
 </head>
 
@@ -1212,7 +1215,7 @@
         <div class="container newsletter-wrapper" data-aos="fade-up">
             <div class="row">
                 <div class="col">
-                    <form id="newsletter-form" name="newsletter_form" onsubmit="validateNewsletterForm(event)">
+                    <form id="newsletter-form" name="newsletter_form" onsubmit="return subMail(this);">
                         <h3 class="col d-flex justify-content-center newsletter-header">Be in the know...</h3>
                         <h4 class="newsletter-header">Sign up for exclusive offers</h4>
                         <label for="newsletter-email"></label>
