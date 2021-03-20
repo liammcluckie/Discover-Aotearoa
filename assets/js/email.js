@@ -1,3 +1,4 @@
+//Validate contact form with success/error message
 //Original code taken from CI learning material and customised for this project
 (function () {
     emailjs.init("user_7Zuhihp6HZgdp93yn7Cpc");
