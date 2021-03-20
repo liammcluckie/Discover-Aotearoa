@@ -70,13 +70,26 @@ function defaultText() {
     document.getElementById("nevis").innerHTML = topAttractionsOriginalText.nevis;
 }
 
-//Display success message signing up for newsletter
-function validateNewsletterForm(event) {
-    let successMessage = document.getElementById("newsletter-success");
-    successMessage.style.display = 'block';
+//Validate newsletter sign up with success message
+//Original code taken from CI learning material and customised for this project
+(function () {
+    emailjs.init("user_7Zuhihp6HZgdp93yn7Cpc");
+})();
+
+function subMail(subForm) {
+    emailjs.send("service_vg6mnxa","subscriber", {
+        "from_email": subForm.newsletter_email.value,
+    })
+    .then(
+        function success(event) {
+            const success = document.getElementById("newsletter-success");
+            success.style.display = "block";
+            event.preventDefault;
+            console.log("success");
+        }
+    );
     document.getElementById("newsletter-form").reset();
-    event.preventDefault();
-    return true;
+    return false;
 }
 
 //Toggle Destinations Content 
