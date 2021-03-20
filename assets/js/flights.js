@@ -45,7 +45,11 @@ function flightsAkl() {
         document.getElementById("quote").innerHTML = `£` + quotes;
     })
     .catch(err => {
-	    document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
+        document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
+        document.getElementById("start-dest").innerHTML = "";
+        document.getElementById("end-dest").innerHTML = "";
+        document.getElementById("carrier").innerHTML = "";
+        document.getElementById("quote").innerHTML = "";
     });
 };
 
@@ -74,6 +78,10 @@ function flightsWell() {
         document.getElementById("quote").innerHTML = `£` + quotes;
     })
     .catch(err => {
-	    document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
+        document.getElementById("flights-error-msg").innerHTML = "Unfortunately our partners system is down, please try again later";
+        document.getElementById("start-dest").innerHTML = "";
+        document.getElementById("end-dest").innerHTML = "";
+        document.getElementById("carrier").innerHTML = "";
+        document.getElementById("quote").innerHTML = "";
     });
 };
