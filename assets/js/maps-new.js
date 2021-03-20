@@ -1,6 +1,8 @@
 //Original code taken from CI learning material and customised for this project
 
-//Code for Google places search and info window functions taken from https://stackoverflow.com/questions/2223574/google-maps-auto-close-open-infowindows and customised for this project
+//Code for Google Places search taken from https://stackoverflow.com/questions/58206884/how-do-i-get-google-maps-to-display-nearby-restaurants and customised for this project
+
+//Code for info window functions taken from https://stackoverflow.com/questions/2223574/google-maps-auto-close-open-infowindows and customised for this project
 
 //Set default map location
 function initMap() {
