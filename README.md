@@ -233,36 +233,65 @@ a professional and clean aesthetic feel to the website.
 
 ### Features
 
-#### Existing Features 
-*Break these into features for each page*
+#### Existing Features Used Throughout the Project
 
 - Responsive on all screen sizes and devices.
 
 - Collapsible navigation bar when viewed on smaller screen sizes.
 
-- Load on scroll, a Javascript technique to load elements on the page as the user scrolls.
-
-- A fully connected email system using [EmailJS](https://www.emailjs.com/) that works alongside a correctly validated form.
-
-- Modal pop up window when the user has successfully completed the form.
+- [Animate on scroll](http://michalsnik.github.io/aos/) a Javascript library to load elements on the page as the user scrolls.
 
 - The appearance on all buttons and links alters when the user clicks or hovers.
 
-- [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) used on both explore pages to display information and locations of information related to the 
-content on the page.
+- A working and connected newsletter sign up form at the bottom of all pages apart from the contact page, this automatically sends the user an email response thanking them for signing up.
 
-- *If Other API's used create a specific API section in Features*
+- Success or error messages that will display depending on if the user correctly or incorrectly uses the forms on the website.
 
-- Input focus used on all input boxes throughout the website.
+- A fixed navbar that the background colour changes from no colour to black as the user starts to scroll down the page.
 
-- Show/hide buttons used to display further information on specific content if the user chooses to.
+#### Specific Landing Page Features
 
-- Card carousel using images with a small amount of information that displays when the user interacts.
+- Two responsive carousels used to display popular destinations and popular attractions. These are fully responsive and work extremely well on touch screen devices due to the ability of
+swiping left and right to change the image displayed instead of always using the chevron button. The initial code for the carousels was taken from [Flickity](https://flickity.metafizzy.co/) 
+and customised for this project.
 
-- Map API markers that display different Google data depending on what the user has selected.
+#### Specific North & South Island Page Features
 
-- Radio buttons that display information on specific locations depending on what the user chooses.
+- [Skyscanner API](https://rapidapi.com/skyscanner/api/skyscanner-flight-search) used to display flights to different locations taken from the Skyscanner database. The flight information 
+consists of destinations, airline and price.
 
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) used to show the user the destination they are interested in on the map.
 
+- Google maps markers used alongside the Google maps places functionality used to display clear markers on the relevant locations as well as display local businesses within a certain radius
+such as restaurants, accommodation and tourist attractions.
 
+- [Bootstraps](https://getbootstrap.com/docs/4.6/components/card/) card layout code is used to display the 'Top Pick' information for each destination, this code was then customised to better
+suit the aesthetics of this project.
 
+- A simple table that is used to display the flight information when the user selects the destination they are interested in.
+
+- Internal page anchor links and buttons are heavily used throughout the destinations section in order to better improve the UX so that when the user clicks on a button the page moves to the relevant 
+information in order to reduce the users scroll time.
+
+#### Specific Contact Page Features
+
+- A detailed contact from that allows the user to inform the website of the trip they would like to book including travel dates and interested destinations.
+
+- A fully connected and validated contact form using [EmailJS](https://www.emailjs.com/). This not only sends the users enquiry to the website but also sends an automatic response to the user
+informing them that their request has been received as well as including their original request in the response email for them to check over.
+
+### Future Features 
+
+- Include possible booking widgets/travel relevant API's so that users can book directly through the website without needing to navigate away or complete the contact form.
+
+- Add a blog page that includes posts about real travel stories to New Zealand.
+
+- Create a gallery page that mirrors an real life Instagram feed showing images posted of the websites users on their trip.
+
+- Include a search bar that allows the user to find all content relevant to either a location or an attraction.
+
+- Create a separate contact modal form for general enquires and then adapt the current contact page to be a further details booking form e.g allow the user to select specific attractions or 
+activities they would like to do on their trip, as well as include flight options in the form.
+
+- Customise the [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) aesthetics further to create a more unique map for this site e.g. alter marker pin images 
+and add further business content to info windows.
