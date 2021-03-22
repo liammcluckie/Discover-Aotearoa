@@ -828,6 +828,27 @@ label:focus {
   transform: scale(0.9);
 }
 
+/*---- 404 page ----*/
+
+.error-container {
+    text-align: center;
+    margin-top: 3rem;
+    color: #0C0409;
+}
+
+#error-content {
+    font-size: 1rem;
+}
+
+.footer-wrapper-404 {
+    background-color: #0C0409;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto; 
+    padding-bottom: 1rem;
+}
+
 /*---- Footer ----*/
 
 .footer-wrapper {
