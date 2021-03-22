@@ -1,8 +1,8 @@
 # Discover Aotearoa | Specialist Travel Website
 
-[View Live Project Here](#)
+[View Live Project Here](https://liammcluckie.github.io/Discover-Aotearoa/)
 
-*Images of Live Website here*
+![Screenshot of landing page on multiple devices](assets/images/responsive-screenshot.png)
 
 ## Overview
 
@@ -169,15 +169,20 @@ For a more detailed look at the website structure and page flow please see struc
 
 ### Wireframes
 
-*Add wireframes here*
+- [Desktop website view](wireframes/desktop.pdf)
+
+- [Tablet website view](wireframes/desktop.pdf)
+
+- [Mobile website view](wireframes/desktop.pdf)
 
 ### Design
  
 #### Colour Scheme
 
-- The colour scheme for this website will consist of a combination of blue, green and neutral shades that will tie in with the overall imagery 
-and theme of the website. These natural colours help convey feelings of rest and relaxation which is key for travel, as well as portraying the 
-colours associated with the New Zealand landscape.
+- The colour scheme for this website is based on a well known colour scheme of black and gold. I have altered this to better suit the aesthetics of the project using a raw umber shade in 
+place of gold and a very light pink to balance these two striking and bold colours. These colours will also tie in with the imagery used especially the hero images for each page that will 
+consist of dramatic and contrasting dark blues and greens as well as warm oranges. These natural colours help convey feelings of rest and relaxation which is key for travel, as well as 
+portraying the colours associated with the New Zealand landscape. 
 
 -  Black Tone (#0C0409) - This colour which has some small tonal changes from a normal black colour will only be used for the navigation bar and the footer. The reason for this is 
 to represent New Zealands well known and recognisable *All Blacks* colour.
@@ -186,8 +191,6 @@ to represent New Zealands well known and recognisable *All Blacks* colour.
 
 - Raw Umber (#A58961) - Secondary Colour - Also described as a bronze/gold shade and a typical colour pairing with black, Raw Umber will also feature heavily throughout the website used for
 borders and alternative background colours when using boxes/cards for content. This colour also works very well with the main hero imagery used on each page such as sand, beaches and sunsets.
-
-- Tundora (#53505A) - *Include information on how the colours are used and why/May not be used*
 
 #### Typography 
 
@@ -202,18 +205,25 @@ the thick and thin lines in the text. This will immediately catch the users atte
 attention away from the other important aspects on the page. Due to it's popularity this is a font that many users will be familiar with evoking a feeling 
 of comfort and trust as well as being aesthetically pleasing.
 
-#### Logo *(if one is used)*
+#### Logo
+
+- A very simplistic and minimal logo was used for this project consisting of the company name in the **Bodoni Moda** font that is consistently used throughout the website. Alongside this 
+the globally recognised white New Zealand fern designed by [the Noun Project](https://thenounproject.com/term/silver-fern/379641/) was used to immediately convey to the user what and where
+this websites focus is.
 
 #### Imagery 
 
 - The type of imagery used within this website will be of great importance as this is what will be used to initially convince first time users 
 that planning a trip to New Zealand is the right decision. This will be done by using dramatic and eye catching landscape imagery that really displays
-the beauty of the country. Firstly, this will be achieved by a full screen hero image displayed on the landing page that not only conveys what the website is 
+the beauty of the country. Firstly, this will be achieved by a full screen hero image displayed at the top of each page that not only conveys what the website is 
 about but will also make the user want to see more.
 
 - Images will also be used to convey information and work alongside text content, this will be especially important when displaying what attractions, destinations
-and restaurants are available or recommended. These images will be more of a documentary style telling a story of what the user could experience should they 
-visit these places.
+and restaurants are available or recommended. The images used to inform the user of different attractions available will be more of a documentary style telling a story of what the user 
+could experience should they visit these places.
+
+- For informing and showing the user the possible destinations available to visit the imagery will be mainly dramatic and intriguing landscape shots showing the beauty of a particular area.
+This will automatically make the user want to see more of this destination and increase the likelihood of them wanting to visit whilst on their trip.  
 
 - There will also be the use of font icons throughout the website imported from [Font Awesome.](https://fontawesome.com/) These will be used in a way to further 
 enhance certain sections on the website such as flights, accommodation, travelling and planning. By using these icons in a way that isn't excessive it will add 
