@@ -17,7 +17,7 @@ function initMap() {
 };
 
 //Set map to Queenstown
-document.getElementById("queenstown").addEventListener("click", mapQueens);
+document.getElementById("dest-btn-one").addEventListener("click", mapQueens);
 
 function mapQueens() {
     const queenstown = { lat: -45.03007565651303, lng: 168.6584263202857 }; //Queenstown 
@@ -189,7 +189,7 @@ function queensAttractions() {
 };
 
 //Set map to Kaikoura
-document.getElementById("kaikoura").addEventListener("click", mapKaik);
+document.getElementById("dest-btn-two").addEventListener("click", mapKaik);
 
 function mapKaik() {
     const kaikoura = { lat: -42.39948938642581, lng: 173.6805899014221 }; //Kaikoura  
@@ -361,7 +361,7 @@ function kaikAttractions() {
 };
 
 //Set map to Christchurch
-document.getElementById("christchurch").addEventListener("click", mapChrist);
+document.getElementById("dest-btn-three").addEventListener("click", mapChrist);
 
 function mapChrist() {
     const christchurch = { lat: -43.529981399003944, lng: 172.623711848145 }; //Christchurch  
@@ -533,7 +533,7 @@ function christAttractions() {
 };
 
 //Set map to Nelson
-document.getElementById("nelson").addEventListener("click", mapNels);
+document.getElementById("dest-btn-four").addEventListener("click", mapNels);
 
 function mapNels() {
     const nelson = { lat: -41.29825197726259, lng: 173.24399865401824 }; //Nelson  
@@ -705,7 +705,7 @@ function nelsAttractions() {
 };
 
 //Set map to Dunedin
-document.getElementById("dunedin").addEventListener("click", mapDun);
+document.getElementById("dest-btn-five").addEventListener("click", mapDun);
 
 function mapDun() {
     const dunedin = { lat: -45.896802458411685, lng: 170.46354275642523 }; //Dunedin  
@@ -877,7 +877,7 @@ function dunAttractions() {
 };
 
 //Set map to Blenheim
-document.getElementById("blenheim").addEventListener("click", mapBlen);
+document.getElementById("dest-btn-six").addEventListener("click", mapBlen);
 
 function mapBlen() {
     const blenheim = { lat: -41.513936515129295, lng: 173.95903441173152 }; //Blenheim  
@@ -1049,7 +1049,7 @@ function blenAttractions() {
 };
 
 //Function to only display relevant destination picks
-let topPickButtons = document.querySelectorAll(".ex-btn");
+let topPickButtons = document.querySelectorAll(".destinations-btn");
 for (let button of topPickButtons) {
     button.addEventListener('click', (e) => {
         let allContent = document.querySelectorAll(".top-picks")
