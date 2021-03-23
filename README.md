@@ -39,7 +39,7 @@ relevant imagery of New Zealand and it's destinations.
 - Frameworks, Libraries & Programs
 
 ### 5. [Testing](#testing)
-- [Testing Document](#)
+- [Testing Document](testing.md)
 
 ### 6. [Deployment](#deployment)
 - GitHub Pages
@@ -249,6 +249,8 @@ a professional and clean aesthetic feel to the website.
 
 - A fixed navbar that the background colour changes from no colour to black as the user starts to scroll down the page.
 
+- Custom 404 error page created to enhance UI if an incorrect page is searched for.
+
 #### Specific Landing Page Features
 
 - Two responsive carousels used to display popular destinations and popular attractions. These are fully responsive and work extremely well on touch screen devices due to the ability of
@@ -391,3 +393,9 @@ and add further business content to info windows.
     - This application was used to test the functionality and appearance of the project on all main browsers.
 
 [Back to Table of Contents](#table-of-contents)
+
+### Testing
+
+Find all information on the testing that has been carried out for this project [here.](TESTING.md)
+
+### Deployment
