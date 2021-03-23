@@ -1,5 +1,7 @@
 // http://michalsnik.github.io/aos/ For Animate on Scroll Library
 
+//jshint esversion: 6
+
 AOS.init();
 
 AOS.init({
@@ -37,21 +39,21 @@ $(document).ready(function () {
 });
 
 // Function to change image carousel title
-const destinationsOriginalText = popularDestinations = {
+const destinationsOriginalText = {
     auckland: "Auckland",
     queenstown: "Queenstown",
     wellington: "Wellington",
     kaikoura: "Kaikōura",
     rotorua: "Rotorua"
-}
+};
 
-const topAttractionsOriginalText = topAttractions = {
+const topAttractionsOriginalText = {
     fiordland: "Fiordland National Park",
     franz: "Franz Josef Glacier",
     abel: "Abel Tasman Coast Track",
     waiheke: "Waiheke Vineyards",
     nevis: "Nevis Bungy Jump"
-}
+};
 
 function changeText(text) {
     text.innerHTML = "Click to Explore More";
@@ -84,7 +86,7 @@ function subMail(subForm) {
         function success(event) {
             const success = document.getElementById("newsletter-success");
             success.style.display = "block";
-            event.preventDefault;
+            event.preventDefault();
             console.log("success");
         }
     );
@@ -97,7 +99,7 @@ function subMail(subForm) {
 let buttons = document.querySelectorAll(".destinations-content-wrapper .destinations-btn");
 for (let button of buttons) {
     button.addEventListener('click', (e) => {
-        let allContent = document.querySelectorAll(".destinations-text-wrapper")
+        let allContent = document.querySelectorAll(".destinations-text-wrapper");
         for (let content of allContent) {
             if (content.getAttribute('data-number') === button.getAttribute('data-number')) {
                 content.style.display = "block";
