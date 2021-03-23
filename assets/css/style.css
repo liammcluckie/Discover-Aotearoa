@@ -551,26 +551,6 @@ table > tbody > tr > td {
     border-radius: 2px;
 }
 
-.explore-mre-btn {
-    padding: 1em 2em;
-    margin-top: 1.5em;
-    font-size: 2vmin;
-    border: 2px solid #A58961;
-    border-radius: 2px;
-    background-color: #F5EBE0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
-}
-
-.explore-mre-btn-lg {
-    padding: 1em;
-    margin-top: 1.5em;
-    font-size: 2vmin;
-    border: 2px solid #A58961;
-    border-radius: 2px;
-    background-color: #F5EBE0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
-}
-
 /*---- Google Maps ----*/
 
 #ni-dest-map {
