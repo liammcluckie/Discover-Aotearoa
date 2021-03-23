@@ -26,10 +26,6 @@ body {
     font-size: 1vh;
 }
 
-.text-uppercase {
-    text-transform: capitalize;
-}
-
 .hidden {
     display: none;
 }
@@ -162,7 +158,6 @@ body {
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color: #A58961!important;
-    font-weight: ;
 }
 
 .active {
@@ -905,7 +900,7 @@ label:focus {
 
 /*---- Galaxy Fold Landscape ----*/
 
-@media (device-width: 653px) and (device-height: 280px) {
+@media (min-width: 653px) and (max-height: 280px) {
     /*---- What we do ---*/
     #plan-text {
         left: 32%!important;
@@ -922,7 +917,7 @@ label:focus {
 
 /*---- Galaxy and Moto Landscape ----*/
 
-@media (device-width: 640px) and (device-height: 360px) {
+@media (min-width: 640px) and (max-height: 360px) {
     /*---- What we do ---*/
     #plan-text {
         left: 30%;
@@ -940,8 +935,8 @@ label:focus {
 /*---- Pixel 2 Landscape ----*/
 
 @media screen 
-and (device-width: 731px) 
-and (device-height: 411px)  
+and (min-width: 731px) 
+and (max-height: 411px)  
 and (orientation: landscape) {
     /*---- What we do ---*/
     #plan-text {
@@ -959,8 +954,8 @@ and (orientation: landscape) {
 
 /*---- Iphone 5/se Landscape----*/
 
-@media (device-height : 320px) 
-and (device-width : 568px) 
+@media (min-height : 320px) 
+and (max-width : 568px) 
 and (-webkit-min-device-pixel-ratio: 2) {
     /*---- What we do ---*/
     #plan-text {
@@ -979,8 +974,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /*---- Iphone 6/7/8 Landscape ----*/
 
 @media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
+and (min-width: 375px) 
+and (max-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
     /*---- What we do ---*/
@@ -1000,8 +995,8 @@ and (orientation: landscape) {
 /*---- Iphone 6/7/8 plus Landscape ----*/
 
 @media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
+and (min-width: 414px) 
+and (max-width: 736px) 
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) {
     /*---- What we do ---*/
@@ -1021,8 +1016,8 @@ and (orientation: landscape) {
 /*---- Iphone X Landscape ----*/
 
 @media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) 
+and (min-width: 375px) 
+and (max-width: 812px) 
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) {
     /*---- What we do ---*/
@@ -1031,7 +1026,7 @@ and (orientation: landscape) {
     }
 
     #go-text {
-        left: 42%;
+        left: 44%;
     }
 
     #explore-text {
@@ -1041,7 +1036,7 @@ and (orientation: landscape) {
 
 /*---- General Mobile ----*/
 
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 768px) and (orientation: portrait) {
     /*---- Navbar & Header ----*/
     .navbar-toggler {
         margin: 1em 0.5em 0.5em 0.5em;
@@ -1101,17 +1096,17 @@ and (orientation: landscape) {
     /*---- What We Do ----*/
     #plan-text {
         position: absolute;
-        left: 22%;
+        left: 18%!important;
     }
 
     #go-text {
         position: absolute;
-        left: 33%;
+        left: 32%!important;
     }
 
     #explore-text {
         position: absolute;
-        left: 35%;
+        left: 32%!important;
     }
 
     /*---- Popular Destinations ----*/
@@ -1299,7 +1294,7 @@ and (orientation:landscape) {
 
 /*---- Ipad ----*/
 
-@media only screen and (device-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 768px) {
     /*---- Navbar & Header ----*/
     .nav-text {
         font-size: 4.5vmin;
@@ -1326,7 +1321,7 @@ and (orientation:landscape) {
 
 /*---- Surface Duo Landscape ----*/
 
-@media (device-width: 720px) and (device-height: 540px) {
+@media (min-width: 720px) and (max-height: 540px) {
     /*---- What we do ---*/
     #plan-text {
         left: 26%;
@@ -1357,8 +1352,8 @@ and (orientation : landscape) {
 /*---- Pixel 2 Landscape ----*/
 
 @media screen 
-and (device-width: 731px) 
-and (device-height: 411px)  
+and (min-width: 731px) 
+and (max-height: 411px)  
 and (orientation: landscape) {
 
     /*---- Top Pick ----*/
@@ -1381,8 +1376,8 @@ and (orientation: landscape) {
 
 /*---- Iphone 5/se ----*/
 
-@media (device-height : 568px) 
-and (device-width : 320px) 
+@media (min-height : 568px) 
+and (max-width : 320px) 
 and (-webkit-min-device-pixel-ratio: 2) {
     .martin-btn {
         font-size: 0.35rem!important;
@@ -1392,8 +1387,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /*---- Pixel 2 XL Landscape ----*/
 
 @media screen 
-and (device-width: 823px) 
-and (device-height: 411px)  
+and (min-width: 823px) 
+and (max-height: 411px)  
 and (orientation: landscape) {
     /*---- Top Pick ----*/
     .top-pick-card {
@@ -1415,8 +1410,8 @@ and (orientation: landscape) {
 
 /*---- Iphone X Landscape ----*/
 @media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) 
+and (min-width: 375px) 
+and (max-width: 812px) 
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) {
     /*---- Top Pick ----*/
@@ -1440,8 +1435,8 @@ and (orientation: landscape) {
 /*---- Iphone 6/7/8 Landscape ----*/
 
 @media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
+and (min-width: 375px) 
+and (max-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
     /*---- Top Pick ----*/
@@ -1464,10 +1459,10 @@ and (orientation: landscape) {
 
 /*---- Galaxy Fold ----*/
 
-@media (device-width: 280px) and (device-height: 653px) {
+@media (min-width: 280px) and (max-width: 280px) {
     /*---- Destinations ----*/
     .destinations-btn {
-        font-size: 0.3rem;
+        font-size: 0.25rem!important;
     }
     /*---- Top Pick ----*/
     .top-pick-card {
@@ -1558,7 +1553,7 @@ and (orientation:landscape) {
 
 /*---- Ipad ----*/
 
-@media only screen and (device-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 768px) {
     /*---- Flights ----*/
     .flights-wrapper {
         height: 30em;
@@ -1645,7 +1640,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 /*---- Surface Duo Landscape ----*/
 
-@media (device-width: 720px) and (device-height: 540px) {
+@media (min-width: 720px) and (max-height: 540px) and (orientation: landscape) {
+    /*---- Destinations ----*/
+    .destinations-btn {
+        font-size: 0.5rem!important;
+    }
     /*---- Top Pick ----*/
     .top-pick-card {
         width: 95%;
@@ -1662,7 +1661,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 /*---- Surface Duo ----*/
 
-@media (device-width: 540px) and (device-height: 720px) {
+@media (min-width: 540px) and (max-height: 720px) {
     /*---- Navbar ----*/
     .dropdown-menu {
         margin-right: 1em;
