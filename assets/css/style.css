@@ -562,12 +562,18 @@ table > tbody > tr > td {
 
 .dest-top-anchor-btn {
     padding: 1em;
+    text-decoration: none!important;
+    color: #0C0409;
     margin-bottom: 1.5em;
     font-size: 2vmin;
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dest-top-anchor-btn:hover {
+    color: #0C0409!important;
 }
 
 /*---- Top Pick Cards ----*/
@@ -625,8 +631,10 @@ table > tbody > tr > td {
 
 .explore-business-btn {
     padding: 1em;
+    white-space: nowrap;
     color: #0C0409;
     font-size: 2vmin;
+    text-decoration: none!important;
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #A58961;
@@ -635,6 +643,10 @@ table > tbody > tr > td {
     left: 50%;
     bottom: 0;
     transform: translate(-50%, -50%);
+}
+
+.explore-business-btn:hover {
+    color: #0C0409;
 }
 
 /*---- South Island Hero Image ----*/
