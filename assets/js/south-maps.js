@@ -4,6 +4,8 @@
 
 //Code for info window functions taken from https://stackoverflow.com/questions/2223574/google-maps-auto-close-open-infowindows and customised for this project
 
+//jshint esversion: 6
+
 //Set default map location
 function initMap() {
     map = new google.maps.Map(document.getElementById("si-dest-map"), {
@@ -14,7 +16,7 @@ function initMap() {
             lng: 175.08429833641372
         }
     });
-};
+}
 
 //Set map to Queenstown
 document.getElementById("dest-btn-one").addEventListener("click", mapQueens);
@@ -30,7 +32,7 @@ function mapQueens() {
         map: map,
         animation: google.maps.Animation.DROP
     });
-};
+}
 
 //Set map to Queenstown Restaurants
 document.getElementById("queens-rest").addEventListener("click", queensRestaurants);
@@ -48,7 +50,7 @@ function queensRestaurants() {
         location: map.getCenter(),
         radius: 1000,
         types: ['restaurant']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -70,7 +72,7 @@ function queensRestaurants() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -82,7 +84,7 @@ function queensRestaurants() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Queenstown Accommodation
 document.getElementById("queens-accomm").addEventListener("click", queensAccommodation);
@@ -100,7 +102,7 @@ function queensAccommodation() {
         location: map.getCenter(),
         radius: 1000,
         types: ['lodging']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -122,7 +124,7 @@ function queensAccommodation() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -134,7 +136,7 @@ function queensAccommodation() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Queenstown Attractions
 document.getElementById("queens-attr").addEventListener("click", queensAttractions);
@@ -152,7 +154,7 @@ function queensAttractions() {
         location: map.getCenter(),
         radius: 1000,
         types: ['tourist_attraction']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -174,7 +176,7 @@ function queensAttractions() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -186,7 +188,7 @@ function queensAttractions() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Kaikoura
 document.getElementById("dest-btn-two").addEventListener("click", mapKaik);
@@ -202,7 +204,7 @@ function mapKaik() {
         map: map,
         animation: google.maps.Animation.DROP
     });
-};
+}
 
 //Set map to Kaikoura Restaurants
 document.getElementById("kaik-rest").addEventListener("click", kaikRestaurants);
@@ -220,7 +222,7 @@ function kaikRestaurants() {
         location: map.getCenter(),
         radius: 1000,
         types: ['restaurant']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -242,7 +244,7 @@ function kaikRestaurants() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -254,7 +256,7 @@ function kaikRestaurants() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Kaikoura Accommodation
 document.getElementById("kaik-accomm").addEventListener("click", kaikAccommodation);
@@ -272,7 +274,7 @@ function kaikAccommodation() {
         location: map.getCenter(),
         radius: 1000,
         types: ['lodging']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -294,7 +296,7 @@ function kaikAccommodation() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -306,7 +308,7 @@ function kaikAccommodation() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Kaikoura Attractions
 document.getElementById("kaik-attr").addEventListener("click", kaikAttractions);
@@ -324,7 +326,7 @@ function kaikAttractions() {
         location: map.getCenter(),
         radius: 1000,
         types: ['tourist_attraction']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -346,7 +348,7 @@ function kaikAttractions() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -358,7 +360,7 @@ function kaikAttractions() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Christchurch
 document.getElementById("dest-btn-three").addEventListener("click", mapChrist);
@@ -374,7 +376,7 @@ function mapChrist() {
         map: map,
         animation: google.maps.Animation.DROP
     });
-};
+}
 
 //Set map to Christchurch Restaurants
 document.getElementById("christ-rest").addEventListener("click", christRestaurants);
@@ -392,7 +394,7 @@ function christRestaurants() {
         location: map.getCenter(),
         radius: 1000,
         types: ['restaurant']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -414,7 +416,7 @@ function christRestaurants() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -426,7 +428,7 @@ function christRestaurants() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Christchurch Accommodation
 document.getElementById("christ-accomm").addEventListener("click", christAccommodation);
@@ -444,7 +446,7 @@ function christAccommodation() {
         location: map.getCenter(),
         radius: 1000,
         types: ['lodging']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -466,7 +468,7 @@ function christAccommodation() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -478,7 +480,7 @@ function christAccommodation() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Christchurch Attractions
 document.getElementById("christ-attr").addEventListener("click", christAttractions);
@@ -496,7 +498,7 @@ function christAttractions() {
         location: map.getCenter(),
         radius: 1000,
         types: ['tourist_attraction']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -518,7 +520,7 @@ function christAttractions() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -530,7 +532,7 @@ function christAttractions() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Nelson
 document.getElementById("dest-btn-four").addEventListener("click", mapNels);
@@ -546,7 +548,7 @@ function mapNels() {
         map: map,
         animation: google.maps.Animation.DROP
     });
-};
+}
 
 //Set map to Nelson Restaurants
 document.getElementById("nelson-rest").addEventListener("click", nelsRestaurants);
@@ -564,7 +566,7 @@ function nelsRestaurants() {
         location: map.getCenter(),
         radius: 1000,
         types: ['restaurant']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -586,7 +588,7 @@ function nelsRestaurants() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -598,7 +600,7 @@ function nelsRestaurants() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Nelson Accommodation
 document.getElementById("nelson-accomm").addEventListener("click", nelsAccommodation);
@@ -616,7 +618,7 @@ function nelsAccommodation() {
         location: map.getCenter(),
         radius: 1000,
         types: ['lodging']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -638,7 +640,7 @@ function nelsAccommodation() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -650,7 +652,7 @@ function nelsAccommodation() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Nelson Attractions
 document.getElementById("nelson-attr").addEventListener("click", nelsAttractions);
@@ -668,7 +670,7 @@ function nelsAttractions() {
         location: map.getCenter(),
         radius: 1000,
         types: ['tourist_attraction']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -690,7 +692,7 @@ function nelsAttractions() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -702,7 +704,7 @@ function nelsAttractions() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Dunedin
 document.getElementById("dest-btn-five").addEventListener("click", mapDun);
@@ -718,7 +720,7 @@ function mapDun() {
         map: map,
         animation: google.maps.Animation.DROP
     });
-};
+}
 
 //Set map to Dunedin Restaurants
 document.getElementById("dunedin-rest").addEventListener("click", dunRestaurants);
@@ -736,7 +738,7 @@ function dunRestaurants() {
         location: map.getCenter(),
         radius: 1000,
         types: ['restaurant']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -758,7 +760,7 @@ function dunRestaurants() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -770,7 +772,7 @@ function dunRestaurants() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Dunedin Accommodation
 document.getElementById("dunedin-accomm").addEventListener("click", dunAccommodation);
@@ -788,7 +790,7 @@ function dunAccommodation() {
         location: map.getCenter(),
         radius: 1000,
         types: ['lodging']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -810,7 +812,7 @@ function dunAccommodation() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -822,7 +824,7 @@ function dunAccommodation() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Dunedin Attractions
 document.getElementById("dunedin-attr").addEventListener("click", dunAttractions);
@@ -840,7 +842,7 @@ function dunAttractions() {
         location: map.getCenter(),
         radius: 1000,
         types: ['tourist_attraction']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -862,7 +864,7 @@ function dunAttractions() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -874,7 +876,7 @@ function dunAttractions() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Blenheim
 document.getElementById("dest-btn-six").addEventListener("click", mapBlen);
@@ -890,7 +892,7 @@ function mapBlen() {
         map: map,
         animation: google.maps.Animation.DROP
     });
-};
+}
 
 //Set map to Blenheim Restaurants
 document.getElementById("blen-rest").addEventListener("click", blenRestaurants);
@@ -908,7 +910,7 @@ function blenRestaurants() {
         location: map.getCenter(),
         radius: 1000,
         types: ['restaurant']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -930,7 +932,7 @@ function blenRestaurants() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -942,7 +944,7 @@ function blenRestaurants() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Blenheim Accommodation
 document.getElementById("blen-accomm").addEventListener("click", blenAccommodation);
@@ -960,7 +962,7 @@ function blenAccommodation() {
         location: map.getCenter(),
         radius: 1000,
         types: ['lodging']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -982,7 +984,7 @@ function blenAccommodation() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -994,7 +996,7 @@ function blenAccommodation() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Set map to Blenheim Attractions
 document.getElementById("blen-attr").addEventListener("click", blenAttractions);
@@ -1012,7 +1014,7 @@ function blenAttractions() {
         location: map.getCenter(),
         radius: 1000,
         types: ['tourist_attraction']
-    }
+    };
 
     const service = new google.maps.places.PlacesService(map);
 
@@ -1034,7 +1036,7 @@ function blenAttractions() {
             position: place.geometry.location,
             title: place.name,
             animation: google.maps.Animation.DROP
-        })
+        });
         const infoWindow = new google.maps.InfoWindow({
             content: place.name
         });
@@ -1046,13 +1048,13 @@ function blenAttractions() {
             infoWindow.open(map, marker);
         });
     }
-};
+}
 
 //Function to only display relevant destination picks
 let topPickButtons = document.querySelectorAll(".destinations-btn");
 for (let button of topPickButtons) {
     button.addEventListener('click', (e) => {
-        let allContent = document.querySelectorAll(".top-picks")
+        let allContent = document.querySelectorAll(".top-picks");
         for (let content of allContent) {
             if (content.getAttribute('data-number') === button.getAttribute('data-number')) {
                 content.style.display = "block";
