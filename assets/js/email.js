@@ -1,5 +1,9 @@
 //Validate contact form with success/error message
+
 //Original code taken from CI learning material and customised for this project
+
+//jshint esversion: 6
+
 (function () {
     emailjs.init("user_7Zuhihp6HZgdp93yn7Cpc");
 })();
@@ -18,13 +22,13 @@ function sendMail(contactForm) {
         function success(event) {
             const success = document.getElementById("contact-success");
             success.style.display = "block";
-            event.preventDefault;
+            event.preventDefault();
             console.log("success");
         },
         function error(event) {
             const error = document.getElementById("contact-error");
             error.style.display = "block";
-            event.preventDefault;
+            event.preventDefault();
             console.log("fail");
         }
     );
