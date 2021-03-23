@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Meta Info-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Aotearoa are a travel company specialising in unique trips exploring New Zealand">
+    <meta name="description"
+        content="Discover Aotearoa are a travel company specialising in unique trips exploring New Zealand">
     <meta name="keywords" content="travel, New Zealand">
     <meta name="author" content="Liam McLuckie">
     <!--External Links-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> <!-- https://flickity.metafizzy.co/ For Image Carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- http://michalsnik.github.io/aos/ For Animate on Scroll Library-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- https://flickity.metafizzy.co/ For Image Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- http://michalsnik.github.io/aos/ For Animate on Scroll Library-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
     <title>Discover Aotearoa</title>
 </head>
 
 <body>
-     <!-- Header -->
+    <!-- Header -->
     <header id="contact-nav-wrapper">
         <span role="img" aria-label="Landscape image of the Milford Sound mountains and rainforest"></span>
-    <!-- Nav -->
-    <!-- Navbar code taken from Bootstrap.com-->
+        <!-- Nav -->
+        <!-- Navbar code taken from Bootstrap.com-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand nav-text" href="index.html">Discover Aotearoa</a>
-            <img class="img-fluid logo" src="assets/images/fern-logo.png" alt="Silver Fern by Josh from the Noun Project">
+            <img class="img-fluid logo" src="assets/images/fern-logo.png"
+                alt="Silver Fern by Josh from the Noun Project">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,12 +53,15 @@
                             Explore
                         </a>
                         <div class="nav-dropdown dropdown-menu ml-auto" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="nav-dropdown-colour dropdown-item bg-transparent" href="north-island.html">North Island</a>
-                            <a class="nav-dropdown-colour dropdown-item bg-transparent" href="south-island.html">South Island</a>
+                            <a class="nav-dropdown-colour dropdown-item bg-transparent" href="north-island.html">North
+                                Island</a>
+                            <a class="nav-dropdown-colour dropdown-item bg-transparent" href="south-island.html">South
+                                Island</a>
                         </div>
                     </li>
                     <li class="nav-item ml-auto active">
-                        <a class="nav-link nav-text nav-contact" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-text nav-contact" href="contact.html">Contact <span
+                                class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +101,7 @@
     </section>
     <!-- Booking Form -->
     <!-- Original Code taken from https://getbootstrap.com/ and customised for this project -->
-    <section data-aos="fade-up">
+    <aside data-aos="fade-up">
         <div class="container form-wrapper">
             <form id="contact-form" onsubmit="return sendMail(this);">
                 <div class="form-group">
@@ -101,11 +110,12 @@
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                        required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Contact Number</label>
-                    <input type="tel" class="form-control" id="tel" name="phone" placeholder="123 456 7890" min="11" max="11" required>
+                    <label for="tel">Contact Number</label>
+                    <input type="tel" class="form-control" id="tel" name="phone" placeholder="123 456 7890" required>
                 </div>
                 <div class="form-group">
                     <label for="destination">Destination</label>
@@ -117,24 +127,27 @@
                 </div>
                 <div class="form-group">
                     <label for="start-date">Travel Start Date</label>
-                    <input type="date" multiple class="form-control" id="start-date" name="start_date">
+                    <input type="date" class="form-control" id="start-date" name="start_date">
                 </div>
                 <div class="form-group">
                     <label for="end-date">Travel End Date</label>
-                    <input type="date" multiple class="form-control" id="end-date" name="end_date">
+                    <input type="date" class="form-control" id="end-date" name="end_date">
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="6" placeholder="Tell us of any additional information/interests for your trip"></textarea>
+                    <textarea class="form-control" id="message" rows="6"
+                        placeholder="Tell us of any additional information/interests for your trip" required></textarea>
                 </div>
                 <div class="contact-btn-container">
                     <button type="submit" value="submit" class="contact-btn hvr-shrink">Send</button>
                 </div>
-                <p id="contact-success" class="hidden"><i class="far fa-check-circle"></i> Your request was successful, you will now have received an automated response</p>
-                <p id="contact-error" class="hidden"><i class="far fa-times-circle"></i> Your request was unsuccessful, please ensure all fields are filled out correctly</p>
+                <p id="contact-success" class="hidden"><i class="far fa-check-circle"></i> Your request was successful,
+                    you will now have received an automated response</p>
+                <p id="contact-error" class="hidden"><i class="far fa-times-circle"></i> Your request was unsuccessful,
+                    please ensure all fields are filled out correctly</p>
             </form>
         </div>
-    </section>
+    </aside>
     <!-- Footer -->
     <footer>
         <div class="container-fluid footer-wrapper">
@@ -142,7 +155,8 @@
                 <div class="col">
                     <div class="footer-heading">
                         <a class="footer-title" href="index.html">Discover Aotearoa</a>
-                        <img class="img-fluid footer-logo" src="assets/images/fern-logo.png" alt="Silver Fern by Josh from the Noun Project">
+                        <img class="img-fluid footer-logo" src="assets/images/fern-logo.png"
+                            alt="Silver Fern by Josh from the Noun Project">
                     </div>
                     <div class="footer-nav">
                         <a class="hvr-shrink" href="index.html">Home</a>
@@ -152,28 +166,41 @@
                     </div>
                 </div>
                 <div class="col copyright">
-                    <p class="copyright-text">&#169 Discover Aotearoa 2021</p>
+                    <p class="copyright-text">&#169; Discover Aotearoa 2021</p>
                 </div>
                 <div class="col footer-links">
                     <h4 class="footer-links-title">Useful Links</h4>
                     <div class="footer-icons">
-                        <a class="hvr-shrink" href="https://www.tripadvisor.co.uk/Tourism-g255104-New_Zealand-Vacations.html" target="_blank" rel="noopener"><i class="fab fa-tripadvisor"></i></a>
-                        <a class="hvr-shrink" href="https://www.airbnb.co.uk/a/stays/New-Zealand?af=43720035&c=.pi0.pk21668410956_388219295897_c_64188071577&loc_interest_ms=&loc_physical_ms=9073557&gclid=Cj0KCQiA962BBhCzARIsAIpWEL3vpWk6RLWKrq-viDeeOYV1IYZzQbH2j4BS4636lUy7nDtx7k_494AaArIPEALw_wcB"
+                        <a class="hvr-shrink"
+                            href="https://www.tripadvisor.co.uk/Tourism-g255104-New_Zealand-Vacations.html"
+                            target="_blank" rel="noopener"><i class="fab fa-tripadvisor"></i></a>
+                        <a class="hvr-shrink"
+                            href="https://www.airbnb.co.uk/a/stays/New-Zealand?af=43720035&c=.pi0.pk21668410956_388219295897_c_64188071577&loc_interest_ms=&loc_physical_ms=9073557&gclid=Cj0KCQiA962BBhCzARIsAIpWEL3vpWk6RLWKrq-viDeeOYV1IYZzQbH2j4BS4636lUy7nDtx7k_494AaArIPEALw_wcB"
                             target="_blank" rel="noopener"><i class="fas fa-bed"></i></a>
-                        <a class="hvr-shrink" href="https://www.newzealand.com/int/" target="_blank" rel="noopener"><i class="far fa-map"></i></a>
+                        <a class="hvr-shrink" href="https://www.newzealand.com/int/" target="_blank" rel="noopener"><i
+                                class="far fa-map"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- External JS Links-->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> <!-- https://flickity.metafizzy.co/ For Image Carousel -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- http://michalsnik.github.io/aos/ For Animate on Scroll Library -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- https://flickity.metafizzy.co/ For Image Carousel -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- http://michalsnik.github.io/aos/ For Animate on Scroll Library -->
     <script>AOS.init();</script> <!-- http://michalsnik.github.io/aos/ For Animate on Scroll Library -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/email.js"></script>
 </body>
+
 </html>
