@@ -295,3 +295,99 @@ activities they would like to do on their trip, as well as include flight option
 
 - Customise the [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview) aesthetics further to create a more unique map for this site e.g. alter marker pin images 
 and add further business content to info windows.
+
+[Back to Table of Contents](#table-of-contents)
+
+### Technologies Used
+
+#### Syntax
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - HTML5 is a markup language used for structuring and presenting content on the internet.
+
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+    - Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+    - Javascript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many
+    non-browser environments as well.
+
+- [JQuery](https://jquery.com/)
+    - jQuery is a JavaScript library that allows web developers to add extra functionality to their websites. It is open source and provided for free under the MIT license.
+
+#### Frameworks, Libraries & Programs
+
+- [Balsamiq](https://balsamiq.com/)
+    - The Balsamiq application was used to create wireframes for each website page on various device screen sizes.
+
+- [Font Awesome](https://fontawesome.com/)
+    - Used to display icons on the landing page and the social media icons in the footer.
+
+- [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap was used throughout the site for responsiveness using the grid system, the navigation bar, the form on the contact page, and the table displaying flight information.
+
+- [Google Fonts](https://fonts.google.com/)
+    - Used to import the two fonts used throughout the site 'Bodoni Moda' and 'Montserrat'.
+
+- [Hover.css](https://ianlunn.github.io/Hover/)
+    - A library consisting of various hover effects that are available to use. They feature throughout this site on the majority of links and buttons, effects used were hover shrink, hover grow
+    and underline from center.
+
+- [JQuery](https://jquery.com/)
+    - Used alongside the [Bootstrap](https://getbootstrap.com/) library in order for the collapsible navigation bar to correctly work. As well as this it was used instead of vanilla Javascript
+    to reduce the amount of code used and speed up the writing of certain functions.
+
+- [GitHub](https://github.com/)
+    - Used to host the entire repository for the project.
+
+- [GitPod](https://gitpod.io/workspaces/)
+    - The code editor used to build the entire project.
+
+- [GitHub Pages](https://pages.github.com/)
+    - Used to host the live version of the website as well as integral to aid in the de-bugging of the project specifically for cross browser and various device testing.
+
+- [TinyPNG](https://tinypng.com/)
+    -  Used this to compress all the images used on the website to decrease the file size and increase website load speed.
+
+- [Flickity](https://flickity.metafizzy.co/)
+    - A Javascript slider library used to create responsive image carousels of various styles, it is also touch responsive so works extremely well on touch screen devices. This was used
+    to create both carousels for the Landing Page.
+
+- [Favicon](https://favicon.io/)
+    - Used to generate the websites favicon logo of various sizes for different devices.
+
+- [AOS](http://michalsnik.github.io/aos/)
+    - Animate on Scroll is a Javascript Library that adds various scroll effects on chosen elements on a webpage. It was used on the main elements on each page of this project to give a 
+    'fade up' effect to add to user interactivity as well as aesthetics.
+
+- [Imgur](https://imgur.com/)
+    - An online image sharing and image hosting application. This was used in this project to host all carousel images, due to the type of carousel used the images needed to be inserted
+    through hosting links that Imgur provides.
+
+- [Skyscanner Flights API](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
+    - An API that allows you to fetch flight data from the Skyscanner database to display on your website.
+
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
+    - Allows you to display the well known Google Maps program within your website, the API allows for a huge amount of functionality and customisation allowing you to display data to 
+    the user as they would expect it to appear from previous use of Google Maps.
+
+- [Am I Responsive](http://ami.responsivedesign.is/)
+    - A tool to check how the website appears and the functionality on various devices. The image at the top of this document was generated from this website.
+
+- [Responsinator](http://www.responsinator.com/)
+    - Similar to [Am I responsive](http://ami.responsivedesign.is/) this is a web based application that allows a website to be checked an a large amount of devices in portrait and 
+    landscape view.
+
+- [W3C Validator HTML](https://validator.w3.org/) & [W3C Validator CSS](https://jigsaw.w3.org/css-validator/)
+    - Both of these were used to test all the code for the project whilst working and for the finished website to check for valid HTML and CSS.
+
+- [JSHint](https://jshint.com/)
+    - This is a tool used to detect errors or potential problems within Javascript code, it was used to test and validate all Javascript written for this project.
+
+- [CSS Autoprefixer](https://autoprefixer.github.io/)
+    - This was used to add vendor prefixes to the CSS used in the project to increase cross browser compatibility.
+
+- [BrowserStack](https://www.browserstack.com/)
+    - This application was used to test the functionality and appearance of the project on all main browsers.
+
+[Back to Table of Contents](#table-of-contents)
