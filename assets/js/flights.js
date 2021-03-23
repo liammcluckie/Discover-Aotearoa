@@ -1,12 +1,14 @@
 //Display flight table data
 
+//jshint esversion: 6
+
 //AKL
 document.getElementById("akl-flight").addEventListener("click", aklFlightTable);
 
 function aklFlightTable() {
     const flightTable = document.getElementById("display-flights");
     flightTable.style.display = "block";
-};
+}
 
 //Wellington
 document.getElementById("well-flight").addEventListener("click", wellFlightTable);
@@ -14,7 +16,7 @@ document.getElementById("well-flight").addEventListener("click", wellFlightTable
 function wellFlightTable() {
     const flightTable = document.getElementById("display-flights");
     flightTable.style.display = "block";
-};
+}
 
 //Initial fetch code taken from https://rapidapi.com/skyscanner/api/skyscanner-flight-search
 
@@ -52,7 +54,7 @@ function flightsAkl() {
         document.getElementById("carrier").innerHTML = "";
         document.getElementById("quote").innerHTML = "";
     });
-};
+}
 
 //Wellington Flights
 document.getElementById("well-flight").addEventListener("click", flightsWell);
@@ -86,4 +88,4 @@ function flightsWell() {
         document.getElementById("carrier").innerHTML = "";
         document.getElementById("quote").innerHTML = "";
     });
-};
+}
