@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 //Display flight table data
 
 //Christchurch
@@ -6,7 +8,7 @@ document.getElementById("christ-flight").addEventListener("click", christFlightT
 function christFlightTable() {
     const flightTable = document.getElementById("display-flights");
     flightTable.style.display = "block";
-};
+}
 
 //Queenstown
 document.getElementById("queens-flight").addEventListener("click", queensFlightTable);
@@ -14,7 +16,7 @@ document.getElementById("queens-flight").addEventListener("click", queensFlightT
 function queensFlightTable() {
     const flightTable = document.getElementById("display-flights");
     flightTable.style.display = "block";
-};
+}
 
 //Dunedin
 document.getElementById("dun-flight").addEventListener("click", dunFlightTable);
@@ -22,7 +24,7 @@ document.getElementById("dun-flight").addEventListener("click", dunFlightTable);
 function dunFlightTable() {
     const flightTable = document.getElementById("display-flights");
     flightTable.style.display = "block";
-};
+}
 
 //Initial fetch code taken from https://rapidapi.com/skyscanner/api/skyscanner-flight-search
 
@@ -60,7 +62,7 @@ function flightsChrist() {
         document.getElementById("carrier").innerHTML = "";
         document.getElementById("quote").innerHTML = "";
     });
-};
+}
 
 //Queenstown Flights
 document.getElementById("queens-flight").addEventListener("click", flightsQueens);
@@ -94,7 +96,7 @@ function flightsQueens() {
         document.getElementById("carrier").innerHTML = "";
         document.getElementById("quote").innerHTML = "";
     });
-};
+}
 
 //Dunedin Flights
 document.getElementById("dun-flight").addEventListener("click", flightsDun);
@@ -128,4 +130,4 @@ function flightsDun() {
         document.getElementById("carrier").innerHTML = "";
         document.getElementById("quote").innerHTML = "";
     });
-};
+}
