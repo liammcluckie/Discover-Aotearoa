@@ -17,7 +17,7 @@ function initMap() {
 };
 
 //Set map to Wellington
-document.getElementById("wellington").addEventListener("click", mapWell);
+document.getElementById("dest-btn-one").addEventListener("click", mapWell);
 
 function mapWell() {
     const wellington = { lat: -41.29235450909053, lng: 174.77948265394016 }; //Wellington
@@ -189,7 +189,7 @@ function wellAttractions() {
 };
 
 //Set map to Martinborough
-document.getElementById("martinborough").addEventListener("click", mapMart);
+document.getElementById("dest-btn-two").addEventListener("click", mapMart);
 
 function mapMart() {
     const martinborough = { lat: -41.21998622909235, lng: 175.46008741862477 }; //Martinborough
@@ -361,7 +361,7 @@ function martAttraction() {
 };
 
 //Set map to Rotorua
-document.getElementById("rotorua").addEventListener("click", mapRot);
+document.getElementById("dest-btn-three").addEventListener("click", mapRot);
 
 function mapRot() {
     const rotorua = { lat: -38.14460134789613, lng: 176.23795125681022 }; //Rotorua  
@@ -533,7 +533,7 @@ function rotAttractions() {
 };
 
 //Set map to Coromandel
-document.getElementById("coromandel").addEventListener("click", mapCoro);
+document.getElementById("dest-btn-four").addEventListener("click", mapCoro);
 
 function mapCoro() {
     const coromandel = { lat: -36.7555547584621, lng: 175.50151882207095 }; //Coromandel
@@ -705,7 +705,7 @@ function coroAttractions() {
 };
 
 //Set map to Maunganui
-document.getElementById("maunganui").addEventListener("click", mapMaung);
+document.getElementById("dest-btn-five").addEventListener("click", mapMaung);
 
 function mapMaung() {
     const maunganui = { lat: -37.66373971996193, lng: 176.20571233871715 }; //maunganui
@@ -877,7 +877,7 @@ function maungAttractions() {
 };
 
 //Set map to Auckland
-document.getElementById("auckland").addEventListener("click", mapAkl);
+document.getElementById("dest-btn-six").addEventListener("click", mapAkl);
 
 function mapAkl() {
     const auckland = { lat: -36.85130339882221, lng: 174.76338912848433 }; //AKL
@@ -1049,7 +1049,7 @@ function aklAttractions() {
 };
 
 //Function to only display relevant destination picks
-let topPickButtons = document.querySelectorAll(".ex-btn");
+let topPickButtons = document.querySelectorAll(".destinations-btn");
 for (let button of topPickButtons) {
     button.addEventListener('click', (e) => {
         let allContent = document.querySelectorAll(".top-picks")
