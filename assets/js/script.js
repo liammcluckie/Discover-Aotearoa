@@ -97,10 +97,6 @@ function subMail(subForm) {
 let buttons = document.querySelectorAll(".destinations-content-wrapper .destinations-btn");
 for (let button of buttons) {
     button.addEventListener('click', (e) => {
-        const active = document.querySelector(".default");
-        if (active) {
-            active.classList.remove("default");
-        }
         let allContent = document.querySelectorAll(".destinations-text-wrapper")
         for (let content of allContent) {
             if (content.getAttribute('data-number') === button.getAttribute('data-number')) {
