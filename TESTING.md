@@ -39,7 +39,7 @@ background colour to be removed upon hover, so for aesthetic purposes the border
 
 #### Javascript validation
 
-#### [Script.js](testing/script.js-valid-png)
+#### [Script.js](testing/script.js-valid.png)
 
 - The undefined variables in this file that cause warnings have not been altered as they are correctly used however, JSHint does not recognise them.
     - 'AOS' is the necessary code for the animate on scroll library used.
@@ -67,5 +67,94 @@ for the code to correctly work.
 
 - The unused variables in this file that cause warnings have not been altered as these variables are called within the contact.html file.
     - 'sendMail' is called on the contact form to correctly action and use the emailJS application.
+
+[Back to Testing Table of Contents](#testing-table-of-contents)
+
+### User Story Testing
+
+#### User Goals
+
+- *"As a user, I want to easily navigate to other pages on the website regardless of the current section that I'm viewing."*
+
+    - This is possible due to the fixed navigation bar accessible on all pages regardless of the point in the page the user is viewing.
+
+    ![Screenshot of fixed navigation bar](testing/user-story-test/fixed-navbar.png)
+
+- *"As a user, I want to find links to the businesses social media pages."*
+
+    - I decided to include links to useful travel related websites such as Tripadvisor and the New Zealand tourism website as I believe these 
+    to be more valuable to the user than social media websites. These are found in the footer on each page.
+
+    ![Screenshot of footer links](testing/user-story-test/useful-links.png)
+
+#### First Time Visitor Goals
+
+- *"As a first time visitor, I want to immediately understand the purpose of the website and what the business is offering."*
+
+    - This is clear to the user due to the way the hero image and text is formatted and structured in a way that clearly outlines that the websites
+    main purpose is travel related.
+
+    ![Screenshot of the main text over the hero image on the landing page](testing/user-story-test/hero-text.png)
+
+- *"As a first time visitor, I want to see relevant and important information without having to scroll a lot or navigate far from the landing page."*
+
+    *"As a first time visitor, I want to see offers or recommendations with a small amount of initial information about these."*
+
+    - Both of these are achieved due to the relevant content on the landing page and the hierarchy it is structured in. Firstly it is simply and quickly
+    explained to the user through three icons with three descriptive words, this ensures the purpose of the website is further clarified without the user
+    needing to read a lot of content.
+
+    ![Screenshot of what we do section on landing page](testing/user-story-test/what-we-do.png)
+
+    - Secondly the inclusion of the two carousels that show the user popular destinations and attractions mean that from a quick glance they can gain an
+    understanding of what is on offer with possible places to visit and things to do. This is done visually through striking imagery with the additional hover 
+    option available on larger devices that offer further information on these.
+
+    ![Screenshot of one carousel image with the hovered text visible](testing/user-story-test/carousels.png)
+
+#### Returning Visitor Goals
+
+- *"As a returning visitor, I want to find out more detailed travel advice on specific locations, attractions, accommodation and restaurants."*
+
+    - All of this information is found on both the 'Explore' pages where the user can easily find all of this information can be found in the form of a
+    brief overview of each destination and the 'Top Picks' section.
+
+    ![Screenshot from the 'Destinations' section on the explore page showing an overview of the destination and an image](testing/user-story-test/destinations.png)
+
+    ![Screenshot of the 'Top Picks' section from the explore page](testing/user-story-test/top-picks.png)
+
+- *"As a returning visitor, I want to easily find imagery that is informative and relevant to my travel interests."*
+
+    - This is further enhanced from the imagery used on the landing page carousels by including alternative images for each destination when selected.
+    This imagery used is striking, impressive and has been chosen as it best documents that specific area.
+
+    ![Screenshot of Mt Maunganui destination image](testing/user-story-test/destination-img.png)
+
+#### Frequent Visitor Goals
+
+- *"As a frequent visitor, I want to find real-time flight information to help with my booking process."*
+
+    - This is the first thing the user comes across once they navigate the either of the 'Explore' pages. They are informed of what this flight 
+    information is, where it has come from and if they choose to they can book directly through the Skyscanner website or alternatively through the 
+    websites contact form.
+
+    ![Screenshot display Auckland flight data](testing/user-story-test/flights.png)
+
+- *"As a frequent visitor, I want to be able to contact the company to make a booking or enquiry directly through the website."*
+
+    - This is available through the simple contact form where it is required for the user to submit certain contact information and a message. However,
+    they do not need to select travel dates in case the user would like to submit a more general enquiry instead of a booking enquiry.
+
+    ![Screenshot of contact page booking form](testing/user-story-test/contact.png)
+
+- *"As a frequent visitor, I want to be able to locate and explore exact places of interest on a map feature."*
+
+    - This is achieved in two steps, the first is when the user selects a destination the map displays a zoomed in view of this area along with a
+    marker to further show which area they are viewing. Secondly, there is a button for each section of the 'Top Picks' that displays all relevant 
+    places of interest within a certain radius as well as place info.
+
+    ![Screenshot displaying Blenheim destination on Google Map](testing/user-story-test/dest-marker.png)
+
+    ![Screenshot displaying Blenheim accommodation with marker info](testing/user-story-test/top-picks-marker.png)
 
 [Back to Testing Table of Contents](#testing-table-of-contents)
