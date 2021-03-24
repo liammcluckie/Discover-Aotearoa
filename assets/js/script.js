@@ -97,7 +97,7 @@ function subMail(subForm) {
 //Toggle Destinations Content 
 //Code taken from https://dev.to/mohdhussein/how-to-show-the-clicked-element-only-and-hide-others-in-vanilla-javascript-1ip2 and customised for this project
 let buttons = document.querySelectorAll(".destinations-content-wrapper .destinations-btn");
-for (let button of buttons) {
+for (const button of buttons) {
     button.addEventListener('click', (e) => {
         let allContent = document.querySelectorAll(".destinations-text-wrapper");
         for (let content of allContent) {

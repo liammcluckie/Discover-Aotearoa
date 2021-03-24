@@ -1052,7 +1052,7 @@ function aklAttractions() {
 
 //Function to only display relevant destination picks
 let topPickButtons = document.querySelectorAll(".destinations-btn");
-for (let button of topPickButtons) {
+for (const button of topPickButtons) {
     button.addEventListener('click', (e) => {
         let allContent = document.querySelectorAll(".top-picks");
         for (let content of allContent) {
