@@ -158,3 +158,12 @@ for the code to correctly work.
     ![Screenshot displaying Blenheim accommodation with marker info](testing/user-story-test/top-picks-marker.png)
 
 [Back to Testing Table of Contents](#testing-table-of-contents)
+
+### Browser Compatibility and Device Responsiveness Testing
+
+- This project was tested throughout the build on various device types and sizes using Google Chrome Developer Tools as well as other web based applications mentioned in the ReadMe 
+document such as [Am I Responsive](http://ami.responsivedesign.is/) and [Responsinator](http://www.responsinator.com/) to ensure fluid and error free responsive design, screenshots from
+this testing can be viewed [here.](testing/responsive-test/device-test.pdf) The deployed website was also continually tested on my own personal device of an iPhone 8 as well as an iPhone
+11 and android device to ensure the project worked as intended see screenshots below.
+
+![Screenshot of two iPhones displaying different pages of this project](testing/responsive-test/iphone-test.png)
