@@ -1444,6 +1444,13 @@ and (orientation:landscape) {
     #explore-text {
         left: 42%;
     }
+
+    /*---- Footer ----*/
+    .footer-logo {
+        position: relative;
+        left: 2%;
+        width: 15%;
+    }
 }
 
 /*---- Ipad ----*/
