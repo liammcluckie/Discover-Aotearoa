@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*---- Imported Google Font ----*/
 
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@100;200;300;400&display=swap');
@@ -8,11 +15,13 @@
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *, ::after, ::before { 
-    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box; 
 }
 
 html,body {
@@ -37,15 +46,22 @@ body {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
     -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
+    transition-property: transform, -webkit-transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
 }
 
 .hvr-shrink {
@@ -53,16 +69,23 @@ body {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
     -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
+    transition-property: transform, -webkit-transform;
 }
 
 .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -ms-transform: scale(0.9);
+        transform: scale(0.9);
 }
 
 .hvr-underline-from-center {
@@ -70,7 +93,8 @@ body {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
 }
@@ -84,11 +108,14 @@ body {
     background: #A58961;
     height: 2px;
     -webkit-transition-property: left, right;
+    -o-transition-property: left, right;
     transition-property: left, right;
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+       transition-timing-function: ease-out;
 }
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     left: 0;
@@ -100,12 +127,16 @@ body {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
     -webkit-transition-property: background;
+    -o-transition-property: background;
     transition-property: background;
-    box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
     /* Hack to improve aliasing on mobile/tablet devices */
 }
 
@@ -115,6 +146,8 @@ body {
 /*---- Hero Image ----*/
 
 #landing-nav-wrapper {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)) ), url("../images/landing-page-hero.jpg") no-repeat center;
+    background: -o-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/landing-page-hero.jpg") no-repeat center;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/landing-page-hero.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
@@ -174,15 +207,21 @@ body {
 .logo {
     width: 4%;
     height: auto;
-    filter: invert(1);
+    -webkit-filter: invert(1);
+            filter: invert(1);
     margin-top: 2.5em;
 }
 
 /*---- Hero Image Text ----*/
 
 .hero-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     top: 35%;
     margin-left: 6em;
@@ -219,7 +258,8 @@ body {
 .description-wrapper {
     height: 36em;
     background-color: #A58961;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
     text-align: center;
 }
 
@@ -248,9 +288,16 @@ body {
 }
 
 .travel-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     font-size: 9vmin;
     margin-top: 0.6em;
 }
@@ -262,9 +309,16 @@ body {
 }
 
 .what-we-do-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     font-family: "Montserrat", sans-serif;
     font-size: 5vmin;
     color: #0C0409;
@@ -291,6 +345,8 @@ body {
 
 .carousel-heading {
     margin-top: 20em;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     font-family: "Bodoni Moda", sans-serif;
     color: #0C0409;
@@ -313,7 +369,8 @@ body {
 
 .carousel {
     background: #F5EBE0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-top: 5em;
 }
 
@@ -344,11 +401,16 @@ body {
 
 .carousel-cell-image {
     opacity: 1;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .carousel-hover-content {
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
     opacity: 0;
     text-align: start;
@@ -356,7 +418,8 @@ body {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
@@ -379,6 +442,8 @@ body {
 /*---- North Island Hero Image ----*/
 
 #north-nav-wrapper {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)) ), url("../images/north-hero-image.jpg") no-repeat center;
+    background: -o-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/north-hero-image.jpg") no-repeat center;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/north-hero-image.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
@@ -390,7 +455,8 @@ body {
 .flights-wrapper {
     height: 40em;
     background-color: #A58961;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
     text-align: center;
     margin-bottom: 3rem;
     padding-bottom: 1.5rem;
@@ -490,7 +556,8 @@ table > tbody > tr > td {
     border-radius: 2px;
     margin: 0 auto;
     height: auto;
-    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
+    -webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
 }
 
 .destinations-heading {
@@ -510,7 +577,9 @@ table > tbody > tr > td {
 .destinations-content-wrapper {
     background-color: #F5EBE0;
     font-size: 2vmin;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .destinations-btn {
@@ -521,7 +590,8 @@ table > tbody > tr > td {
     border-radius: 2px;
     background-color: #A58961;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples ----*/
 }
 
 .destinations-text-wrapper {
@@ -542,7 +612,8 @@ table > tbody > tr > td {
 
 .destinations-image {
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples  ----*/
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /*---- Code taken from https://getcssscan.com/css-box-shadow-examples  ----*/
     border-radius: 2px;
 }
 
@@ -569,7 +640,8 @@ table > tbody > tr > td {
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .dest-top-anchor-btn:hover {
@@ -592,7 +664,8 @@ table > tbody > tr > td {
 .top-pick-card {
     border: 1px solid #A58961;
     border-radius: 4px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin: 0 auto;
 }
 
@@ -638,11 +711,14 @@ table > tbody > tr > td {
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #A58961;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .explore-business-btn:hover {
@@ -652,6 +728,8 @@ table > tbody > tr > td {
 /*---- South Island Hero Image ----*/
 
 #south-nav-wrapper {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)) ), url("../images/south-hero-image.jpg") no-repeat center;
+    background: -o-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/south-hero-image.jpg") no-repeat center;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/south-hero-image.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
@@ -661,6 +739,8 @@ table > tbody > tr > td {
 /*---- Contact Hero Image ----*/
 
 #contact-nav-wrapper {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)) ), url("../images/contact-hero-image.jpg") no-repeat center;
+    background: -o-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/contact-hero-image.jpg") no-repeat center;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/contact-hero-image.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
@@ -672,7 +752,8 @@ table > tbody > tr > td {
 .contact-intro-wrapper {
     height: auto;
     background-color: #A58961;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /*Box shadow taken from https://getcssscan.com/css-box-shadow-examples */
     text-align: center;
 }
 
@@ -699,7 +780,8 @@ table > tbody > tr > td {
     border-radius: 2px;
     margin: 0 auto;
     height: auto;
-    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
+    -webkit-box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
     font-size: 2.5vmin;
     color: #0C0409;
     width: 70%;
@@ -718,7 +800,8 @@ select:focus,
 label:focus {
     border: #A58961 solid 1px!important;
     -webkit-appearance:none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px!important; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px!important;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px!important; /* Code taken from https://getcssscan.com/css-box-shadow-examples */
     border-radius: 2px!important;
 }
  
@@ -736,7 +819,8 @@ label:focus {
     border: 2px solid #A58961;
     border-radius: 2px;
     background-color: #F5EBE0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     font-size: 2.5vmin;
     color: #0C0409;
 }
@@ -774,8 +858,13 @@ label:focus {
 /*---- Newsletter Form ----*/
 
 .newsletter-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     width: 40%;
     height: auto;
@@ -783,7 +872,8 @@ label:focus {
     position: relative;
     bottom: -20em;
     padding: 2.5em;
-    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; /*Code taken from https://getcssscan.com/css-box-shadow-examples*/
+    -webkit-box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; /*Code taken from https://getcssscan.com/css-box-shadow-examples*/
     border-radius: 2px;
     z-index: 1;
 }
@@ -814,7 +904,8 @@ label:focus {
 
 #newsletter-email:focus {
     border: 2px solid #708090;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /*---- Code taken from https://ianlunn.github.io/Hover/ for hover effect ----*/
@@ -828,16 +919,23 @@ label:focus {
     display: inline-block;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+       transition-duration: 0.3s;
     -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
+    transition-property: transform, -webkit-transform;
 }
 
 #sign-up:hover, #sign-up:focus, #sign-up:active {
   -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+  -ms-transform: scale(0.9);
+      transform: scale(0.9);
 }
 
 /*---- Footer ----*/
@@ -850,19 +948,29 @@ label:focus {
 }
 
 .footer-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer-logo {
     width: 10%;
     height: auto;
-    filter: invert(1);
+    -webkit-filter: invert(1);
+            filter: invert(1);
 }
 
 .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .footer-title {
@@ -913,9 +1021,16 @@ label:focus {
 }
 
 .footer-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .footer-icons > a > i {
@@ -930,7 +1045,9 @@ label:focus {
 @media (min-width: 280px) and (max-width: 653px) {
     /*---- Navbar & Header ----*/
     .navbar {
-        justify-content: inherit!important;
+        -webkit-box-pack: inherit!important;
+            -ms-flex-pack: inherit!important;
+                justify-content: inherit!important;
         padding: 0!important;
     }
 }
