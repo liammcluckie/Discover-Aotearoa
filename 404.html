@@ -22,7 +22,7 @@
     <!-- Nav -->
     <!-- Navbar code taken from Bootstrap.com-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0C0409"> <!-- Inline style used to only effect error page -->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="error-navbar">
             <a class="navbar-brand nav-text" href="index.html">Discover Aotearoa</a>
             <img class="img-fluid logo" src="assets/images/fern-logo.png" alt="Silver Fern by Josh from the Noun Project">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -52,7 +52,7 @@
         </nav>
     </header>
         <!-- Error Message -->
-        <div class="container" style="text-align: center; margin-top: 3rem; color: #0C0409;">
+        <div class="container error-msg-container">
             <div class="row">
                 <div class="col">
                     <h1 id="error-title">404 Error Page Not Found</h1>
@@ -60,13 +60,13 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p style="font-size: 1rem;">We're sorry the page you were looking for does not exist, click <a href="index.html">here</a> to return to the home page.</p>
+                    <p class="error-msg-content">We're sorry the page you were looking for does not exist, click <a href="index.html">here</a> to return to the home page.</p>
                 </div>
             </div>
         </div>
     <!-- Footer -->
     <footer>
-        <div class="container-fluid" style="background-color: #0C0409; position: absolute; bottom: 0; width: 100%; height: auto; padding-bottom: 1rem;">
+        <div class="container-fluid error-footer-container">
             <div class="row">
                 <div class="col">
                     <div class="footer-heading">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col copyright">
-                    <p class="copyright-text">&#169 Discover Aotearoa 2021</p>
+                    <p class="copyright-text">&#169; Discover Aotearoa 2021</p>
                 </div>
                 <div class="col footer-links">
                     <h4 class="footer-links-title">Useful Links</h4>
