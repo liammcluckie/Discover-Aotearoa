@@ -39,7 +39,7 @@ relevant imagery of New Zealand and it's destinations.
 - Frameworks, Libraries & Programs
 
 ### 5. [Testing](#testing)
-- [Testing Document](testing.md)
+- [Testing Document](TESTING.md)
 
 ### 6. [Deployment](#deployment)
 - GitHub Pages
