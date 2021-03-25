@@ -181,3 +181,25 @@ Poor - Website still functions correctly but key elements do not appear as inten
 
 ![Screenshot of table displaying various devices and browsers and data inline with above key displayed](testing/cross-browser-test.png)
 
+[Back to Testing Table of Contents](#testing-table-of-contents)
+
+### Google Lighthouse Testing
+
+Once the main build of this project was completed a test for mobile and web was carried out for all pages using Google Developer Tools Lighthouse application. Using the report I then went
+through the project and made as many recommended alterations as possible to improve the website inline with the areas that lighthouse focuses on. 
+
+Below are two example screenshots of the overall report for desktop and mobile. To see reports for all pages in desktop click [here](testing/lighthouse-test/lighthouse-desktop.pdf) and 
+for all page reports on mobile click [here](testing/lighthouse-test/lighthouse-mobile.pdf).
+
+**index.html mobile report**
+![Screenshot of Google lighthouse report for the landing page on mobile](testing/lighthouse-test/index-mobile.png)
+
+**south-island.html desktop report**
+![Screenshot of Google lighthouse report the south island page on desktop](testing/lighthouse-test/si-desktop.png)
+
+- The improvements made this project to increase lighthouse scores were;
+    - Further reducing and compressing image sizes whilst still maintaining quality.
+    - Removing any unused and unnecessary code that the report indicated.
+    - Ensuring `META` tags have all the necessary information to improve SEO. 
+
+[Back to Testing Table of Contents](#testing-table-of-contents)
