@@ -20,12 +20,12 @@
 
 ### 6. [Bugs](#bugs)
 
-### Code Validation
+## Code Validation
 
 Throughout this project all code has been regularly ran through HTML, CSS and Javascript validators to ensure there are no errors within the code. See below screenshots of all validated
 and passed code. Outlined for each page is the decision why the warnings present have not been corrected.
 
-#### [CSS Validation](testing/css-valid.png)
+### [CSS Validation](testing/css-valid.png)
 
 - The majority of warnings present relate to unknown prefix vendors that have been added by [Autoprefixer](https://autoprefixer.github.io/) to increase cross browser compatibility. These 
 warnings have not been corrected due to this know being a necessary practice.
@@ -33,11 +33,11 @@ warnings have not been corrected due to this know being a necessary practice.
 - Another warning present relates to some buttons on the website having the same border colour as background colour. This is due to the hover effect added to these elements that cause the 
 background colour to be removed upon hover, so for aesthetic purposes the border colour needs to be present when this happens.
 
-#### [HTML Validation](testing/html-valid.png)
+### [HTML Validation](testing/html-valid.png)
 
 - No warnings present for any html pages within this project.
 
-#### Javascript validation
+### Javascript validation
 
 #### [Script.js](testing/script.js-valid.png)
 
@@ -70,9 +70,9 @@ for the code to correctly work.
 
 [Back to Testing Table of Contents](#testing-table-of-contents)
 
-### User Story Testing
+## User Story Testing
 
-#### User Goals
+### User Goals
 
 - *"As a user, I want to easily navigate to other pages on the website regardless of the current section that I'm viewing."*
 
@@ -87,7 +87,7 @@ for the code to correctly work.
 
     ![Screenshot of footer links](testing/user-story-test/useful-links.png)
 
-#### First Time Visitor Goals
+### First Time Visitor Goals
 
 - *"As a first time visitor, I want to immediately understand the purpose of the website and what the business is offering."*
 
@@ -112,7 +112,7 @@ for the code to correctly work.
 
     ![Screenshot of one carousel image with the hovered text visible](testing/user-story-test/carousels.png)
 
-#### Returning Visitor Goals
+### Returning Visitor Goals
 
 - *"As a returning visitor, I want to find out more detailed travel advice on specific locations, attractions, accommodation and restaurants."*
 
@@ -130,7 +130,7 @@ for the code to correctly work.
 
     ![Screenshot of Mt Maunganui destination image](testing/user-story-test/destination-img.png)
 
-#### Frequent Visitor Goals
+### Frequent Visitor Goals
 
 - *"As a frequent visitor, I want to find real-time flight information to help with my booking process."*
 
@@ -159,7 +159,7 @@ for the code to correctly work.
 
 [Back to Testing Table of Contents](#testing-table-of-contents)
 
-### Browser Compatibility and Device Responsiveness Testing
+## Browser Compatibility and Device Responsiveness Testing
 
 - This project was tested throughout the build on various device types and sizes using Google Chrome Developer Tools as well as other web based applications mentioned in the ReadMe 
 document such as [Am I Responsive](http://ami.responsivedesign.is/) and [Responsinator](http://www.responsinator.com/) to ensure fluid and error free responsive design, screenshots from
@@ -183,7 +183,7 @@ Poor - Website still functions correctly but key elements do not appear as inten
 
 [Back to Testing Table of Contents](#testing-table-of-contents)
 
-### Google Lighthouse Testing
+## Google Lighthouse Testing
 
 Once the main build of this project was completed a test for mobile and web was carried out for all pages using Google Developer Tools Lighthouse application. Using the report I then went
 through the project and made as many recommended alterations as possible to improve the website inline with the areas that lighthouse focuses on. 
@@ -202,7 +202,7 @@ for all page reports on mobile click [here](testing/lighthouse-test/lighthouse-m
     - Removing any unused and unnecessary code that the report indicated.
     - Ensuring `META` tags have all the necessary information to improve SEO. 
 
-### Further Testing
+## Further Testing
 
 - All functionality and features of the entire website have been thoroughly tested, this includes all links internal and external, email forms and buttons.
 
@@ -214,7 +214,7 @@ described as an unnecessary step and the user expected this information to displ
 
 [Back to Testing Table of Contents](#testing-table-of-contents)
 
-### Bugs
+## Bugs
 
 Listed below are the major bugs that I encountered whilst building this project and how I resolved them.
 
