@@ -163,8 +163,6 @@ visitors who are not worried about price. Due to this the website will have a hi
 
     - Copyright and legal information placed here.
 
-For a more detailed look at the website structure and page flow please see structure diagram [here.](#) *Add created flow structure here*
-
 [Back to Table of Contents](#table-of-contents)
 
 ### Wireframes
@@ -399,3 +397,69 @@ and add further business content to info windows.
 Find all information on the testing that has been carried out for this project [here.](TESTING.md)
 
 ### Deployment
+
+#### GitHub Pages
+
+This project was built using [GitPod](https://gitpod.io/workspaces/).
+
+1. Firstly a new repository was created and titled for this project.
+
+2. During and once the project was completed all commits and code was pushed to said repository.
+
+This project was then deployed using [GitHub Pages](https://pages.github.com/) by using the following steps, the instructional images contain a black box around the specified area.
+
+1. Log in to [GitHub](https://github.com/) and locate this [repository](https://github.com/liammcluckie/Discover-Aotearoa).
+
+    - Alternatively you can locate the repository by searching liammcluckie/Discover-Aotearoa on [GitHub](https://github.com/).
+
+2. You will find at the top of the repository, below the repository title, a list of links. Click on the 'Settings' option.
+
+    - Please note if you are viewing this on a smaller device you can locate the link in the same place but you will need to horizontally scroll to the left to view the link.
+
+    ![Screenshot of the above instructions](deployment/deployment-one.png)
+
+3. Scroll down the page until you reach the 'GitHub Pages' section.
+
+4. Under the 'Source' label there is a dropdown box displaying 'None'. Click on this and change the source to 'Master Branch', the page will now automatically refresh.
+
+    ![Screenshot displaying the source label mentioned above](deployment/deployment-two.png)
+
+5. Once the page has finished loading scroll back down to the GitHub pages section and it will be displaying the published website [link](https://liammcluckie.github.io/Discover-Aotearoa/).
+
+    ![Screenshot of text showing the link for the website to be deployed to](deployment/deployment-three.png)
+
+    ![Screenshot of success message for the deployment of website](deployment/deployment-four.png)
+
+#### Forking the GitHub Repository
+
+This project is available to be copied and edited by other users without changing the repository on the original GitHub account. This can be done by forking the entire repository by following
+these steps, the instructional images contain a black box around the specified area.
+
+1. Log in to [GitHub](https://github.com/) and locate the [repository](https://github.com/liammcluckie/Discover-Aotearoa).
+
+    - Alternatively you can locate the repository by searching liammcluckie/Discover-Aotearoa on [GitHub](https://github.com/).
+
+2. At the top of the repository page, below your own account icon you will find three buttons one of these is labelled 'Fork' click here.
+
+    ![Screenshot of the 'fork' button found in Github](deployment/fork-one.png)
+
+3. You will now have a copy of the entire repository in your own GitHub account to edit and make changes too.
+
+4. If any suggestions, improvements or changes have been made that you would wish to share to improve the original site you can then submit a pull request to the project owner, details on
+how to do this can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+
+#### Making a Local Clone
+
+1. Log in to [GitHub](https://github.com/) and locate the [repository](https://github.com/liammcluckie/Discover-Aotearoa).
+
+    - Alternatively you can locate the repository by searching liammcluckie/Discover-Aotearoa on [GitHub](https://github.com/).
+
+2. Located directly above the repository files and to the left of the green 'GitPod' button is a 'Code' button click on this.
+
+    ![Screenshot example of following the above step](deployment/clone-one.png)
+
+4. Next open your own terminal in GitPod and change the current directory to where you want the cloned directory to be sent to.
+
+5. In the terminal type `git clone` and then paste the URL copied from the original repository and press enter. This will create your local clone.
+
+6. If you use GitHub desktop the instructions on how to clone to this can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
