@@ -463,3 +463,198 @@ how to do this can be found [here](https://docs.github.com/en/github/collaborati
 5. In the terminal type `git clone` and then paste the URL copied from the original repository and press enter. This will create your local clone.
 
 6. If you use GitHub desktop the instructions on how to clone to this can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
+
+[Back to Table of Contents](#table-of-contents)
+
+### Credits
+
+#### Resources
+
+- [Unsplash](https://unsplash.com/)
+    - The majority of the images used for this project were taken from here with the owners permission.
+
+- [Flickr](https://www.flickr.com/)
+    - This was used for the 'Nevis Bungy' image in the 'Top Attractions' carousel with the owners permission.
+
+- [Stack Overflow](https://stackoverflow.com/)
+    - This was used to help troubleshoot and overcome many of the problems and bugs encountered whilst building this project.
+
+- [w3 Schools](https://www.w3schools.com/)
+    - An educational website containing example code and documentation on all syntax for web development, another paramount tool for problem solving during this project.
+
+- [CSS Tricks](https://css-tricks.com/)
+    - Used whilst trying to overcome any problems and achieve certain outcomes that at that time I did not have the knowledge on how to do, as well as offer certain CSS design inspiration.
+
+#### Code
+
+Listed below is any code that was taken from external resources and customised for this project, this is also referenced in the specific webpage files.
+
+- [CSS box Shadow Effects](https://getcssscan.com/css-box-shadow-examples)
+    - A library of varying ready to use box shadow effects available from getcssscan.com these were widely used throughout this project for image shadows, button shadows and container
+    shadows.
+
+- [Carousel Text Hover Effect](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity)
+    - When wanting to apply a simple hover effect over the carousel images I found an example on w3 Schools that I then customised the styles to better suit the aesthetics of this project.
+
+- [Change navbar Background Colour on Scroll](https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling)
+    - In order to not negatively impact the aesthetics of the hero image did not want the fixed navbar to have a background colour, however, when the user began scrolling the readability was
+    badly affected. To fix this I wanted the background colour to change when the user reached a certain scroll point of the page, I found an example of this on Stack Overflow that I used for 
+    this project.
+
+- [Skyscanner API JSON Fetch Technique](https://www.youtube.com/watch?v=uxf0--uiX0I&ab_channel=TheCodingTrain)
+    - When trying to implement the Skyscanner API used for flights I struggled to understand how to correctly use JSON to fetch the data I wanted. This YouTube video helped my understanding 
+    of how to use this greatly.
+
+- [Skyscanner API Init Function](https://rapidapi.com/skyscanner/api/skyscanner-flight-search)
+    - The initial `fetch` code used to implement the Skyscanner API was taken from the example code displayed on Rapid API's website.
+
+- [Hover Effects](https://ianlunn.github.io/Hover/)
+    - For all link and button hover effects I used examples from the vast library of Hover.css which provides many code snippets to quickly add effects to certain elements.
+
+- [Navbar, Flights Table & Contact Form](https://getbootstrap.com/)
+    - These three features all used example code from Bootstrap and were all heavily customised for this project but still utilised Bootstraps responsivity.
+
+- [Emailjs & Google Maps](https://codeinstitute.net/)
+    - The initial code to implement these features was taken from Code Institute's learning material available to it's students. It was then altered and added to in order to suit this project.
+
+- [Display Local Google Places Business](https://stackoverflow.com/questions/58206884/how-do-i-get-google-maps-to-display-nearby-restaurants)
+    - When wanting to utilise Google Places to display relevant businesses within a certain radius I found some example code on Stack Overflow which I used to achieve this.
+
+- [Google Places Info Windows](https://stackoverflow.com/questions/2223574/google-maps-auto-close-open-infowindows)
+    - Following on from fetching the Google Places data I also wanted to display the business name when the user clicked on the relevant marker, however, I wanted any open info windows to 
+    close when doing so to ensure there was only one window open at a time. I found example code for this on Stack Overflow which I then used.
+
+- [Display one desired element/elements at a time](https://dev.to/mohdhussein/how-to-show-the-clicked-element-only-and-hide-others-in-vanilla-javascript-1ip2)
+    - There are multiple functions within this project that need the user to select a specific button to display the content, for all of these I only wanted one of the desired elements 
+    to be visible at a time. This meant needing to create a loop with an `if statement` which I was unsure on how to achieve. I found a perfect example on dev.to that used matching 
+    `data-number` attributes on the relevant elements and containers that would only display if the button selected matched the hidden elements. 
+
+#### Content
+
+All content written within this project has been done so by the author unless specified in the section below.
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
+    - Used as a resource to find general information on locations to include in carousel content.
+
+- [New Zealand Tourism](https://www.newzealand.com/uk/)
+    - The majority of content for destination locations on each 'Explore page was taken from here and altered to better suit this project.
+
+- [Franz Josef Glacier](https://www.franzjosefglacier.com/)
+    - Some content was used from here for the 'Top Attractions' carousel information.
+
+- [Waiheke](http://waihekeunlimited.co.nz/)
+    - Some content was taken from here for the 'Popular Destinations' carousel information.
+
+The following websites were used to find information on the 'Top Picks' businesses.
+
+- [Wellington Restaurants](https://www.theurbanlist.com/a-list/best-wellington-restaurants)
+
+- [Wellington Hotels](https://theculturetrip.com/pacific/new-zealand/articles/the-best-boutique-hotels-in-wellington/)
+
+- [Martinborough Restaurants](https://wairarapanz.com/places-to-eat-martinborough)
+
+- [Martinborough Hotels](https://www.thehotelguru.com/en-gb/best-hotels-in/new-zealand/martinborough)
+
+- [Rotorua Attractions](https://www.planetware.com/tourist-attractions-/rotorua-nz-bp-r.htm)
+
+- [The Coromandel Attractions](https://www.thecoromandel.com/media/media-stories/must-dos/)
+
+- [Mt Maunganui Restaurants](https://www.travelmag.com/articles/restaurants-mount-maunganui/)
+
+- [Kaikoura Attractions](https://www.greatjourneysofnz.co.nz/blog/tick-kaikoura-off-your-must-do-list/)
+
+- [Christchurch Restaurants](https://www.timeout.com/christchurch/restaurants/best-restaurants-in-christchurch)
+
+- [Blenheim Restaurants](https://www.thingstodopost.org/where-to-eat-in-blenheim-the-best-restaurants-and-bars-108682)
+
+- [Blenheim Attractions](https://www.tripsavvy.com/top-things-to-do-in-blenheim-4801246)
+
+#### Media
+
+**Logo** 
+
+- The logo of the white fern used throughout this website was designed by [The Noun Project](https://thenounproject.com/term/silver-fern/379641/) with the owners permission this image could
+be used as long as the alt tag contained the designers information.
+
+        <img class="img-fluid logo" src="assets/images/fern-logo.png"
+                alt="Silver Fern by Josh from the Noun Project">
+
+- Listed below are all of the images and their rightful owners used throughout this project.
+
+**Landing Page**
+
+- [Hero image by Peter Hammer](https://unsplash.com/@peterham)
+
+- [Auckland Popular Destinations image by Dan Freeman](https://unsplash.com/@danfreemanphoto)
+
+- [Wellington Popular Destinations image by Pat Ho](https://unsplash.com/@pjho)
+
+- [Kaikoura Popular Destinations image by Tim Marshall](https://unsplash.com/@timmarshall)
+
+- [Rotorua Popular Destinations image by Koon Chakhatrakan](https://unsplash.com/@koonspace)
+
+- [Queenstown Popular Destinations image by Sebastien Goldberg](https://unsplash.com/@sebastiengoldberg)
+
+- [Franz Josef Top Attractions image by Jeff Finley](https://unsplash.com/@jeff_finley)
+
+- [Abel Tasman Top Attractions image by David Tip](https://unsplash.com/@david113)
+
+- [Waiheke Top Attractions image by Árpád Czapp](https://unsplash.com/@czapp_arpad)
+
+- [Nevis Bungy Top Attractions image by Mat](https://www.flickr.com/photos/matze79/)
+
+- [Fiordland National Park image by Colin Watts](https://unsplash.com/@imagefactory)
+
+**North Island Page**
+
+- [Hero image by Casey Horner](https://unsplash.com/@mischievous_penguins)
+
+- [Wellington Destination image by Cameron Witney](https://unsplash.com/@camwitney)
+
+- [Marlborough Destination image by Claire Edwards](https://unsplash.com/@edwardclaire1234)
+
+- [Rotorua Destination image by Holger Offermann](https://unsplash.com/@_holger)
+
+- [The Coromandel Destination image by James Coleman](https://unsplash.com/@jhc)
+
+- [Mt Maunganui Destination image by Dating Scout](https://unsplash.com/@datingscout)
+
+- [Auckland Destination image by AR](https://unsplash.com/@ra_)
+
+**South Island Page**
+
+- [Hero image by Kerensa Pickett](https://unsplash.com/@kerensa1)
+
+- [Queenstown Destination image by Photoholgic](https://unsplash.com/@photoholgic)
+
+- [Kaikoura Destination image by Tim Marshall](https://unsplash.com/@timmarshall)
+
+- [Christchurch Destination image by Nico Smit](https://unsplash.com/@nicosmit99)
+
+- [Nelson Destination image by Rich Hay](https://unsplash.com/@richexploration)
+
+- [Dunedin Destination image by Sulthan Auliya](https://unsplash.com/@swafie)
+
+- [Blenheim Destination image by Sven Wilhelm](https://unsplash.com/@svenwilhelm)
+
+**Top Pick Thumbnails**
+
+- [Restaurant image by Tim Mossholder](https://unsplash.com/@timmossholder)
+
+- [Accommodation image by David Mao](https://unsplash.com/@itsdavo)
+
+- [Attractions image by Benjamin Sharpe](https://unsplash.com/@benjaminsharpe)
+
+**Contact Page**
+
+- [Hero image by David Billings](https://unsplash.com/@dav_billings)
+
+#### Acknowledgements
+
+- My mentor Precious for his valuable suggestions and help with certain aspects of this project.
+
+- The Code Institute tutor support for helping with some of my most time consuming bugs.
+
+- The New Zealand people for making my years spent there some of my best and giving me the inspiration for this project.
+
+[Back to Table of Contents](#table-of-contents)
