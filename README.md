@@ -92,7 +92,7 @@ relevant imagery of New Zealand and it's destinations.
 
 [Back to Table of Contents](#table-of-contents)
 
-## Business Goals
+### Business Goals
 
 - The main goal of this website is to convert visitors into customers, it's primary focus is to show users that the content and information
 of this website has been created by people who are experienced in travel specifically in New Zealand. 
@@ -165,7 +165,7 @@ visitors who are not worried about price. Due to this the website will have a hi
 
 [Back to Table of Contents](#table-of-contents)
 
-### Wireframes
+#### Wireframes
 
 - [Desktop website view](wireframes/desktop.pdf)
 
@@ -173,9 +173,9 @@ visitors who are not worried about price. Due to this the website will have a hi
 
 - [Mobile website view](wireframes/desktop.pdf)
 
-### Design
+## Design
  
-#### Colour Scheme
+### Colour Scheme
 
 - The colour scheme for this website is based on a well known colour scheme of black and gold. I have altered this to better suit the aesthetics of the project using a raw umber shade in 
 place of gold and a very light pink to balance these two striking and bold colours. These colours will also tie in with the imagery used especially the hero images for each page that will 
@@ -190,7 +190,7 @@ to represent New Zealands well known and recognisable *All Blacks* colour.
 - Raw Umber (#A58961) - Secondary Colour - Also described as a bronze/gold shade and a typical colour pairing with black, Raw Umber will also feature heavily throughout the website used for
 borders and alternative background colours when using boxes/cards for content. This colour also works very well with the main hero imagery used on each page such as sand, beaches and sunsets.
 
-#### Typography 
+### Typography 
 
 - There will be two fonts used throughout this website. The font used for the logo and headings is Bodoni Moda, for the remaining website content 
 the Montserrat font will be used. Since both of these fonts are of the serif typeface Sans Serif will be used as the fallback font in case there 
@@ -203,13 +203,13 @@ the thick and thin lines in the text. This will immediately catch the users atte
 attention away from the other important aspects on the page. Due to it's popularity this is a font that many users will be familiar with evoking a feeling 
 of comfort and trust as well as being aesthetically pleasing.
 
-#### Logo
+### Logo
 
 - A very simplistic and minimal logo was used for this project consisting of the company name in the **Bodoni Moda** font that is consistently used throughout the website. Alongside this 
 the globally recognised white New Zealand fern designed by [the Noun Project](https://thenounproject.com/term/silver-fern/379641/) was used to immediately convey to the user what and where
 this websites focus is.
 
-#### Imagery 
+### Imagery 
 
 - The type of imagery used within this website will be of great importance as this is what will be used to initially convince first time users 
 that planning a trip to New Zealand is the right decision. This will be done by using dramatic and eye catching landscape imagery that really displays
@@ -229,9 +229,9 @@ a professional and clean aesthetic feel to the website.
 
 [Back to Table of Contents](#table-of-contents)
 
-### Features
+## Features
 
-#### Existing Features Used Throughout the Project
+### Existing Features Used Throughout the Project
 
 - Responsive on all screen sizes and devices.
 
@@ -298,9 +298,9 @@ and add further business content to info windows.
 
 [Back to Table of Contents](#table-of-contents)
 
-### Technologies Used
+## Technologies Used
 
-#### Syntax
+### Syntax
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
     - HTML5 is a markup language used for structuring and presenting content on the internet.
@@ -315,7 +315,7 @@ and add further business content to info windows.
 - [JQuery](https://jquery.com/)
     - jQuery is a JavaScript library that allows web developers to add extra functionality to their websites. It is open source and provided for free under the MIT license.
 
-#### Frameworks, Libraries & Programs
+### Frameworks, Libraries & Programs
 
 - [Balsamiq](https://balsamiq.com/)
     - The Balsamiq application was used to create wireframes for each website page on various device screen sizes.
@@ -392,13 +392,13 @@ and add further business content to info windows.
 
 [Back to Table of Contents](#table-of-contents)
 
-### Testing
+## Testing
 
 Find all information on the testing that has been carried out for this project [here.](TESTING.md)
 
-### Deployment
+## Deployment
 
-#### GitHub Pages
+### GitHub Pages
 
 This project was built using [GitPod](https://gitpod.io/workspaces/).
 
@@ -430,7 +430,7 @@ This project was then deployed using [GitHub Pages](https://pages.github.com/) b
 
     ![Screenshot of success message for the deployment of website](deployment/deployment-four.png)
 
-#### Forking the GitHub Repository
+### Forking the GitHub Repository
 
 This project is available to be copied and edited by other users without changing the repository on the original GitHub account. This can be done by forking the entire repository by following
 these steps, the instructional images contain a black box around the specified area.
@@ -448,7 +448,7 @@ these steps, the instructional images contain a black box around the specified a
 4. If any suggestions, improvements or changes have been made that you would wish to share to improve the original site you can then submit a pull request to the project owner, details on
 how to do this can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
 
-#### Making a Local Clone
+### Making a Local Clone
 
 1. Log in to [GitHub](https://github.com/) and locate the [repository](https://github.com/liammcluckie/Discover-Aotearoa).
 
@@ -466,9 +466,9 @@ how to do this can be found [here](https://docs.github.com/en/github/collaborati
 
 [Back to Table of Contents](#table-of-contents)
 
-### Credits
+## Credits
 
-#### Resources
+### Resources
 
 - [Unsplash](https://unsplash.com/)
     - The majority of the images used for this project were taken from here with the owners permission.
@@ -485,7 +485,7 @@ how to do this can be found [here](https://docs.github.com/en/github/collaborati
 - [CSS Tricks](https://css-tricks.com/)
     - Used whilst trying to overcome any problems and achieve certain outcomes that at that time I did not have the knowledge on how to do, as well as offer certain CSS design inspiration.
 
-#### Code
+### Code
 
 Listed below is any code that was taken from external resources and customised for this project, this is also referenced in the specific webpage files.
 
@@ -529,7 +529,7 @@ Listed below is any code that was taken from external resources and customised f
     to be visible at a time. This meant needing to create a loop with an `if statement` which I was unsure on how to achieve. I found a perfect example on dev.to that used matching 
     `data-number` attributes on the relevant elements and containers that would only display if the button selected matched the hidden elements. 
 
-#### Content
+### Content
 
 All content written within this project has been done so by the author unless specified in the section below.
 
@@ -569,7 +569,7 @@ The following websites were used to find information on the 'Top Picks' business
 
 - [Blenheim Attractions](https://www.tripsavvy.com/top-things-to-do-in-blenheim-4801246)
 
-#### Media
+### Media
 
 **Logo** 
 
@@ -649,7 +649,7 @@ be used as long as the alt tag contained the designers information.
 
 - [Hero image by David Billings](https://unsplash.com/@dav_billings)
 
-#### Acknowledgements
+### Acknowledgements
 
 - My mentor Precious for his valuable suggestions and help with certain aspects of this project.
 
