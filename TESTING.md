@@ -202,4 +202,87 @@ for all page reports on mobile click [here](testing/lighthouse-test/lighthouse-m
     - Removing any unused and unnecessary code that the report indicated.
     - Ensuring `META` tags have all the necessary information to improve SEO. 
 
+### Further Testing
+
+- All functionality and features of the entire website have been thoroughly tested, this includes all links internal and external, email forms and buttons.
+
+- The live site was viewed and reviewed in the Code Institute Slack channel for 'peer-code-review' where only one minor changes were mentioned. This change focused on the UX of the destinations
+section of the 'Explore' pages. The suggestion and implemented change was to remove the extra 'Explore' button that the user needed to select to display the 'Top Picks' content as it was
+described as an unnecessary step and the user expected this information to display from the first 'Explore' button. See details below.
+
+![Screenshot of conversation with fellow student regarding the above changes](testing/code-review.png)
+
 [Back to Testing Table of Contents](#testing-table-of-contents)
+
+### Bugs
+
+Listed below are the major bugs that I encountered whilst building this project and how I resolved them.
+
+1. The first bug encountered during this project was caused when adding the landing page hero image as a background image as was needed to achieve the desired aesthetics. When doing this
+it had an effect on the navigation bar and more specifically the functionality of the collapsed burger icon causing it to not work as intended. 
+
+    This bug was resolved by wrapping the whole navbar code in a separate `div` container and adding the `background-image` css code to this container instead of the original navbar container.
+    Problems were still being caused by the size of the hero image which was then resolved by changing the image height from `100%` to `100vh` in order to always fill the users viewport height.
+
+        #landing-nav-wrapper {
+        background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)) ), url("../images/landing-page-hero.jpg") no-repeat center;
+        background: -o-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/landing-page-hero.jpg") no-repeat center;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/landing-page-hero.jpg") no-repeat center;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        }
+
+2. Another bug caused within the header section of this project effected the responsiveness when viewing the website on small and medium sized devices the collapsed hamburger icon as well 
+as the hero image location text kept getting pushed off the screen and also caused overflow and horizontal scroll. 
+
+    This bug was caused by the positioning of the hero image text 'Explore New Zealand', since this was positioned using `absolute` and the incorrect parent container was positioned using 
+    `relative` hence the effect on incorrect positioning of other elements within the container. This was then resolved by identifying the correct parent container and giving assigning this
+    `position: relative;`.
+
+3. When writing the first Javascript for this project I wanted to display a success message when the user signed up to the newsletter, I was initially attempting to achieve this by selecting 
+the class of the message that was set to `display: none;` and then toggling the `classList` to allow it to be visible. I well also trying to target the desired element through the `form` tag
+instead of targeting the specific `id`.
+
+    By making the necessary changes and then incorporating this into a function that also used emailJS correctly I managed to achieve the desired effect.
+
+        (function () {
+            emailjs.init("user_7Zuhihp6HZgdp93yn7Cpc");
+        })();
+
+        function subMail(subForm) {
+            emailjs.send("service_vg6mnxa","subscriber", {
+            "from_email": subForm.newsletter_email.value,
+        })
+        .then(
+            function success(event) {
+                const success = document.getElementById("newsletter-success");
+                success.style.display = "block";
+                event.preventDefault();
+                console.log("success");
+            }
+        );
+            document.getElementById("newsletter-form").reset();
+            return false;
+        }
+
+4. When using [Flickity](https://flickity.metafizzy.co/) for the carousels on the landing page to achieve the desired effect needed I couldn't use any of the default carousel types in 
+their library which meant I had to take code from multiple different examples and combine these together to create the carousel necessary. 
+
+    This caused two major bugs, one of which was inserting the images into the carousel cell so that it fit correctly and displayed as it should, initially this was being done as normal
+    by using the `src` attribute within the `img` tag which did not work correctly. Through extensive reading through documentation I discovered that because of the code I used I needed 
+    to insert my images through direct links but using the in-built [Flickity](https://flickity.metafizzy.co/) attribute of `data-flickity-lazyload="insert-link-here"`, this initially
+    made everything work correctly. 
+
+    Upon validating my HTML through [W3C Validator HTML](https://validator.w3.org/) a major error flagged was caused by using the `img` tag without a `src` attribute this was then corrected 
+    by doing this but leaving the images to be inserted through direct links using [Imgur](https://imgur.com/). This then resolved the [W3C Validator HTML](https://validator.w3.org/) errors,
+    however, when completing cross browser testing the carousels would not correctly display on Safari (see image below).
+
+    This final bug was then resolved by leaving one image in each carousel to be inserted through the built in `data-flickity-lazyload="insert-link-here"` code and then to ensure there were
+    no validation errors on the `img` tags that used this an empty a src tag was still included e.g `src="#"` which resolved all bugs and errors.
+
+    ![Screenshot of carousel bug in Safari as mentioned above](testing/carousel-bug.png) 
+
+    [Back to Testing Table of Contents](#testing-table-of-contents)
+
+    [Return to ReadMe file](README.md)
