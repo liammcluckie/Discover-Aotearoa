@@ -92,6 +92,8 @@ relevant imagery of New Zealand and it's destinations.
 
 [Back to Table of Contents](#table-of-contents)
 
+---
+
 ### Business Goals
 
 - The main goal of this website is to convert visitors into customers, it's primary focus is to show users that the content and information
@@ -108,6 +110,8 @@ the form, allowing for initial contact with the business to be a quick process a
 
 [Back to Table of Contents](#table-of-contents)
 
+---
+
 ### User Centered Design
 
 #### Strategy
@@ -122,6 +126,8 @@ contact form.
 - This website is aimed at users who want to spend anywhere from three weeks to a few months travelling, with the idea of the trip being a once in a lifetime 
 experience. The prices and overall cost of such things as flights, accommodation and attractions will be high which will reduce the relatable audience to that of
 visitors who are not worried about price. Due to this the website will have a high end luxury feel to match.
+
+---
 
 #### Scope | Trade Off 
 
@@ -142,6 +148,8 @@ visitors who are not worried about price. Due to this the website will have a hi
     - An 'About' page or section that includes information about the business.
     - A newsletter or blog subscription form.
     - Gallery page or section.
+
+---
 
 #### Structure 
 
@@ -164,6 +172,8 @@ visitors who are not worried about price. Due to this the website will have a hi
     - Copyright and legal information placed here.
 
 [Back to Table of Contents](#table-of-contents)
+
+---
 
 #### Wireframes
 
@@ -190,6 +200,8 @@ to represent New Zealands well known and recognisable *All Blacks* colour.
 - Raw Umber (#A58961) - Secondary Colour - Also described as a bronze/gold shade and a typical colour pairing with black, Raw Umber will also feature heavily throughout the website used for
 borders and alternative background colours when using boxes/cards for content. This colour also works very well with the main hero imagery used on each page such as sand, beaches and sunsets.
 
+---
+
 ### Typography 
 
 - There will be two fonts used throughout this website. The font used for the logo and headings is Bodoni Moda, for the remaining website content 
@@ -203,11 +215,15 @@ the thick and thin lines in the text. This will immediately catch the users atte
 attention away from the other important aspects on the page. Due to it's popularity this is a font that many users will be familiar with evoking a feeling 
 of comfort and trust as well as being aesthetically pleasing.
 
+---
+
 ### Logo
 
 - A very simplistic and minimal logo was used for this project consisting of the company name in the **Bodoni Moda** font that is consistently used throughout the website. Alongside this 
 the globally recognised white New Zealand fern designed by [the Noun Project](https://thenounproject.com/term/silver-fern/379641/) was used to immediately convey to the user what and where
 this websites focus is.
+
+---
 
 ### Imagery 
 
@@ -231,7 +247,7 @@ a professional and clean aesthetic feel to the website.
 
 ## Features
 
-### Existing Features Used Throughout the Project
+### Existing Features
 
 - Responsive on all screen sizes and devices.
 
@@ -280,6 +296,8 @@ information in order to reduce the users scroll time.
 - A fully connected and validated contact form using [EmailJS](https://www.emailjs.com/). This not only sends the users enquiry to the website but also sends an automatic response to the user
 informing them that their request has been received as well as including their original request in the response email for them to check over.
 
+---
+
 ### Future Features 
 
 - Include possible booking widgets/travel relevant API's so that users can book directly through the website without needing to navigate away or complete the contact form.
@@ -314,6 +332,8 @@ and add further business content to info windows.
 
 - [JQuery](https://jquery.com/)
     - jQuery is a JavaScript library that allows web developers to add extra functionality to their websites. It is open source and provided for free under the MIT license.
+
+---
 
 ### Frameworks, Libraries & Programs
 
@@ -430,6 +450,8 @@ This project was then deployed using [GitHub Pages](https://pages.github.com/) b
 
     ![Screenshot of success message for the deployment of website](deployment/deployment-four.png)
 
+---
+
 ### Forking the GitHub Repository
 
 This project is available to be copied and edited by other users without changing the repository on the original GitHub account. This can be done by forking the entire repository by following
@@ -447,6 +469,8 @@ these steps, the instructional images contain a black box around the specified a
 
 4. If any suggestions, improvements or changes have been made that you would wish to share to improve the original site you can then submit a pull request to the project owner, details on
 how to do this can be found [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+
+---
 
 ### Making a Local Clone
 
@@ -484,6 +508,8 @@ how to do this can be found [here](https://docs.github.com/en/github/collaborati
 
 - [CSS Tricks](https://css-tricks.com/)
     - Used whilst trying to overcome any problems and achieve certain outcomes that at that time I did not have the knowledge on how to do, as well as offer certain CSS design inspiration.
+
+---
 
 ### Code
 
@@ -529,6 +555,8 @@ Listed below is any code that was taken from external resources and customised f
     to be visible at a time. This meant needing to create a loop with an `if statement` which I was unsure on how to achieve. I found a perfect example on dev.to that used matching 
     `data-number` attributes on the relevant elements and containers that would only display if the button selected matched the hidden elements. 
 
+---
+
 ### Content
 
 All content written within this project has been done so by the author unless specified in the section below.
@@ -568,6 +596,8 @@ The following websites were used to find information on the 'Top Picks' business
 - [Blenheim Restaurants](https://www.thingstodopost.org/where-to-eat-in-blenheim-the-best-restaurants-and-bars-108682)
 
 - [Blenheim Attractions](https://www.tripsavvy.com/top-things-to-do-in-blenheim-4801246)
+
+---
 
 ### Media
 
@@ -648,6 +678,8 @@ be used as long as the alt tag contained the designers information.
 **Contact Page**
 
 - [Hero image by David Billings](https://unsplash.com/@dav_billings)
+
+---
 
 ### Acknowledgements
 
