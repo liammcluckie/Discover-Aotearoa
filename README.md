@@ -555,6 +555,12 @@ Listed below is any code that was taken from external resources and customised f
     to be visible at a time. This meant needing to create a loop with an `if statement` which I was unsure on how to achieve. I found a perfect example on dev.to that used matching 
     `data-number` attributes on the relevant elements and containers that would only display if the button selected matched the hidden elements. 
 
+- [Code Institute Code](https://codeinstitute.net/)
+    - For the basic  function to initialise the map, set the location and place markers I used the code the [Code Institutes](https://codeinstitute.net/) learning material on 
+    API's, it was then adapted for this project.
+    - For the initial use of [EmailJS](https://www.emailjs.com/) I used the code provided in [Code Institutes](https://codeinstitute.net/) learning material on using this library, it was
+    then adapted to send emails in a desired way for this project.
+
 ---
 
 ### Content
