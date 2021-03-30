@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 });
 
-// Function to change image carousel title
+//Store original carousel title text
 const destinationsOriginalText = {
     auckland: "Auckland",
     queenstown: "Queenstown",
@@ -59,6 +59,7 @@ function changeText(text) {
     text.innerHTML = "Click to Explore More";
 }
 
+// Function to change image carousel title
 function defaultText() {
     document.getElementById("auckland").innerHTML = destinationsOriginalText.auckland;
     document.getElementById("queenstown").innerHTML = destinationsOriginalText.queenstown;
@@ -72,7 +73,7 @@ function defaultText() {
     document.getElementById("nevis").innerHTML = topAttractionsOriginalText.nevis;
 }
 
-//Validate newsletter sign up with success message
+////Send website an email informing of a new subscriber & send automatic response
 //Original code taken from CI learning material and customised for this project
 (function () {
     emailjs.init("user_7Zuhihp6HZgdp93yn7Cpc");
@@ -83,11 +84,10 @@ function subMail(subForm) {
         "from_email": subForm.newsletter_email.value,
     })
     .then(
-        function success(event) {
+        function success() {
             const success = document.getElementById("newsletter-success");
             success.style.display = "block";
             event.preventDefault();
-            console.log("success");
         }
     );
     document.getElementById("newsletter-form").reset();
