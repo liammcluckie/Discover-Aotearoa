@@ -1,16 +1,14 @@
-//Validate contact form with success/error message
-
-//Original code taken from CI learning material and customised for this project
-
 //jshint esversion: 6
 
+//Original code taken from CI learning material and customised for this project
+//Submit contact form function
 (function () {
     emailjs.init("user_7Zuhihp6HZgdp93yn7Cpc");
 })();
 
 function sendMail(contactForm) {
     emailjs.send("service_vg6mnxa", "aotearoa", {
-        "from_name": contactForm.fname.value,
+        "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
         "contact_number": contactForm.phone.value,
         "destination": contactForm.destination.value,
@@ -19,19 +17,36 @@ function sendMail(contactForm) {
         "booking_request": contactForm.message.value
     })
     .then(
-        function success(event) {
+        function success() {
             const success = document.getElementById("contact-success");
             success.style.display = "block";
-            event.preventDefault();
-            console.log("success");
-        },
-        function error(event) {
-            const error = document.getElementById("contact-error");
-            error.style.display = "block";
-            event.preventDefault();
-            console.log("fail");
         }
     );
     document.getElementById("contact-form").reset();
     return false;
+}
+
+//Function to check that user input is valid
+function validateForm() {
+    event.preventDefault();
+    //Get Form data
+    const contactName = document.getElementById("name").value;
+    const contactEmail = document.getElementById("email").value;
+    const contactPhone = document.getElementById("tel").value;
+    //Valid user input 
+    const validCharacters = /^[a-zA-Z\s]*$/; //Regex's code taken from https://www.w3resource.com/javascript/form/javascript-sample-registration-form-validation.php
+    const validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
+    const validPhone = /^\d{11}$/;
+    //Store test in variables
+    const correctName = validCharacters.test(contactName);
+    const correctEmail = validEmail.test(contactEmail);
+    const correctPhone = validPhone.test(contactPhone);
+    //Check that tests match user input
+    if (correctName && correctEmail && correctPhone) {
+        const form = document.getElementById("contact-form");
+        sendMail(form);
+    } else {
+        const error = document.getElementById("contact-error");
+        error.style.display = "block";
+    }
 }
