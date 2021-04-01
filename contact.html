@@ -105,15 +105,24 @@
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                    <div class="form-error-container" id="name-error">
+                        <p>Please enter a valid name e.g John Doe</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
                         required>
+                    <div class="form-error-container" id="email-error">
+                        <p>Please enter a valid email e.g john@gmail.com</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="tel">Contact Number</label>
                     <input type="tel" class="form-control" id="tel" name="phone" placeholder="01234567890" required>
+                    <div class="form-error-container" id="tel-error">
+                        <p>Please enter a valid UK 11 digit contact number</p>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="destination">Destination</label>
