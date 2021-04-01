@@ -1,5 +1,23 @@
 //jshint esversion: 6
 
+//Stop previous dates being selected in form
+//Code taken from https://www.codegrepper.com/code-examples/html/how+to+disable+previous+date+in+html+input+type+date
+$(document).ready(function() {
+    let dtToday = new Date();
+    let month = dtToday.getMonth() + 1;
+    let day = dtToday.getDate();
+    let year = dtToday.getFullYear();
+
+    if (month < 10)
+        month = '0' + month.toString();
+    if (day < 10)
+        day = '0' + day.toString();
+
+    let maxDate = year + '-' + month + '-' + day;
+    $('#start-date').attr('min', maxDate);
+    $('#end-date').attr('min', maxDate);
+});
+
 //Original code taken from CI learning material and customised for this project
 //Submit contact form function
 (function () {
