@@ -64,9 +64,10 @@ for the code to correctly work.
 
 - The undefined variables in this file that cause warnings have not been altered as they are correctly used however, JSHint does not recognise them.
     - 'emailjs' is the necessary code to allow the forms within the website to send emails as instructed.
+    - The '$' is used inline with correct JQuery syntax, however, JSHint has not been told that JQuery is being used hence this warning.
 
 - The unused variables in this file that cause warnings have not been altered as these variables are called within the contact.html file.
-    - 'sendMail' is called on the contact form to correctly action and use the emailJS application.
+    - 'validateForm' is called on the contact form to send the form and correctly action and use the emailJS application.
 
 [Back to Testing Table of Contents](#testing-table-of-contents)
 
