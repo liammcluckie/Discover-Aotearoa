@@ -2,7 +2,7 @@
 
 [View Live Project Here](https://liammcluckie.github.io/Discover-Aotearoa/)
 
-![Screenshot of landing page on multiple devices](assets/images/responsive-screenshot.png)
+![Screenshot of landing page on multiple devices](testing/responsive-test/responsive-screenshot.png)
 
 ## Overview
 
@@ -343,8 +343,9 @@ and add further business content to info windows.
 - [Font Awesome](https://fontawesome.com/)
     - Used to display icons on the landing page and the social media icons in the footer.
 
-- [Bootstrap](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/) with [JQuery](https://jquery.com/)
     - Bootstrap was used throughout the site for responsiveness using the grid system, the navigation bar, the form on the contact page, and the table displaying flight information.
+    - Used alongside the [Bootstrap](https://getbootstrap.com/) library in order for the collapsible navigation bar to correctly work.
 
 - [Google Fonts](https://fonts.google.com/)
     - Used to import the two fonts used throughout the site 'Bodoni Moda' and 'Montserrat'.
@@ -352,10 +353,6 @@ and add further business content to info windows.
 - [Hover.css](https://ianlunn.github.io/Hover/)
     - A library consisting of various hover effects that are available to use. They feature throughout this site on the majority of links and buttons, effects used were hover shrink, hover grow
     and underline from center.
-
-- [JQuery](https://jquery.com/)
-    - Used alongside the [Bootstrap](https://getbootstrap.com/) library in order for the collapsible navigation bar to correctly work. As well as this it was used instead of vanilla Javascript
-    to reduce the amount of code used and speed up the writing of certain functions.
 
 - [GitHub](https://github.com/)
     - Used to host the entire repository for the project.
@@ -554,6 +551,10 @@ Listed below is any code that was taken from external resources and customised f
     - There are multiple functions within this project that need the user to select a specific button to display the content, for all of these I only wanted one of the desired elements 
     to be visible at a time. This meant needing to create a loop with an `if statement` which I was unsure on how to achieve. I found a perfect example on dev.to that used matching 
     `data-number` attributes on the relevant elements and containers that would only display if the button selected matched the hidden elements. 
+
+- [Only allow users to select the current day or future dates on the contact form](https://www.codegrepper.com/code-examples/html/how+to+disable+previous+date+in+html+input+type+date)
+    - My mentor pointed out a bug that allowed users to select past dates for there travel which is of course not possible. I found some example code on how to achieve this and implemented
+    the function on page load that retrieved the current date and assigned the `min` HTML attribute to the date input.
 
 - [Code Institute Code](https://codeinstitute.net/)
     - For the basic  function to initialise the map, set the location and place markers I used the code the [Code Institutes](https://codeinstitute.net/) learning material on 
