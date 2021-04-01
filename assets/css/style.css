@@ -830,6 +830,15 @@ label:focus {
     text-align: center;
 }
 
+.form-error-container {
+    padding-left: 0.5em;
+    background-color: #A58961;
+    border-radius: 2px;
+    width: 100%;
+    font-style: italic;
+    display: none;
+}
+
 /*---- 404 Page ----*/
 
 #error-navbar {
