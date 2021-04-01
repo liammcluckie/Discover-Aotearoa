@@ -44,6 +44,12 @@ function sendMail(contactForm) {
     return false;
 }
 
+//Declare global variable to use when displaying errors
+const nameError = document.getElementById("name-error");
+const emailError = document.getElementById("email-error");
+const telError = document.getElementById("tel-error");
+const contactError = document.getElementById("contact-error");
+
 //Function to check that user input is valid
 function validateForm() {
     event.preventDefault();
@@ -59,12 +65,26 @@ function validateForm() {
     const correctName = validCharacters.test(contactName);
     const correctEmail = validEmail.test(contactEmail);
     const correctPhone = validPhone.test(contactPhone);
+    //If user input is invalid display specific error message
+    if (!correctName) {
+        nameError.style.display = "block";
+        contactError.style.display = "block";
+    }
+    if (!correctEmail) {
+        emailError.style.display = "block";
+        contactError.style.display = "block";
+    }
+    if (!correctPhone) {
+        telError.style.display = "block";
+        contactError.style.display = "block";
+    }
     //Check that tests match user input
     if (correctName && correctEmail && correctPhone) {
+        nameError.style.display = "none";
+        emailError.style.display = "none";
+        telError.style.display = "none";
+        contactError.style.display = "none";
         const form = document.getElementById("contact-form");
         sendMail(form);
-    } else {
-        const error = document.getElementById("contact-error");
-        error.style.display = "block";
     }
 }
